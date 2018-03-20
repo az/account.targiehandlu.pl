@@ -14,7 +14,7 @@ import get from 'lodash/get';
 import qs from 'query-string';
 
 import { validate } from './validation';
-import { getUserFullName, getUserData, getUserCompany } from '../../api/helpers';
+import { getUserFullName, getUserData } from '../../api/helpers';
 
 const ViewCreate = props => (
   <Create title="aor.page.meeting_request" {...props}>

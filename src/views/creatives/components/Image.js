@@ -53,8 +53,8 @@ const Creative = ({ creative, showModal, translate }) => (
             href={`${creative.image}?dl=1`}
             onClick={() =>
               showModal({
-                title: 'image_downloaded',
-                body: `Important! Please remember that you have to use your tracking link.`,
+                title: translate("resources.creatives.fields.image_downloaded"),
+                body: translate('resources.creatives.fields.image_body'),
                 buttons: [<CopyTrackingLink link={creative.link} />]
               })
             }

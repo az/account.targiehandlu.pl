@@ -2,7 +2,7 @@ import React from 'react';
 import { CardActions } from 'material-ui/Card';
 import FlatButton from 'material-ui/FlatButton';
 import NavigationRefresh from 'material-ui/svg-icons/navigation/refresh';
-import { ListButton } from 'admin-on-rest';
+import { translate } from 'admin-on-rest';
 
 const style = {
   zIndex: 2,
@@ -17,7 +17,8 @@ const Actions = ({
   filterValues,
   basePath,
   showFilter,
-  refresh
+  refresh,
+  translate
 }) => (
   <CardActions style={style}>
     {filters &&
@@ -31,7 +32,7 @@ const Actions = ({
 
     <FlatButton
       primary
-      label="refresh"
+      label={translate("aor.action.refresh")}
       onClick={refresh}
       icon={<NavigationRefresh />}
     />
@@ -42,4 +43,4 @@ const Actions = ({
   </CardActions>
 );
 
-export default Actions;
+export default translate(Actions);

@@ -1,5 +1,5 @@
 import React from 'react';
-import { Datagrid, Filter, List, TextInput, TextField } from 'admin-on-rest';
+import { Datagrid, List, TextField } from 'admin-on-rest';
 //
 // const VisitorFilter = props => (
 //   <Filter {...props}>

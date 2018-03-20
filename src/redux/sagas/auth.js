@@ -1,11 +1,10 @@
 import { put, takeEvery, all, call } from 'redux-saga/effects';
 import { push } from 'react-router-redux';
-import { showNotification } from 'admin-on-rest';
 import { getToken } from '../../api/helpers';
 
 import slack from '../../services/slack';
 
-import { FETCH_ERROR, USER_CHECK, USER_LOGIN_SUCCESS } from 'admin-on-rest';
+import {  USER_CHECK } from 'admin-on-rest';
 
 // function* handleFetchError(data) {
 //   if ('error' in data && 'status' in data.error) {
@@ -30,14 +29,14 @@ function* handleUserCheck(data) {
   }
 }
 
-function* handleSlackNotification() {
-  const userData = yield call(slack, 'User loggedin!');
-  // Instructing middleware to dispatch corresponding action.
-  yield put({
-    type: 'SLACK_NOTIFICATION_STATUS',
-    userData
-  });
-}
+// function* handleSlackNotification() {
+//   const userData = yield call(slack, 'User loggedin!');
+//   // Instructing middleware to dispatch corresponding action.
+//   yield put({
+//     type: 'SLACK_NOTIFICATION_STATUS',
+//     userData
+//   });
+// }
 
 export default function* saga() {
   yield all([

@@ -1,6 +1,6 @@
 import React from 'react';
-import { connect } from 'react-redux';
-import compose from 'recompose/compose';
+// import { connect } from 'react-redux';
+// import compose from 'recompose/compose';
 import { translate } from 'admin-on-rest';
 
 import { Card, CardHeader, CardText, CardActions } from 'material-ui/Card';

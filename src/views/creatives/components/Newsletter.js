@@ -19,11 +19,9 @@ const newsletterLink = (link, type) => {
   switch (type) {
     case 'zip':
       return `${base}&zip=1`;
-      break;
-
+  
     case 'download':
       return `${base}&dl=1`;
-      break;
 
     default:
       return base;
@@ -49,11 +47,11 @@ class Newsletter extends React.Component {
 
   render() {
     const { translate, creative } = this.props;
-    const { newsletter } = this.state;
+    const { newsletter} = this.state;
 
     return (
       <Card>
-        <CardHeader title={ translate(`resources.creatives.versions.${creative.name}`)} />
+        <CardHeader title={translate(`resources.creatives.version.${creative.lang}`)} />
 
         {newsletter && (
           <div>

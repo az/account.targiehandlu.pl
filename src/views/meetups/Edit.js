@@ -4,7 +4,6 @@ import {
   SimpleForm,
   LongTextInput,
   TextField,
-  required,
   minLength
 } from 'admin-on-rest';
 

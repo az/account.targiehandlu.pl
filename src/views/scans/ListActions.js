@@ -3,6 +3,7 @@ import { CardActions } from 'material-ui/Card';
 import FlatButton from 'material-ui/FlatButton';
 import IconRefresh from 'material-ui/svg-icons/navigation/refresh';
 import IconDownload from 'material-ui/svg-icons/file/file-download';
+import {translate} from 'admin-on-rest';
 
 //import { ListButton } from 'admin-on-rest';
 import {getToken} from '../../api/helpers';
@@ -20,7 +21,8 @@ const Actions = ({
   filterValues,
   basePath,
   showFilter,
-  refresh
+  refresh,
+  translate,
 }) => (
   <CardActions style={style}>
     {filters &&
@@ -32,11 +34,11 @@ const Actions = ({
         context: 'button'
       })}
 
-    <FlatButton primary href={`https://api.eventjuicer.com/v1/restricted/scans?download=1&x-token=${ getToken() }`} label="Export" icon={<IconDownload />} />
+    <FlatButton primary href={`https://api.eventjuicer.com/v1/restricted/scans?download=1&x-token=${ getToken() }`} label = {translate("aor.action.export")} icon={<IconDownload />} />
 
     <FlatButton
       primary
-      label="refresh"
+      label={translate("aor.action.refresh")}
       onClick={refresh}
       icon={<IconRefresh />}
     />
@@ -44,4 +46,4 @@ const Actions = ({
   </CardActions>
 );
 
-export default Actions;
+export default translate(Actions);

@@ -1,6 +1,6 @@
 import eventjuicerApiClient from './eventjuicerApiClient';
 import { fetchUtils } from 'admin-on-rest';
-import get from 'lodash/get';
+// import get from 'lodash/get';
 import { getToken } from './helpers';
 
 const httpClient = (url, options = {}) => {

@@ -9,7 +9,6 @@ import { fetchUtils } from 'admin-on-rest';
 
 import {
   validateToken,
-  storeUserData,
   clearUserData,
   refreshUserData,
   getToken
@@ -41,7 +40,7 @@ console.log(type, params);
   }
 
   if (type === AUTH_CHECK) {
-    const { resource, route } = params;
+    const { resource } = params;
 
     if (resource === 'posts') {
       // check credentials for the posts resource
@@ -59,7 +58,7 @@ console.log(type, params);
   if (type === AUTH_LOGIN) {
     clearUserData();
 
-    const { email, password, token } = params;
+    const { token } = params;
 
     if (token !== undefined && validateToken(token)) {
       return refreshUserData(token);

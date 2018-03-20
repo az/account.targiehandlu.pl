@@ -43,7 +43,7 @@ class Mapping extends React.Component {
 
   handleMappingChange = value => {
     //check if already used?
-    const { index, changeImportMapping, mappings } = this.props;
+    const { index, changeImportMapping } = this.props;
 
     //search for a value in object
 
@@ -55,7 +55,7 @@ class Mapping extends React.Component {
 
     return (
       <SelectField
-        floatingLabelText="What is it?"
+        floatingLabelText={translate('resources.imports.fields.assignment_body')}
         value={get(mappings, index, 'skip')}
         onChange={(ev, idx, value) => this.handleMappingChange(value)}
       >

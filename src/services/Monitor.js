@@ -1,6 +1,6 @@
 import React from 'react';
 import PropTypes from 'prop-types';
-import slack from './slack';
+// import slack from './slack';
 
 class Monitor extends React.PureComponent {
   static propTypes = {

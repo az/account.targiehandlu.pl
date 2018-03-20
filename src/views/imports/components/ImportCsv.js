@@ -94,7 +94,7 @@ class CsvImport extends React.Component {
   };
 
   render() {
-    const { translate, input, meta, data, mappings, file } = this.props;
+    const { translate, meta, data } = this.props;
 
     return (
       <div>
@@ -108,9 +108,9 @@ class CsvImport extends React.Component {
             style={styles.dropzone}
           >
             <p style={{ textAlign: 'center' }}>
-              Drop files or click here to select files to upload.
+              {translate("resources.imports.fields.drop")}
             </p>
-          </Dropzone> : <p>Success! file loaded! <IconButton onClick={this.onReset}><IconRemove color="red" /></IconButton></p>
+          </Dropzone> : <p>{translate("resources.imports.fields.success")}<IconButton onClick={this.onReset}><IconRemove color="red" /></IconButton></p>
         }
         </div>
 

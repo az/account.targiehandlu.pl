@@ -21,21 +21,13 @@ class ImportManually extends React.Component {
   };
 
   render() {
-    const {
-      label,
-      source,
-      meta: { touched, error },
-      elStyle,
-
-      input
-    } = this.props;
+    const { meta: { touched, error }, translate } = this.props;
 
     return (
       <TextField
-        hintText="Message Field"
         fullwidth="true"
         errorText={touched && error}
-        floatingLabelText="Paste or enter email addresses. One address per line."
+        floatingLabelText={translate("resources.imports.fields.hint")}
         multiLine={true}
         rows={10}
         rowsMax={50}

@@ -9,7 +9,6 @@ import { translate } from 'admin-on-rest';
 // import CodeIcon from 'material-ui/svg-icons/action/code';
 //import FlatButton from 'material-ui/FlatButton';
 
-import { Heading, Subheading, Body } from '../../components/Typography';
 
 export default translate(({ style, translate }) => (
   <Card style={style}>
@@ -21,10 +20,11 @@ export default translate(({ style, translate }) => (
     <CardText>{translate('dashboard.welcome.description')}</CardText>
 
     <Card>
-      <CardHeader title="Check out our tutorial about using promo materials" />
+      <CardHeader title={translate("dashboard.tutorial")} />
 
       <CardText>
         <iframe
+          title="Tutorial"
           width="800"
           height="450"
           src="https://www.youtube.com/embed/adF7n7297u8?rel=0&amp;showinfo=0"

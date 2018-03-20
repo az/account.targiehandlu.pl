@@ -32,11 +32,11 @@ const modalReducer = (previousState = '', { type, payload }) => {
   switch (type) {
     case SHOW_MODAL:
       return payload;
-      break;
+
 
     case CLOSE_MODAL:
       return null;
-      break;
+
 
     default:
       return previousState;
@@ -47,7 +47,7 @@ const resourceLimitReducer = (previousState = {}, payload) => {
   switch (payload.type) {
     case RESOURCE_LIMIT_SHOW:
       return { ...previousState, [payload.resource]: payload.limit };
-      break;
+    
 
     default:
       return previousState;

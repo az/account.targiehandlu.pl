@@ -9,7 +9,7 @@ import Prize from './Prize';
 
 import { getUserData } from '../../api/helpers';
 import { httpClient } from '../../api/restClient';
-import { Heading, Subheading, Body } from '../../components/Typography';
+import { Heading, Body } from '../../components/Typography';
 
 class Stats extends React.Component {
   state = {
@@ -49,16 +49,15 @@ class Stats extends React.Component {
             </Heading>
 
             <Body>
-              To participate in the{' '}
+              {translate('resources.rewards.body_text_1')}
               <Link to={{ pathname: '/ranking' }}>
                 {translate('resources.ranking.name')}
-              </Link>{' '}
-              and be able to win rewards you must use dedicated tracking link.
-              See{' '}
+              </Link>
+              {translate('resources.rewards.body_text_2')}
               <Link to={{ pathname: '/creatives' }}>
                 {translate('resources.creatives.name')}
-              </Link>{' '}
-              for details.
+              </Link>
+              {translate('resources.rewards.body_text_3')}
             </Body>
 
             <Body>

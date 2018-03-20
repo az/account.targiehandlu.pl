@@ -1,17 +1,16 @@
 import React from 'react';
 
-import { Title } from './Shared';
+// import { Title } from './Shared';
 import {
   Create,
   SimpleForm,
   TextInput,
   required,
-  email,
   minLength
 } from 'admin-on-rest';
 
 import { validate as validateInvites } from './validation';
-import { Heading, Subheading, Body } from '../../components/Typography';
+// import { Heading, Subheading, Body } from '../../components/Typography';
 
 const ViewCreate = props => (
   <Create title="Create contact list" {...props}>

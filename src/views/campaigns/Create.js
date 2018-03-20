@@ -1,6 +1,6 @@
 import React from 'react';
 
-import { Title } from './Shared';
+// import { Title } from './Shared';
 
 
 
@@ -25,7 +25,7 @@ import {
 import { validate } from './validation';
 
 const ViewCreate = props => (
-  <Create title={<Title />} {...props}>
+  <Create title="resources.campaigns.creative" {...props}>
     <SimpleForm
       redirect="list"
       submitOnEnter={false}

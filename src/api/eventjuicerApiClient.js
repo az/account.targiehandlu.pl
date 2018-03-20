@@ -35,7 +35,7 @@ export default (apiUrl, httpClient = fetchUtils.fetchJson) => {
     const options = {};
     switch (type) {
       case GET_LIST: {
-        const { page, perPage } = params.pagination;
+        const { page } = params.pagination;
         const { field, order } = params.sort;
         const query = {
           ...params.filter,
@@ -53,7 +53,7 @@ export default (apiUrl, httpClient = fetchUtils.fetchJson) => {
         url = `${apiUrl}/${resource}/${params.id}`;
         break;
       case GET_MANY_REFERENCE: {
-        const { page, perPage } = params.pagination;
+        const { page } = params.pagination;
         const { field, order } = params.sort;
         const query = {
           ...params.filter,

@@ -16,8 +16,8 @@ const Mappings = props => (
   <Table selectable={false}>
     <TableHeader displaySelectAll={false}>
       <TableRow>
-        <TableHeaderColumn>Found data</TableHeaderColumn>
-        <TableHeaderColumn>Assignment</TableHeaderColumn>
+        <TableHeaderColumn>{translate("resources.imports.fields.found")}</TableHeaderColumn>
+        <TableHeaderColumn>{translate("resources.imports.fields.assignment")}</TableHeaderColumn>
       </TableRow>
     </TableHeader>
 

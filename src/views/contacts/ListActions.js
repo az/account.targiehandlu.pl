@@ -2,7 +2,7 @@ import React from 'react';
 import { CardActions } from 'material-ui/Card';
 import FlatButton from 'material-ui/FlatButton';
 import NavigationRefresh from 'material-ui/svg-icons/navigation/refresh';
-import { CreateButton } from 'admin-on-rest';
+import { CreateButton, translate } from 'admin-on-rest';
 
 const inviteListActionsStyle = {
   zIndex: 2,
@@ -10,13 +10,13 @@ const inviteListActionsStyle = {
   float: 'right'
 };
 
-const InviteListActions = ({ basePath, data, refresh }) => (
+const InviteListActions = ({ basePath, data, refresh, translate }) => (
   <CardActions style={inviteListActionsStyle}>
     <CreateButton basePath="/imports" label="resources.contacts.actions.import" />
 
     <FlatButton
       primary
-      label="Refresh"
+      label={translate("aor.action.refresh")}
       onClick={refresh}
       icon={<NavigationRefresh />}
     />
@@ -32,4 +32,4 @@ const InviteListActions = ({ basePath, data, refresh }) => (
   </CardActions>
 );
 
-export default InviteListActions;
+export default translate(InviteListActions);

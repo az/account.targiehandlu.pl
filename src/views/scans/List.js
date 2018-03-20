@@ -13,7 +13,7 @@ import ListActions from './ListActions';
 
 const ViewFilter = props => (
   <Filter {...props}>
-    {/*    <TextInput label="pos.search" source="q" alwaysOn /> */}
+       {/* <TextInput label="pos.search" source="q" alwaysOn /> */}
     <SelectInput
       source="status"
       allowEmpty

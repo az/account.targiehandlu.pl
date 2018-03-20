@@ -16,7 +16,6 @@ import sagas from './redux/sagas';
 import reducers from './redux/reducers';
 
 import translations from './i18n';
-
 import Dashboard from './views/dashboard';
 
 import {
@@ -24,6 +23,11 @@ import {
   ViewEdit as MeetupEdit,
   ViewCreate as MeetupCreate
 } from './views/meetups';
+
+import {
+  ViewList as CompanyDataList,
+  ViewEdit as CompanyDataEdit
+} from './views/companydata';
 
 import {
   ViewList as VisitorList
@@ -95,6 +99,13 @@ class App extends React.Component {
           create={MeetupCreate}
           remove={Delete}
         />
+
+        <Resource
+          name="companydata"
+          list={CompanyDataList}
+          edit={CompanyDataEdit}
+        />
+
 
         <Resource
           name="contactlists"

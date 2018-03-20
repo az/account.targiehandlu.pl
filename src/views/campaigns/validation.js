@@ -1,4 +1,6 @@
-export const validate = values => {
+import {translate} from 'admin-on-rest';
+
+export const validate = (values) => {
 
   console.log(values);
 
@@ -6,7 +8,7 @@ export const validate = values => {
 
   if (! values.data)
   {
-      errors.data.subject = "Required";
+      errors.data.subject = translate("aor.validation.required");
   }
   else
   {
@@ -24,18 +26,18 @@ export const validate = values => {
 
   if(!values.contactlist_ids || !Array.isArray(values.contactlist_ids))
   {
-    errors.contactlist_ids = "Choose contact list(s)";
+    errors.contactlist_ids = translate('resources.contacts.data.contactlist_ids');
   }
 
   if(!values.name)
   {
-    errors.name = "Name must be more descriptive";
+    errors.name = translate('aor.validation.name');
   }
   else
   {
     if(values.name.length < 10)
     {
-        errors.name = "Name must be more descriptive";
+        errors.name = translate('aor.validation.name');
     }
   }
 

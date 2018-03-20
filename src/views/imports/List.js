@@ -19,14 +19,14 @@ const ViewList = props => (
     >
       <TextField source="created_at" sortable={false} />
       <TextField source="name" sortable={false} />
-      <TextField source="contactlist.name" sortable={false} />
+      <TextField source="contactlist" sortable={false} />
       <ProgressField
         label="Imported"
         current="imported"
         target="submitted"
         sortable={false}
       />
-      <FullNameField source="admin.profile" sortable={false} />
+      <FullNameField source="created_by" sortable={false} />
     </Datagrid>
   </List>
 );

@@ -1,7 +1,7 @@
 import React from 'react';
 import { connect } from 'react-redux';
 import compose from 'recompose/compose';
-import { Card, CardTitle, CardText } from 'material-ui/Card';
+import { CardTitle } from 'material-ui/Card';
 import { translate } from 'admin-on-rest';
 import get from 'lodash/get';
 

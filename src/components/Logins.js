@@ -1,7 +1,7 @@
 import React from 'react';
 import PropTypes from 'prop-types';
 
-import { Notification, translate } from 'admin-on-rest';
+import { Notification } from 'admin-on-rest';
 
 import MuiThemeProvider from 'material-ui/styles/MuiThemeProvider';
 import getMuiTheme from 'material-ui/styles/getMuiTheme';
@@ -18,7 +18,7 @@ import LoginByToken from './LoginByToken';
 import { getColorsFromTheme } from '../api/helpers';
 
 const Logins = props => {
-  const { theme, translate } = props;
+  const { theme } = props;
   const muiTheme = getMuiTheme(theme);
   const { primary1Color, accent1Color } = getColorsFromTheme(muiTheme);
 
@@ -64,4 +64,4 @@ Logins.defaultProps = {
   theme: {}
 };
 
-export default translate(Logins);
+export default Logins;

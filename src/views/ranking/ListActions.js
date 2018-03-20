@@ -3,6 +3,7 @@ import { CardActions } from 'material-ui/Card';
 import FlatButton from 'material-ui/FlatButton';
 import NavigationRefresh from 'material-ui/svg-icons/navigation/refresh';
 import { ListButton, EditButton, DeleteButton } from 'admin-on-rest';
+import {translate} from 'admin-on-rest';
 
 const inviteListActionsStyle = {
   zIndex: 2,
@@ -10,14 +11,14 @@ const inviteListActionsStyle = {
   float: 'right'
 };
 
-const Actions = ({ basePath, data, refresh }) => (
+const Actions = ({ basePath, data, refresh, translate }) => (
   <CardActions style={inviteListActionsStyle}>
     <EditButton basePath={basePath} record={data} />
     <ListButton basePath={basePath} />
     <DeleteButton basePath={basePath} record={data} />
     <FlatButton
       primary
-      label="Refresh"
+      label={translate("aor.action.refresh")}
       onClick={refresh}
       icon={<NavigationRefresh />}
     />
@@ -30,4 +31,4 @@ const Actions = ({ basePath, data, refresh }) => (
   </CardActions>
 );
 
-export default Actions;
+export default translate(Actions);

@@ -6,7 +6,6 @@ import {
   TextInput,
   TextField,
   NumberField,
-  DateField
 } from 'admin-on-rest';
 
 import FullNameField from '../../fields/FullNameField';

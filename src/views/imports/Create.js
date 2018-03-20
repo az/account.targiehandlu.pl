@@ -1,13 +1,11 @@
 import React from 'react';
 
-import { Title } from './Shared';
 import {
   Create,
   TabbedForm,
   FormTab,
   TextInput,
   required,
-  email,
   minLength
 } from 'admin-on-rest';
 
@@ -17,7 +15,7 @@ import ImportCsv from './components/ImportCsv';
 
 import { validate as validateInvites } from './validation';
 
-import { Heading, Subheading, Body } from '../../components/Typography';
+// import { Heading, Subheading, Body } from '../../components/Typography';
 
 const ViewCreate = props => (
   <Create title="resources.imports.fields.title" {...props}>

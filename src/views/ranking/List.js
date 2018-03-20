@@ -18,7 +18,7 @@ import ViewTitle from '../../components/ViewTitle';
 
 const ViewList = props => (
   <List
-    title={<ViewTitle resource={props.resource} subtitle={true} />}
+    title={<ViewTitle resource={props.resource} subtitle='resources.ranking.subtitle' />}
     {...props}
     //  filters={<VisitorFilter />}
     //  sort={{ field: 'lname', order: 'ASC' }}
@@ -37,7 +37,7 @@ const ViewList = props => (
     >
       <TextField source="profile.cname2" sortable={false} />
       <TextField source="domain" sortable={false} />
-      <PointsField source="stats" label="resources.ranking.fields.stats" sortable={false} />
+      <PointsField source="stats" sortable={false} />
     </Datagrid>
   </List>
 );
