@@ -12,6 +12,10 @@ export const validateToken = token => {
 //     localStorage.setItem();
 // }
 
+export const getLocale = () => {
+  return process.env.REACT_APP_LOCALE || "en"
+}
+
 export const storeUserData = (token, profile) => {
   localStorage.setItem('token', token);
   localStorage.setItem('profile', JSON.stringify(profile));

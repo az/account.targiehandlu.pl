@@ -26,14 +26,15 @@ class Monitor extends React.PureComponent {
       elem.props.onClick(event);
     }
 
-    services.map(service => {
-
+    services.map(function(service)
+    {
       if(typeof service === 'function')
       {
-        service(`clicked ${name}`);
+        return service(`clicked ${name}`);
       }
-
+      return false;
     });
+
   };
 
   render() {

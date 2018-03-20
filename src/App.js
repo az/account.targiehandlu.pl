@@ -18,6 +18,8 @@ import reducers from './redux/reducers';
 import translations from './i18n';
 import Dashboard from './views/dashboard';
 
+import {getLocale} from './api/helpers'
+
 import {
   ViewList as MeetupList,
   ViewEdit as MeetupEdit,
@@ -83,6 +85,7 @@ class App extends React.Component {
         loginPage={Logins}
         logoutButton={Logout}
         menu={Menu}
+        locale={ getLocale() }
         messages={translations}
       >
         <Resource

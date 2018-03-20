@@ -62,8 +62,8 @@ class Stats extends React.Component {
 <Subheading>
 <strong>Step 1.</strong>
 Install "Expo" app for {' '}
-<a href="https://itunes.apple.com/app/apple-store/id982107779?ct=www&mt=8" target="_blank">iOS (iPhone, iPad)</a> or {' '}
-<a href="https://play.google.com/store/apps/details?id=host.exp.exponent&referrer=www" target="_blank">Android</a>.
+<a href="https://itunes.apple.com/app/apple-store/id982107779?ct=www&mt=8" target="_blank" rel="noopener noreferrer">iOS (iPhone, iPad)</a> or {' '}
+<a href="https://play.google.com/store/apps/details?id=host.exp.exponent&referrer=www" target="_blank" rel="noopener noreferrer">Android</a>.
 (Open Google Play or App Store and search "Expo". Then install. )
 </Subheading>
 
@@ -73,7 +73,7 @@ Open EXPO application and touch "Scan QR Code" (approve camera access if request
 </Subheading>
 
 <Body>
-<img src={expolink} style={{width: 350 }} />
+<img src={expolink} style={{width: 350 }} alt="" />
 </Body>
 
 <Subheading>
@@ -82,7 +82,7 @@ Scan below QR code in order to launch expojuicer mobile app
 </Subheading>
 
 <Body>
-<img src={qrcode} style={{ width: 350 }}/>
+<img src={qrcode} style={{ width: 350 }} alt=""/>
 </Body>
 
 
@@ -92,12 +92,12 @@ When having expojuicer app active, scan below QR code to authenticate.
 </Subheading>
 
 <Body>
-<img src={unathenticated} style={{width: 350 }}/>
+<img src={unathenticated} style={{width: 350 }} alt=""/>
 </Body>
 
 
 <Body>
-<img src={`https://api.eventjuicer.com/v1/services/scanners/${code}`} />
+<img src={`https://api.eventjuicer.com/v1/services/scanners/${code}`} alt="" />
 </Body>
 
 <Subheading>
@@ -106,7 +106,7 @@ Are you authenticated? Check if your company name is displayed on the screen (as
 </Subheading>
 
 <Body>
-<img src={loggedin}  style={{width: 350 }} />
+<img src={loggedin}  style={{width: 350 }} alt="" />
 </Body>
 
 <Subheading>
@@ -121,7 +121,7 @@ Scan below badge to test things out! Switch to SCANS tab - you should see the da
 </Subheading>
 
 <Body>
-<img src={badge}  style={{width: 350 }} />
+<img src={badge}  style={{width: 350 }} alt="" />
 </Body>
 
 
@@ -132,7 +132,7 @@ Pull down the SCANS screen in order to force syncing.
 </Subheading>
 
 <Body>
-<img src={sync} style={{width: 350 }} />
+<img src={sync} style={{width: 350 }} alt="" />
 </Body>
 
 
