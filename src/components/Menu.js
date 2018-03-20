@@ -18,9 +18,10 @@ import IconPeople from 'material-ui/svg-icons/social/people';
 import IconStatus from 'material-ui/svg-icons/action/today';
 import IconTrend from 'material-ui/svg-icons/action/trending-up';
 import IconShare from 'material-ui/svg-icons/av/volume-up';
-// import IconRewards from 'material-ui/svg-icons/action/favorite';
+import IconRewards from 'material-ui/svg-icons/action/favorite';
 import IconImports from 'material-ui/svg-icons/communication/contact-mail';
 import IconLanguage from 'material-ui/svg-icons/action/language';
+import IconSetting from 'material-ui/svg-icons/action/settings';
 
 import Modal from './Modal';
 import Chatlio from '../services/Chatlio';
@@ -38,14 +39,14 @@ const Menu = ({ resources, onMenuTap, logout, translate }) => (
       to="/companydata"
       primaryText={translate('resources.companydata.name')}
       onClick={onMenuTap}
-      leftIcon={<IconLanguage />}
+      leftIcon={<IconSetting />}
       />
 
     <MenuItemLink
       to="/representatives"
       primaryText={translate('resources.representatives.name')}
       onClick={onMenuTap}
-      leftIcon={<IconLanguage />}
+      leftIcon={<IconSetting />}
       />
 
 
@@ -59,7 +60,7 @@ const Menu = ({ resources, onMenuTap, logout, translate }) => (
       />
 
 
-
+{/*
     <MenuItemLink
       to="/campaigns"
       primaryText={translate('resources.campaigns.menu')}
@@ -67,23 +68,23 @@ const Menu = ({ resources, onMenuTap, logout, translate }) => (
       leftIcon={<ContentInbox />}
     />
 
+ */}
 
 
 
-
-       <MenuItemLink
+       {/* <MenuItemLink
         to="/contacts"
         primaryText={translate('resources.contacts.menu')}
         onClick={onMenuTap}
         leftIcon={<IconImports />}
-      />
-{/*
+      /> */}
+
       <MenuItemLink
         to="/rewards"
         primaryText={translate('resources.rewards.menu')}
         onClick={onMenuTap}
         leftIcon={<IconRewards />}
-      /> */}
+      />
 
       <MenuItemLink
         to="/creatives"

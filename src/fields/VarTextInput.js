@@ -10,6 +10,9 @@ import pure from 'recompose/pure'
 
 import RichTextInput from 'aor-rich-text-input';
 
+//https://quilljs.com/docs/modules/toolbar/
+
+
 const buildChoices = (choices, resource, prefix) => {
 
   return choices.map(choice => ({
@@ -32,7 +35,12 @@ const VarTextInput = props => {
 
   if(html.indexOf(name) > -1)
   {
-    return <RichTextInput {...props} />
+    return <RichTextInput {...props} toolbar={[
+      [{ 'header': 3 }],
+      ['bold', 'italic', 'link'],
+      ['blockquote', { 'list': 'ordered'}, { 'list': 'bullet' }],
+      ['clean']
+    ]} />
   }
 
   return (
