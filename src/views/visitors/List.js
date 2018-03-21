@@ -37,7 +37,7 @@ const ViewList = props => (
       <TextField source="profile.lname"  sortable={false} />
       <TextField source="profile.cname2" sortable={false} />
       <TextField source="profile.position" sortable={false} />
-      <TextField source="profile.domain" sortable={false} />
+      {/* <TextField source="profile.domain" sortable={false} /> */}
 
       <InviteButton />
     </Datagrid>

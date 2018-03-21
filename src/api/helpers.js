@@ -12,17 +12,21 @@ export const validateToken = token => {
 //     localStorage.setItem();
 // }
 
+export const lsGet = key => JSON.parse(localStorage.getItem(key))
+export const lsSet = (key, value) => localStorage.setItem(key, JSON.stringify(value))
+
 export const getLocale = () => {
-  return process.env.REACT_APP_LOCALE || "en"
+
+  return lsGet("locale") || process.env.REACT_APP_LOCALE || "en"
 }
 
 export const storeUserData = (token, profile) => {
-  localStorage.setItem('token', token);
-  localStorage.setItem('profile', JSON.stringify(profile));
+  lsSet("token", token)
+  lsSet('profile', profile)
 };
 
 export const getUserData = (path, replacement) => {
-  const profile = JSON.parse(localStorage.getItem('profile'));
+  const profile = lsGet("profile");
   return path !== undefined ? get(profile, path, replacement) : profile;
 };
 
@@ -72,7 +76,7 @@ export const refreshUserData = (token = getToken) => {
 };
 
 export const getToken = () => {
-  const token = localStorage.getItem('token');
+  const token = lsGet('token');
   return validateToken(token) ? token : false;
 };
 

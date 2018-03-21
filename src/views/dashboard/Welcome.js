@@ -1,5 +1,7 @@
 import React from 'react';
 import { Card, CardTitle, CardHeader, CardText } from 'material-ui/Card';
+import { Tabs, Tab } from 'material-ui/Tabs';
+import Wrapper from '../../components/Wrapper';
 
 import { translate } from 'admin-on-rest';
 
@@ -35,6 +37,27 @@ export default translate(({ style, translate }) => (
       </CardText>
     </Card>
 
+    {/* <Wrapper>
+      <Tabs>
+        <Tab label="Send of equipment" >
+          <div>
+            <p>Jakiś tekst. Wysyłać możecie chuj wie kiedy.</p>
+          </div>
+        </Tab>
+
+        <Tab label="Exhibition details" >
+          <div>
+            <p>Znowu jakiś tekst</p>
+            <img
+              src="https://files.ecommerceberlin.com/eb3/600x200.jpg"
+            />
+          </div>
+        </Tab>
+      </Tabs>
+    </Wrapper> */}
+
+
+
     {/* <CardActions style={{ textAlign: 'right' }}>
       <FlatButton
         label={translate('pos.dashboard.welcome.aor_button')}
@@ -49,4 +72,6 @@ export default translate(({ style, translate }) => (
       />
     </CardActions> */}
   </Card>
+
+
 ));

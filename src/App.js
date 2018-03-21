@@ -2,6 +2,8 @@
 import React from 'react';
 import { Admin, Resource, Delete } from 'admin-on-rest';
 
+import theme from './styles/muiTheme'
+
 import AppBarTitle from './components/AppBarTitle';
 import Logins from './components/Logins';
 import Logout from './components/Logout';
@@ -87,6 +89,7 @@ class App extends React.Component {
         menu={Menu}
         locale={ getLocale() }
         messages={translations}
+        theme={theme}
       >
         <Resource
           name="imports"

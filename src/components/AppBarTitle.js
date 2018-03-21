@@ -1,7 +1,7 @@
 import React from 'react';
 
 import { getUserData, getCompanyName } from '../api/helpers';
-import Logout from './Logout';
+//import Logout from './Logout';
 
 class AppBarTitle extends React.Component {
   state = {
@@ -15,7 +15,7 @@ class AppBarTitle extends React.Component {
       <div>
         {`${getUserData('profile.fname')} @ ${getCompanyName()} `}
 
-        <Logout icon />
+        {/* <Logout icon /> */}
       </div>
     );
   }

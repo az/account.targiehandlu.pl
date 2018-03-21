@@ -40,8 +40,7 @@ class LoginByToken extends Component {
         <h2 style={styles.centered}>{translate('auth.unauthorized')}</h2>
 
         <p style={styles.centered}>
-          Please contact with sales support if you cannot access this
-          application .
+          {translate("auth.support")}
         </p>
       </div>
     );
