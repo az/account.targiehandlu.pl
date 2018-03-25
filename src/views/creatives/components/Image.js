@@ -21,13 +21,6 @@ const htmlCode = ({ name, act_as, link, image }) => {
   return `<a href="${link}"><img src="${image}" alt="" /></a>`;
 };
 
-const CopyTrackingLink = link => (
-  <CopyToClipboardButton
-    text={link}
-    label={translate("resources.creatives.actions.copy_tracking_link_to_clipboard")}
-    raised={true}
-  />
-);
 
 const Creative = ({ creative, showModal, translate }) => (
   <Card>
@@ -55,7 +48,11 @@ const Creative = ({ creative, showModal, translate }) => (
               showModal({
                 title: translate("resources.creatives.fields.image_downloaded"),
                 body: translate('resources.creatives.fields.image_body'),
-                buttons: [<CopyTrackingLink link={creative.link} />]
+                buttons: [<CopyToClipboardButton
+                          text={creative.link}
+                          label={translate("resources.creatives.actions.copy_tracking_link_to_clipboard")}
+                          raised={true}
+                           />]
               })
             }
           />

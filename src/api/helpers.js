@@ -1,4 +1,4 @@
-import { cyan500, pinkA200 } from 'material-ui/styles/colors';
+
 import { fetchUtils } from 'admin-on-rest';
 import get from 'lodash/get';
 
@@ -81,7 +81,7 @@ export const getToken = () => {
 };
 
 export const getCompanyName = () => {
-  return getUserData('company.name', getUserData('profile.cname2'));
+  return getUserData('company.profile.name', getUserData('company.slug', getUserData('profile.cname2')));
 };
 
 export const getCompanyId = () => {
@@ -90,10 +90,4 @@ export const getCompanyId = () => {
 
 export const getUserId = () => {
   return getUserData('id', 0);
-};
-
-export const getColorsFromTheme = theme => {
-  if (!theme) return { primary1Color: cyan500, accent1Color: pinkA200 };
-  const { palette: { primary1Color, accent1Color } } = theme;
-  return { primary1Color, accent1Color };
 };

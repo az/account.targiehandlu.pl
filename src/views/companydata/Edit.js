@@ -24,15 +24,29 @@ const ViewEdit = props => (
         // parse={v => v.split('\n').filter(v => v)}
         component={VarTextInput}
         html={["about", "products", "expo"]}
+        source="value"
+        radios={
+          {
+            'countries' :  [
+              'national', 'europe', 'global', 'other'
+            ],
+          }
+        }
         checkboxes={{
+          'countries' :  [
+            'national', 'europe', 'global', 'other'
+          ],
           'keywords' : [
             'logistics',
             'payment',
-            'e-shop_platform',
+            'platform',
             'sales_generation',
             'development',
-            'e-mail marketing',
-            
+            'communication',
+            'customer_support',
+            'analytics',
+            'international_sales',
+            'omnichannel'
           ]}}
       />
 

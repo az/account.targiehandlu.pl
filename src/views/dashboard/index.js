@@ -2,7 +2,11 @@ import React, { Component } from 'react';
 import withWidth from 'material-ui/utils/withWidth';
 import { AppBarMobile } from 'admin-on-rest';
 
+
+
 import Welcome from './Welcome';
+import Informer from './Informer';
+import Contact from './Contact';
 
 const styles = {
   welcome: { marginBottom: '2em' },
@@ -22,6 +26,13 @@ class Dashboard extends Component {
         {width === 1 && <AppBarMobile title="expojuicer" />}
 
         <Welcome style={styles.welcome} />
+
+        <Informer />
+
+        <Contact />
+
+
+
 
         {/*
 

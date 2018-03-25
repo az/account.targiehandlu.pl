@@ -5,6 +5,7 @@ import Wrapper from '../../components/Wrapper';
 
 import { translate } from 'admin-on-rest';
 
+
 //import Avatar from 'material-ui/Avatar';
 //import LightBulbIcon from 'material-ui/svg-icons/action/lightbulb-outline';
 // import HomeIcon from 'material-ui/svg-icons/action/home';
@@ -21,7 +22,7 @@ export default translate(({ style, translate }) => (
 
     <CardText>{translate('dashboard.welcome.description')}</CardText>
 
-    <Card>
+    {/* <Card>
       <CardHeader title={translate("dashboard.tutorial")} />
 
       <CardText>
@@ -30,12 +31,13 @@ export default translate(({ style, translate }) => (
           width="800"
           height="450"
           src="https://www.youtube.com/embed/adF7n7297u8?rel=0&amp;showinfo=0"
-          frameborder="0"
+          frameBorder="0"
           allow="autoplay; encrypted-media"
-          allowfullscreen
+          allowFullScreen
         />
       </CardText>
-    </Card>
+    </Card> */}
+
 
     {/* <Wrapper>
       <Tabs>
@@ -58,6 +60,7 @@ export default translate(({ style, translate }) => (
 
 
 
+
     {/* <CardActions style={{ textAlign: 'right' }}>
       <FlatButton
         label={translate('pos.dashboard.welcome.aor_button')}
@@ -72,6 +75,8 @@ export default translate(({ style, translate }) => (
       />
     </CardActions> */}
   </Card>
+
+
 
 
 ));

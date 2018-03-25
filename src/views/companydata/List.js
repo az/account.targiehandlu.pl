@@ -9,6 +9,20 @@ import {
 
 
 import VarLabelTextField from '../../fields/VarLabelTextField';
+import MultiContentField from '../../fields/MultiContentField';
+
+
+const translatable = (record) => {
+  
+  const name = record.name;
+
+  if(name === "countries" || name === "keywords")
+  {
+    return `resources.companydata.fields.${name}_choices.`;
+  }
+
+  return false;
+}
 
 
 const ViewList = props => (
@@ -30,7 +44,7 @@ const ViewList = props => (
         sortable={false}
       />
 
-      <TextField source="value"  sortable={false} />
+      <MultiContentField source="value" sortable={false} translatable={ translatable } />
 
       <TextField source="updated_at" sortable={false} />
 

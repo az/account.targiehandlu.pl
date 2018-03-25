@@ -30,7 +30,7 @@ const InviteButton = ({
   get(limits, resource, true) ? (
     <FlatButton
       primary
-      label={translate('resources.visitors.actions.invite')}
+      label={translate("resources.visitors.actions.invite")}
       icon={<Icon />}
       containerElement={
         <Link

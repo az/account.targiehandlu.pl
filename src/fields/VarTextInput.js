@@ -3,7 +3,8 @@ import React from 'react';
 import {
   LongTextInput,
 //  TextInput,
-  CheckboxGroupInput
+  CheckboxGroupInput,
+  RadioButtonGroupInput
 } from 'admin-on-rest'
 
 import pure from 'recompose/pure'
@@ -24,9 +25,15 @@ const buildChoices = (choices, resource, prefix) => {
 
 const VarTextInput = props => {
 
-  const { record, resource, html, checkboxes} = props;
+  const { record, resource, html, checkboxes, radios, source} = props;
 
   const name = record.name;
+
+  if(name in radios)
+  {
+      return <RadioButtonGroupInput source={source} {...props} choices={ buildChoices(radios[name], resource, name) } />
+
+  }
 
   if(name in checkboxes)
   {
@@ -50,7 +57,8 @@ const VarTextInput = props => {
 
 VarTextInput.defaultProps = {
   html : [],
-  checkboxes : {}
+  checkboxes : {},
+  radios : {}
 }
 
 export default pure(VarTextInput);

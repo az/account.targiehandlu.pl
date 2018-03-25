@@ -1,6 +1,6 @@
 
-const expression = /[-a-zA-Z0-9@:%_\+.~#?&//=]{2,256}\.[a-z]{2,4}\b(\/[-a-zA-Z0-9@:%_\+.~#?&//=]*)?/gi;
-const regExp = new RegExp(expression);
+const validLinkRegExp = /[-a-zA-Z0-9@:%_+.~#?&//=]{2,256}\.[a-z]{2,4}\b(\/[-a-zA-Z0-9@:%_+.~#?&//=]*)?/gi;
+const validLink = new RegExp(validLinkRegExp);
 
 export const validate = ({name, value}) => {
 
@@ -14,7 +14,7 @@ export const validate = ({name, value}) => {
     case "twitter":
     case "website":
 
-      if(value && ! value.match( regExp ) )
+      if(value && ! value.match( validLink ) )
       {
         errors["value"] = 'Must contain valid link'
       }

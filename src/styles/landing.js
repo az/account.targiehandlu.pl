@@ -12,7 +12,7 @@ const styles = {
     backgroundImage: `url(${backgroundImage})`,
     backgroundSize: 'cover',
     backgroundPosition: 'center center',
-    backgroundBlendMode: 'luminosity'
+    backgroundBlendMode: 'multiply'
   },
   centered: {
     textAlign: 'center'

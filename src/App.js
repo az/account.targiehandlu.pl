@@ -2,7 +2,6 @@
 import React from 'react';
 import { Admin, Resource, Delete } from 'admin-on-rest';
 
-import theme from './styles/muiTheme'
 
 import AppBarTitle from './components/AppBarTitle';
 import Logins from './components/Logins';
@@ -21,6 +20,8 @@ import translations from './i18n';
 import Dashboard from './views/dashboard';
 
 import {getLocale} from './api/helpers'
+import {getTheme} from './styles/muiTheme'
+
 
 import {
   ViewList as MeetupList,
@@ -89,7 +90,7 @@ class App extends React.Component {
         menu={Menu}
         locale={ getLocale() }
         messages={translations}
-        theme={theme}
+        theme={ getTheme() }
       >
         <Resource
           name="imports"

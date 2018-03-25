@@ -7,13 +7,13 @@
     new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
     j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
     'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
-    })(window,document,'script','dataLayer','GTM-TJPXHWC');</script>
+  })(window,document,'script','dataLayer','%REACT_APP_GTM%');</script>
     <!-- End Google Tag Manager -->
 
 
     <script src="https://use.fontawesome.com/6de33398df.js"></script>
 
-    
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lato:100,300,400,500,700">
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="shortcut icon" href="%PUBLIC_URL%/favicon.ico">
@@ -26,7 +26,7 @@
       work correctly both with client-side routing and a non-root public URL.
       Learn how to configure a non-root public URL by running `npm run build`.
     -->
-    <title>expojuicer.com</title>
+    <title>%REACT_APP_SITENAME%</title>
     <style>
     .loader-container {
     display: flex;
@@ -38,7 +38,7 @@
     bottom: 0;
     left: 0;
     right: 0;
-    background-color: #00bcd4;
+    background-color: rgb(244, 67, 54);
     }
     /* CSS Spinner from https://projects.lukehaas.me/css-loaders/ */
     .loader,
@@ -67,7 +67,7 @@
     .loader:before {
       width: 5.2em;
       height: 10.2em;
-      background: #00bcd4;
+      background: rgb(244, 67, 54);
       border-radius: 10.2em 0 0 10.2em;
       top: -0.1em;
       left: -0.1em;
@@ -79,7 +79,7 @@
     .loader:after {
       width: 5.2em;
       height: 10.2em;
-      background: #00bcd4;
+      background: rgb(244, 67, 54);
       border-radius: 0 10.2em 10.2em 0;
       top: -0.1em;
       left: 5.1em;
@@ -109,7 +109,6 @@
       }
     }
     </style>
-    <meta name=viewport content="width=device-width, initial-scale=1">
   </head>
   <body>
     <div id="root">

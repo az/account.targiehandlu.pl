@@ -19,15 +19,15 @@ const importReducer = (previousState = { data: {}, mappings: {} }, payload) => {
         ...previousState,
         mappings: { ...previousState.mappings, [payload.index]: payload.value }
       };
-      break;
+
 
     case IMPORT_RESET:
       return { ...previousState, mappings: {}, data : {}};
-      break;
+
 
     case IMPORT_CHANGE_DATA:
       return {...previousState, data: payload.data, mappings: {} };
-      break;
+ 
 
     default:
       return previousState;
