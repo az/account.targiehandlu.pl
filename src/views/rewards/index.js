@@ -61,8 +61,8 @@ class Stats extends React.Component {
             </Body>
 
             <Body>
-              {getUserData('domain')} place:{' '}
-              {sessions ? `#${position}` : `unknown`}
+              {translate("prizes.place")}
+              {sessions ? `#${position}` : translate('prizes.unknown')}
             </Body>
 
             {prizes &&

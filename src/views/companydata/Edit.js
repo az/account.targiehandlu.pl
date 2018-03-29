@@ -41,7 +41,7 @@ const ViewEdit = props => (
             'payment',
             'platform',
             'sales_generation',
-            'development',
+            'software',
             'communication',
             'customer_support',
             'analytics',

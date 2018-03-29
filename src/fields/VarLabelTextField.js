@@ -6,7 +6,7 @@ const VarLabelTextField = props => {
   const {source, resource, record, translate} = props;
 
   return (
-    <span>{translate(`resources.${resource}.fields.${record[source]}`)}</span>
+    <span>{translate(`resources.${resource}.customfields.${record[source]}`)}</span>
   )
 }
 

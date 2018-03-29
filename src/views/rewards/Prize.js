@@ -52,7 +52,7 @@ const conditions = ({ min, max, level}, translate) => {
   if (min === max) {
     if (min === 1) {
 
-      return translate("prizes.must_be_winner");
+      return translate("prizes.must_be_winner") + `${levelInfo}`;
 
     }
 

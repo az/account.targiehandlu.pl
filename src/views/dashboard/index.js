@@ -6,7 +6,8 @@ import { AppBarMobile } from 'admin-on-rest';
 
 import Welcome from './Welcome';
 import Informer from './Informer';
-import Contact from './Contact';
+import Contact from './components/Contact';
+
 
 const styles = {
   welcome: { marginBottom: '2em' },
@@ -29,7 +30,8 @@ class Dashboard extends Component {
 
         <Informer />
 
-        <Contact />
+
+        {/* <Contact /> */}
 
 
 
