@@ -35,8 +35,8 @@ const ViewList = props => (
         }
       }
     >
-      <TextField source="profile.cname2" sortable={false} />
-      <TextField source="domain" sortable={false} />
+      <TextField source="profile.name" sortable={false} />
+      <TextField source="slug" sortable={false} />
       <PointsField source="stats" sortable={false} />
     </Datagrid>
   </List>

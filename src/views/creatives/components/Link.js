@@ -8,7 +8,7 @@ import { Card, CardHeader, CardText, CardActions } from 'material-ui/Card';
 import Share from '../../../components/Share';
 import { colorBg, colorHeader } from '../../../styles/colors';
 
-import CopyToClipboardButton from './CopyToClipboardButton';
+import CopyToClipboardButton from '../../../components/CopyToClipboardButton';
 
 const Creative = ({ creative, translate }) => (
   <Card containerStyle={{ backgroundColor: colorBg }}>

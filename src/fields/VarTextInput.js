@@ -14,6 +14,16 @@ import RichTextInput from 'aor-rich-text-input';
 //https://quilljs.com/docs/modules/toolbar/
 
 
+
+const styles = {
+  error : {
+    color: 'rgb(244, 67, 54)',
+    fontSize : 12,
+    lineHeight : '12px'
+  },
+
+}
+
 const buildChoices = (choices, resource, prefix) => {
 
   return choices.map(choice => ({
@@ -23,9 +33,15 @@ const buildChoices = (choices, resource, prefix) => {
 
 }
 
+const FieldError = ({valid, invalid, error}) => {
+  return !valid ? <p style={styles.error}>{error}</p> : null;
+}
+
 const VarTextInput = props => {
 
   const { record, resource, html, checkboxes, radios, source} = props;
+
+
 
   const name = record.name;
 
@@ -37,7 +53,15 @@ const VarTextInput = props => {
 
   if(name in checkboxes)
   {
-    return <CheckboxGroupInput {...props} choices={ buildChoices(checkboxes[name], resource, name) } />
+    return <div>
+      <CheckboxGroupInput
+      {...props}
+      choices={ buildChoices(checkboxes[name], resource, name) }
+    />
+
+      <FieldError { ...props.meta } />
+
+    </div>
   }
 
   if(html.indexOf(name) > -1)

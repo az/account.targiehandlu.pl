@@ -14,41 +14,41 @@ const Shipment = ({translate}) => (
   <Wrapper>
 
     <Heading>
-      {translate("informer.heading.shipment")}
+      {translate("informer.shipment.address")}
     </Heading>
 
         <Border>
           EXPO Kraków
-          <p>{translate("informer.body.describe")}</p>
+          <p>{translate("informer.shipment.describe")}</p>
           <p>Galicyjska 9</p>
-          <p>31-586 Kraków{translate('informer.subheading.country')}</p>
+          <p>31-586 Kraków{translate('informer.shipment.country')}</p>
         </Border>
 
 
     <Divider></Divider>
 
   <HeadingMargin>
-    {translate("informer.heading.deliver")}
+    {translate("informer.shipment.deliver_hours")}
   </HeadingMargin>
 
     <Body>
       <ul>
-        <li>{translate("informer.subheading.date.first")}</li>
-        <li>{translate("informer.subheading.date.second")}</li>
+        <li>{translate("informer.shipment.date.april24")}</li>
+        <li>{translate("informer.shipment.date.april25")}</li>
       </ul>
 
-        <IconError /> <mark>{translate("informer.subheading.deliver")}</mark>
+        <IconError /> <mark>{translate("informer.shipment.deliver")}</mark>
     </Body>
 
     <Divider></Divider>
 
 
    <HeadingMargin>
-      {translate("informer.heading.sped")}
+      {translate("informer.shipment.sped")}
    </HeadingMargin>
 
         <Subheading>
-          {translate("informer.border.contact_person")}
+          {translate("informer.shipment.contact_person")}
         </Subheading>
 
         <Border>

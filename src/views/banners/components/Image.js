@@ -9,7 +9,9 @@ import SecondaryButton from 'material-ui/FlatButton';
 import IconPreview from 'material-ui/svg-icons/action/visibility';
 import IconDownload from 'material-ui/svg-icons/file/file-download';
 import { showModal as showModalAction } from '../../../redux/actions';
-import CopyToClipboardButton from './CopyToClipboardButton';
+
+
+import CopyToClipboardButton from '../../../components/CopyToClipboardButton';
 
 import Monitor from '../../../services/Monitor';
 

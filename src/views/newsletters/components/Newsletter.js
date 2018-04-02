@@ -11,7 +11,7 @@ import { httpClient } from '../../../api/restClient';
 import Iframe from '../../../components/Iframe';
 import { getUserId } from '../../../api/helpers';
 
-import CopyToClipboardButton from './CopyToClipboardButton';
+import CopyToClipboardButton from '../../../components/CopyToClipboardButton';
 
 const newsletterLink = (link, type) => {
   const base = `${link}?participant_id=${getUserId()}`;
@@ -19,7 +19,7 @@ const newsletterLink = (link, type) => {
   switch (type) {
     case 'zip':
       return `${base}&zip=1`;
-  
+
     case 'download':
       return `${base}&dl=1`;
 

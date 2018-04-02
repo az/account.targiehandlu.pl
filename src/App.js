@@ -47,6 +47,15 @@ import {
 } from './views/creatives';
 
 import {
+  ViewList as BannerList
+} from './views/banners';
+
+import {
+  ViewList as NewsletterList
+} from './views/newsletters';
+
+
+import {
   ViewList as CampaignList,
   ViewCreate as CampaignCreate,
   ViewEdit as CampaignEdit
@@ -135,13 +144,9 @@ class App extends React.Component {
         <Resource name="contacts" list={ContactList} edit={ContactEdit} />
 
         <Resource name="creatives" list={CreativeList} edit={CreativeEdit} />
+        <Resource name="newsletters" list={NewsletterList} />
+        <Resource name="banners" list={BannerList}  />
 
-        <Resource
-          name="newsletters"
-          list={CreativeList}
-          edit={CreativeEdit}
-          create={CreativeCreate}
-        />
         <Resource
           name="scans"
           options={{ label: 'Scans' }}

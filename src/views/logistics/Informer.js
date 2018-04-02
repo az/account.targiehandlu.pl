@@ -26,19 +26,19 @@ const Informer = ({translate, Heading }) => (
   /> */}
 
   <Tabs>
-    <Tab label={translate('informer.tabs.title_1')}>
+    <Tab label={translate('informer.tabs.basic')}>
       <div>
         <ExhibitionSpace />
       </div>
     </Tab>
 
-    <Tab label={translate('informer.tabs.title_2')} >
+    <Tab label={translate('informer.tabs.shipment')} >
       <div>
         <Shipment />
       </div>
     </Tab>
 
-    <Tab label={translate('informer.tabs.title_3')} >
+    <Tab label={translate('informer.tabs.assembly')} >
       <div>
         <Assembly />
       </div>

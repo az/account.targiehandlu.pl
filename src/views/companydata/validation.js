@@ -14,9 +14,9 @@ export const validate = ({name, value}) => {
     case "twitter":
     case "website":
 
-      if(value && ! value.match( validLink ) )
+      if(value && ( ! value.includes("http") || ! value.match( validLink ) ) )
       {
-        errors["value"] = 'Must contain valid link'
+        errors["value"] = 'Must contain valid link http(s)://'
       }
 
       break;

@@ -2,17 +2,22 @@ import React from 'react';
 import pure from 'recompose/pure';
 import styles from '../styles/typography';
 
-const Theading = ({ first, children }) => (
+const Theading = ({ first, children, style }) => (
   <h2
     style={{
       ...styles.paragraph,
       ...styles.heading,
-      ...(first ? styles.first : {})
+      ...(first ? styles.first : {}),
+      ...style
     }}
   >
     {children}
   </h2>
 );
+
+Theading.defaultProps = {
+  style : {}
+}
 
 const Heading = pure(Theading);
 
@@ -30,25 +35,35 @@ const TheadingMargin = ({ first, children }) => (
 
 const HeadingMargin = pure(TheadingMargin);
 
-const Tsubheading = ({ first, children }) => (
+const Tsubheading = ({ first, children, style }) => (
   <h3
     style={{
       ...styles.paragraph,
       ...styles.subheading,
-      ...(first ? styles.first : {})
+      ...(first ? styles.first : {}),
+      ...style
     }}
   >
     {children}
   </h3>
 );
 
+Theading.defaultProps = {
+  style : {}
+}
+
 const Subheading = pure(Tsubheading);
 
-const Tparagraph = ({ first, children }) => (
-  <p style={{ ...styles.paragraph, ...(first ? styles.first : {}) }}>
+
+const Tparagraph = ({ first, children, style }) => (
+  <p style={{ ...styles.paragraph, ...(first ? styles.first : {}), ...style }}>
     {children}
   </p>
 );
+
+Tparagraph.defaultProps = {
+  style : {}
+}
 
 const Paragraph = pure(Tparagraph);
 
