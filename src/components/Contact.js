@@ -4,7 +4,7 @@ import Avatar from 'material-ui/Avatar';
 import List from 'material-ui/List/List';
 import ListItem from 'material-ui/List/ListItem';
 import { Card } from 'material-ui/Card';
-import { Subheading } from '../../../components/Typography';
+import { Subheading } from './Typography';
 
 import { translate } from 'admin-on-rest';
 
