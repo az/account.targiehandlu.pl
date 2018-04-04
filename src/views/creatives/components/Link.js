@@ -34,7 +34,7 @@ const Creative = ({ creative, translate }) => (
 
         <Button
           raised={true}
-          href={getProfileUrl(creative.link)}
+          href={getProfileUrl(creative.link, true)}
           label={translate('resources.creatives.actions.jumpto')}
           target="_blank"
         />

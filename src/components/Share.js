@@ -18,30 +18,29 @@ const Icons = {
   twitter : Twitter
 }
 
-const title = () => {
-  return encodeURIComponent(`Let's meet there!`);
-};
+const _escape = (str) => encodeURIComponent(str)
 
-const Share = ({ translate, type, target }) => {
+const Share = ({ translate, type, target, title, description }) => {
 
   const Icon = Icons[type]
-
-  const encTarget = encodeURIComponent(target);
-
   let link = '';
+
+  const _title = title ? _escape( translate(title) ) : ''
+  const _description = description ? _escape( translate(description) ) : ''
+  const _target = _escape(target)
 
   switch (type) {
     case 'linkedin':
-      link = `https://www.linkedin.com/shareArticle?mini=true&url=${encTarget}&title=${title()}&summary=${''}`;
+      link = `https://www.linkedin.com/shareArticle?mini=true&url=${ _target }&title=${ _title }&summary=${ _description }`;
 
       break;
 
     case 'facebook':
-      link = `https://www.facebook.com/sharer/sharer.php?u=${encTarget}`;
+      link = `https://www.facebook.com/sharer/sharer.php?u=${ _target }`;
       break;
 
     case 'twitter':
-      link = `https://twitter.com/home?status=${encTarget}`;
+      link = `https://twitter.com/home?status=${ _target }`;
 
       break;
 
@@ -58,5 +57,9 @@ const Share = ({ translate, type, target }) => {
   );
 };
 
+Share.defaultProps = {
+  title : "",
+  description : ""
+}
 
 export default translate(Share);

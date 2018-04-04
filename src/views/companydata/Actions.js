@@ -30,7 +30,7 @@ const Actions = ({ basePath, data, refresh, resource, translate, ...rest }) => (
     <FlatButton
       primary
       label={translate(`resources.${resource}.actions.preview`)}
-      href={getProfileUrl()}
+      href={getProfileUrl("", true)}
       target="_blank"
       icon={<Eye />}
     />

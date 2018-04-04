@@ -43,7 +43,37 @@ export const getFullUrl = (str) => {
   return `${homepage}/${removeSlashes(str)}`
 }
 
-export const getProfileUrl = () => getFullUrl(`${slug(getCompanyName())},c,${getCompanyId()}?purge`)
+export const getDefaultTracking = () => {}
+
+export const addUrlParam = (url = "", param = "") => {
+
+  if(param.indexOf("?")===0)
+  {
+    param = param.slice(1)
+  }
+
+  if(!param.length)
+  {
+    return url
+  }
+
+  return url.indexOf("?") > -1 ? `${url}&${param}` : `${url}?${param}`
+}
+
+export const getProfileUrl = (params = "", purgeCache = false) => {
+
+  let url = getFullUrl(`${slug(getCompanyName())},c,${getCompanyId()}`)
+
+  if(params.length){
+    url = addUrlParam(url, params)
+  }
+
+  if(purgeCache){
+    url = addUrlParam(url, 'purge')
+  }
+  return url
+}
+
 
 export const clearUserData = () => {
   localStorage.removeItem('profile');
