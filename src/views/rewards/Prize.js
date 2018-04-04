@@ -1,11 +1,23 @@
 import React from 'react';
-import { Card, CardHeader, CardTitle} from 'material-ui/Card';
+import {Card, CardHeader, CardTitle, CardText} from 'material-ui/Card';
 
 import Bulb from 'material-ui/svg-icons/image/brightness-1';
 //import Rejected from 'material-ui/svg-icons/action/lightbulb-outline';
 import Warning from 'material-ui/svg-icons/alert/warning';
 // import IconReward from 'material-ui/svg-icons/action/info';
+
 import { translate } from 'admin-on-rest';
+
+import {
+  Microphone,
+  Video,
+  Eye,
+  Ticket,
+  Calendar,
+  BarcodeScan,
+  VolumeHigh,
+  Newspaper
+} from 'mdi-material-ui'
 
 import {
   success,
@@ -15,7 +27,25 @@ import {
 
 //import Photogrid from './Photogrid';
 
+const styles = {
+  avatar : {
+    width : 80,
+    height : 80,
+    marginTop : 20,
+    color : '#666666'
+  }
+}
 
+const Icons = {
+  presentation : Microphone,
+  video_interview : Video,
+  brand_highlight : Eye,
+  leaflets : Ticket,
+  meetups : Calendar,
+  scanner : BarcodeScan,
+  rollups : VolumeHigh,
+  blog : Newspaper
+}
 
 const rewarded = (prize, position, sessions) => {
   const level = 'level' in prize ? prize.level : 0;
@@ -48,46 +78,41 @@ const avatar = (prize, position, sessions) => {
 const conditions = ({ min, max, level}, translate) => {
   const levelInfo = level ? `, minimum ${level}` + translate('prizes.points') : '';
 
-
   if (min === max) {
     if (min === 1) {
-
       return translate("prizes.must_be_winner") + `${levelInfo}`;
-
     }
-
     return translate("prizes.position_2") + `${min}${levelInfo}`;
   }
-
   return translate("prizes.position_1") + `${min}` + translate("prizes.and") + `${max}${levelInfo}`;
 }
 
-const Prize = ({ translate, prize, position, sessions }) => (
-  <Card
-    containerStyle={
-      !rewarded(prize, position, sessions)
-        ? { backgroundColor: disabledBg }
-        : {}
-    }
-  >
-    <CardTitle
-      title={translate(`prizes.${prize.name}.title`)}
-      titleStyle={{ fontSize: 16, lineHeight: '26px' }}
-      subtitle={translate(`prizes.${prize.name}.description`)}
-      //  actAsExpander={true}
-      //    showExpandableButton={true}
-    />
 
-    {/* <CardText expandable={true}>
-        <Photogrid />
-        </CardText> */}
+const Prize = ({ translate, prize, position, sessions }) => {
 
-    <CardHeader
-      title={conditions(prize, translate)}
-      avatar={avatar(prize, position, sessions)}
-    />
-  </Card>
-);
+  const Icon = prize.name in Icons ? Icons[prize.name] : Bulb
+
+  return (<Card>
+        <CardHeader
+
+          avatar={<Icon style={styles.avatar} /> }
+          style={{padding: 12}}
+          title={
+              <CardTitle
+                title={ translate(`prizes.${prize.name}.title`) }
+                subtitle={ translate(`prizes.${prize.name}.description`) }
+              />
+          }
+          subtitle={  <CardHeader
+              title={conditions(prize, translate)}
+              avatar={avatar(prize, position, sessions)}
+              style={{paddingTop:0}}
+            />}
+
+        />
+      </Card>
+
+)};
 
 //
 //

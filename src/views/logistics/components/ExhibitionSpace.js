@@ -59,13 +59,13 @@ const ExhibitionSpace = ({translate, style}) => (
     <Body>
 
       <ul>
-        <li>{translate("informer.basic.carpeting")}<a href="mailto:targiehandlu@targiehandlu.com.pl">targiehandlu@targiehandlu.com.pl</a></li>
+        <li>{translate("informer.basic.carpeting")}<a href="mailto:upgrade@targiehandlu.com.pl">upgrade@targiehandlu.com.pl</a></li>
       </ul>
 
       <p></p>
 
       <ul>
-        <li>{translate("informer.basic.add_eq_contact")}</li>
+        <li>{translate("informer.basic.add_eq_contact")}<a href="mailto:upgrade@targiehandlu.com.pl">upgrade@targiehandlu.com.pl</a></li>
       </ul>
 
       <p></p>
@@ -79,14 +79,14 @@ const ExhibitionSpace = ({translate, style}) => (
 
     <Divider></Divider>
 
-  <HeadingMargin>
+  {/* <HeadingMargin>
     {translate("informer.basic.representative")}
   </HeadingMargin>
 
     <Body>
       {translate("informer.basic.reps_info")}<Link to={{ pathname: '/representatives' }}>
       {translate('informer.basic.representative')}</Link>.
-    </Body>
+    </Body> */}
 
 </Wrapper>
 

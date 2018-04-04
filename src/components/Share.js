@@ -1,17 +1,31 @@
 import React from 'react';
 import Button from 'material-ui/FlatButton';
-import FontIcon from 'material-ui/FontIcon';
 import { translate } from 'admin-on-rest';
 
 //escape() will not encode: @*/+
 //encodeURI() will not encode: ~!@#$&*()=:/,;?+'
 //encodeURIComponent() will not encode: ~!*()'
+import {
+    Linkedin,
+    Facebook,
+    Twitter
+} from 'mdi-material-ui'
+
+
+const Icons = {
+  linkedin : Linkedin,
+  facebook : Facebook,
+  twitter : Twitter
+}
 
 const title = () => {
   return encodeURIComponent(`Let's meet there!`);
 };
 
 const Share = ({ translate, type, target }) => {
+
+  const Icon = Icons[type]
+
   const encTarget = encodeURIComponent(target);
 
   let link = '';
@@ -37,27 +51,12 @@ const Share = ({ translate, type, target }) => {
   return (
     <Button
       label={translate(`actions.share_${type}`)}
-      icon={<FontIcon className={`fa fa-${type}`} />}
+      icon={<Icon />}
       href={link}
       target="_blank"
     />
   );
 };
 
-/*
-
-<Button
-  label={translate('pos.share_twitter')}
-icon={<FontIcon className="fa fa-twitter" />}
-href={ tt() }
-/>
-
-<Button
-  label={translate('pos.share_facebook')}
-icon={<FontIcon className="fa fa-facebook" />}
-href={ fb() }
-/>
-
-*/
 
 export default translate(Share);

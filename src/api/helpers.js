@@ -1,6 +1,7 @@
 
 import { fetchUtils } from 'admin-on-rest';
 import get from 'lodash/get';
+import slugify from 'slugify'
 
 export const validateToken = token => {
   return /^[a-z0-9]{32,40}$/.test(token);
@@ -11,6 +12,16 @@ export const validateToken = token => {
 //     limits[resource] = limit;
 //     localStorage.setItem();
 // }
+
+export const capitalizeFirstLetter = (string) => {
+    return string.charAt(0).toUpperCase() + string.slice(1);
+}
+
+export const slug = (str = "") => slugify(str, {
+    replacement: '-',
+    remove: null,
+    lower: true
+})
 
 export const lsGet = key => JSON.parse(localStorage.getItem(key))
 export const lsSet = (key, value) => localStorage.setItem(key, JSON.stringify(value))
@@ -25,14 +36,14 @@ export const storeUserData = (token, profile) => {
   lsSet('profile', profile)
 };
 
-export const getUserData = (path, replacement) => {
-  const profile = lsGet("profile");
-  return path !== undefined ? get(profile, path, replacement) : profile;
-};
+export const removeSlashes = (str = "") => str.replace(/^\/|\/$/g, '')
 
-export const getUserFullName = () => {
-  return getUserData('profile.fname') + ' ' + getUserData('profile.lname');
-};
+export const getFullUrl = (str) => {
+  const homepage = removeSlashes(process.env.REACT_APP_HOMEPAGE)
+  return `${homepage}/${removeSlashes(str)}`
+}
+
+export const getProfileUrl = () => getFullUrl(`${slug(getCompanyName())},c,${getCompanyId()}?purge`)
 
 export const clearUserData = () => {
   localStorage.removeItem('profile');
@@ -80,14 +91,27 @@ export const getToken = () => {
   return validateToken(token) ? token : false;
 };
 
-export const getCompanyName = () => {
-  return getUserData('company.profile.name', getUserData('company.slug', getUserData('profile.cname2')));
+
+export const getUserData = (path, replacement) => {
+  const profile = lsGet("profile");
+  return path !== undefined ? get(profile, path, replacement) : profile;
 };
 
-export const getCompanyId = () => {
-  return getUserData('company.id', 0);
+export const getUserFullName = () => {
+  return getUserData('profile.fname') + ' ' + getUserData('profile.lname');
 };
 
 export const getUserId = () => {
   return getUserData('id', 0);
+};
+
+export const getCompanyName = () => {
+  return getUserData('company.profile.name',
+          getUserData('company.slug',
+            getUserData('profile.cname2', '')
+          ));
+};
+
+export const getCompanyId = () => {
+  return getUserData('company.id', 0);
 };

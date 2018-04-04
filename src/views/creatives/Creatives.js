@@ -1,16 +1,12 @@
 import React from 'react';
 import { translate } from 'admin-on-rest';
+import { Link } from 'react-router-dom';
 
 import { Card, CardTitle } from 'material-ui/Card';
 import { Tabs, Tab } from 'material-ui/Tabs';
 
 import { httpClient } from '../../api/restClient';
-
-import IconEmail from 'material-ui/svg-icons/communication/email';
-import IconImages from 'material-ui/svg-icons/image/collections';
-
-import Link from './components/Link';
-
+import CreativeLink from './components/Link';
 import { Heading, Subheading, Body } from '../../components/Typography';
 import Wrapper from '../../components/Wrapper';
 
@@ -46,7 +42,7 @@ class Creatives extends React.Component {
 
   renderLinks() {
     return this.filterByType('link').map((item, i) => (
-      <Link key={i} creative={item} />
+      <CreativeLink key={i} creative={item} />
     ));
   }
 
@@ -61,9 +57,20 @@ class Creatives extends React.Component {
           {translate("resources.creatives.heading")}
         </Heading>
 
+        <Subheading style={{color: '#666'}} >
+          <strong>UWAGA </strong>
+          Pamiętaj aby zaktualizować swój {' '}
+            <Link to={{ pathname: '/companydata' }}>profil</Link>{' '}przed udostępnianiem linków!<br/>
+          <strong>WARNING </strong>
+          Please update your{' '}<Link to={{ pathname: '/companydata' }}>company data</Link>{' '}before sharing below links!
+        </Subheading>
+
         <Wrapper>{this.renderLinks()}</Wrapper>
 
-        <Body />
+        <Subheading style={{marginBottom:100, paddingBottom: 100}}>
+          Szablony newsletterów oraz kreacje graficzne zostaną udostępnione wkrótce.<br/>
+          Newsletter templates and banners will be published soon.
+        </Subheading>
 
       </Card>
     );

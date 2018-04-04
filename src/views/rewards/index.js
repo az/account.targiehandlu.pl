@@ -10,6 +10,7 @@ import Prize from './Prize';
 import { getUserData } from '../../api/helpers';
 import { httpClient } from '../../api/restClient';
 import { Heading, Body } from '../../components/Typography';
+import Wrapper from '../../components/Wrapper';
 
 class Stats extends React.Component {
   state = {
@@ -48,7 +49,7 @@ class Stats extends React.Component {
               {translate('resources.rewards.name')}{' '}
             </Heading>
 
-            <Body>
+            <Body style={{margin: 25, padding: 0}}>
               {translate('resources.rewards.body_text_1')}
               <Link to={{ pathname: '/ranking' }}>
                 {translate('resources.ranking.name')}

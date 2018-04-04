@@ -7,13 +7,14 @@ import {
 } from 'admin-on-rest';
 
 
+import ListActions from './Actions';
 
 import VarLabelTextField from '../../fields/VarLabelTextField';
 import MultiContentField from '../../fields/MultiContentField';
 
 
 const translatable = (record) => {
-  
+
   const name = record.name;
 
   if(name === "countries" || name === "keywords")
@@ -29,10 +30,15 @@ const ViewList = props => (
 
 <List
     {...props}
-    //actions={<ListActions />}
-      actions={null}
-      //filters={<ViewFilter />}
-      //sort={{ field: 'cname2', order: 'ASC' }}
+    // title={<ViewTitle
+    //         resource={props.resource}
+    //
+    //         limit={false}
+    //       />}
+  
+    actions={<ListActions/>}
+    //filters={<ViewFilter />}
+    //sort={{ field: 'cname2', order: 'ASC' }}
     perPage={100}
   >
     <Datagrid
