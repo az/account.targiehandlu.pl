@@ -6,7 +6,7 @@ import { Card } from 'material-ui/Card';
 
  //import Photogrid from './Photogrid';
 
-import { getUserData } from '../../api/helpers';
+import { getUserData } from '../../helpers';
 import { httpClient } from '../../api/restClient';
 import { Heading, Subheading, Body } from '../../components/Typography';
 import qrcode from '../../imgs/expo.png';

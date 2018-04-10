@@ -1,6 +1,6 @@
 import { put, takeEvery, all, call } from 'redux-saga/effects';
 import { push } from 'react-router-redux';
-import { getToken } from '../../api/helpers';
+import { getToken } from '../../helpers';
 
 //import slack from '../../services/slack';
 

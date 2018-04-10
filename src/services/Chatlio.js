@@ -1,5 +1,5 @@
 import React from 'react';
-import { getUserData, getUserFullName, getCompanyName } from '../api/helpers';
+import { getUserData, getUserFullName, getCompanyName } from '../helpers';
 
 class Chatlio extends React.Component {
   componentDidMount() {

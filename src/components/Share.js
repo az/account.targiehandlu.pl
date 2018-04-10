@@ -20,7 +20,7 @@ const Icons = {
 
 const _escape = (str) => encodeURIComponent(str)
 
-const Share = ({ translate, type, target, title, description }) => {
+const Share = ({ translate, type, target, title, description, disabled }) => {
 
   const Icon = Icons[type]
   let link = '';
@@ -53,13 +53,15 @@ const Share = ({ translate, type, target, title, description }) => {
       icon={<Icon />}
       href={link}
       target="_blank"
+      disabled={disabled}
     />
   );
 };
 
 Share.defaultProps = {
   title : "",
-  description : ""
+  description : "",
+  disabled : false
 }
 
 export default translate(Share);

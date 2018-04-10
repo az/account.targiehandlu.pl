@@ -7,8 +7,9 @@ import { Tabs, Tab } from 'material-ui/Tabs';
 
 import { httpClient } from '../../api/restClient';
 import CreativeLink from './components/Link';
-import { Heading, Subheading, Body } from '../../components/Typography';
+import { Heading, SectionTitle, Body } from '../../components/Typography';
 import Wrapper from '../../components/Wrapper';
+import Important from '../../components/Important'
 
 function handleActive(tab) {
   //  alert(`A tab with this route property ${tab.props['data-route']} was activated.`);
@@ -29,8 +30,8 @@ class Creatives extends React.Component {
     const res = await httpClient(
       `${process.env.REACT_APP_API_ENDPOINT}/creatives`
     );
-    const { meta } = await res.json;
-    await this.setStateAsync({ creatives: meta.creatives });
+    const { data } = await res.json;
+    await this.setStateAsync({ creatives: data });
   }
 
   filterByType(type) {
@@ -52,27 +53,22 @@ class Creatives extends React.Component {
     const { translate } = this.props;
 
     return (
-      <Card>
-        <Heading first={true}>
-          {translate("resources.creatives.heading")}
-        </Heading>
+      <div>
 
-        <Subheading style={{color: '#666'}} >
-          <strong>UWAGA </strong>
-          Pamiętaj aby zaktualizować swój {' '}
-            <Link to={{ pathname: '/companydata' }}>profil</Link>{' '}przed udostępnianiem linków!<br/>
-          <strong>WARNING </strong>
-          Please update your{' '}<Link to={{ pathname: '/companydata' }}>company data</Link>{' '}before sharing below links!
-        </Subheading>
 
-        <Wrapper>{this.renderLinks()}</Wrapper>
+        <Wrapper>
 
-        <Subheading style={{marginBottom:100, paddingBottom: 100}}>
+          {this.renderLinks()}
+
+        </Wrapper>
+
+
+        <SectionTitle style={{marginBottom:100, paddingBottom: 100}}>
           Szablony newsletterów oraz kreacje graficzne zostaną udostępnione wkrótce.<br/>
           Newsletter templates and banners will be published soon.
-        </Subheading>
+        </SectionTitle>
 
-      </Card>
+      </div>
     );
   }
 }

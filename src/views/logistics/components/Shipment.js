@@ -1,66 +1,61 @@
 import React from 'react';
-
-import { Heading, HeadingMargin, Subheading, Body, Border} from '../../../components/Typography';
-import Wrapper from '../../../components/Wrapper';
+import {translate} from 'admin-on-rest';
 import Divider from 'material-ui/Divider';
 
-import {translate} from 'admin-on-rest';
 
-import IconError from 'material-ui/svg-icons/alert/error';
-
+import * as Typo from '../../../components/Typography';
+import Important from '../../../components/Important'
 
 const Shipment = ({translate}) => (
 
-  <Wrapper>
+<div>
 
-    <Heading>
-      {translate("informer.shipment.address")}
-    </Heading>
+    <Typo.Subheading label="informer.shipment.address" />
 
-        <Border>
-          EXPO Kraków
-          <p>{translate("informer.shipment.describe")}</p>
-          <p>Galicyjska 9</p>
-          <p>31-586 Kraków{translate('informer.shipment.country')}</p>
-        </Border>
+    <Important label="informer.shipment.address" >
+
+      <div>
+        <p>EXPO Kraków</p>
+        <p>{translate("informer.shipment.describe")}</p>
+        <p>Galicyjska 9</p>
+        <p>31-586 Kraków{translate('informer.shipment.country')}</p>
+      </div>
+
+    </Important>
 
 
-    <Divider></Divider>
-
-  <HeadingMargin>
-    {translate("informer.shipment.deliver_hours")}
-  </HeadingMargin>
-
-    <Body>
-      <ul>
-        <li>{translate("informer.shipment.date.april24")}</li>
-        <li>{translate("informer.shipment.date.april25")}</li>
-      </ul>
-
-        <IconError /> <mark>{translate("informer.shipment.deliver")}</mark>
-    </Body>
+    <Important label="informer.shipment.deliver" />
 
     <Divider></Divider>
 
+    <div style={{marginTop: 50}}>
 
-   <HeadingMargin>
+      <Typo.Subheading label="informer.shipment.deliver_hours" />
+
+      <Typo.List items={["day_before_event", "event_day"]} baseLabel="informer.shipment.date" />
+
+    </div>
+
+
+
+   {/* <HeadingMargin>
       {translate("informer.shipment.sped")}
-   </HeadingMargin>
+   </HeadingMargin> */}
 
-        <Subheading>
+        {/* <Subheading>
           {translate("informer.shipment.contact_person")}
-        </Subheading>
+        </Subheading> */}
 
-        <Border>
+        {/* <Border>
           Marcin Frontczak
           <p>e-mail: <a href="mailto:marcin@transmeble.com.pl">marcin@transmeble.com.pl</a></p>
           <p>tel.: + 48 61 865 68 07</p>
           <p>tel. kom.: +48 501 710 984</p>
           <p><a href="http://www.transmeble.com.pl/">www.transmeble.com.pl</a></p>
-        </Border>
+        </Border> */}
 
 
-  </Wrapper>
+</div>
 
 );
 

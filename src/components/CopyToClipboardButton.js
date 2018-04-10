@@ -15,20 +15,25 @@ const CopyToClipboardButton = ({
   text,
   showNotification,
   label = 'Copy To Clipboard',
-  raised = false
+  raised = false,
+  disabled
 }) => (
   <CopyToClipboard
     text={text}
     onCopy={() => showNotification('actions.copied')}
   >
     {raised ? (
-      <PrimaryButton label={label} icon={<IconCopy />} primary={true} />
+      <PrimaryButton disabled={disabled} label={label} icon={<IconCopy />} primary={true} />
     ) : (
-      <FlatButton label={label} icon={<IconCopy />} />
+      <FlatButton disabled={disabled} label={label} icon={<IconCopy />} />
     )}
   </CopyToClipboard>
 );
 
+
+CopyToClipboardButton.defaultProps = {
+  disabled : false
+}
 
 export default connect(null, {
   showNotification: showNotificationAction

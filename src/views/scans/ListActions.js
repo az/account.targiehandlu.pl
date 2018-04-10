@@ -6,7 +6,7 @@ import IconDownload from 'material-ui/svg-icons/file/file-download';
 import {translate} from 'admin-on-rest';
 
 //import { ListButton } from 'admin-on-rest';
-import {getToken} from '../../api/helpers';
+import {getToken} from '../../helpers';
 
 const style = {
   zIndex: 2,

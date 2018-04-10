@@ -1,5 +1,5 @@
 import { fetchUtils } from 'admin-on-rest';
-import { getUserFullName, getCompanyName } from '../api/helpers';
+import { getUserFullName, getCompanyName } from '../helpers';
 
 const buildMessage = message => {
   return {

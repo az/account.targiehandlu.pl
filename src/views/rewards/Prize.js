@@ -16,7 +16,8 @@ import {
   Calendar,
   BarcodeScan,
   VolumeHigh,
-  Newspaper
+  Newspaper,
+  SquareIncCash
 } from 'mdi-material-ui'
 
 import {
@@ -29,10 +30,10 @@ import {
 
 const styles = {
   avatar : {
-    width : 80,
-    height : 80,
+    width : 60,
+    height : 60,
     marginTop : 20,
-    color : '#666666'
+    color : '#555555'
   }
 }
 
@@ -44,7 +45,8 @@ const Icons = {
   meetups : Calendar,
   scanner : BarcodeScan,
   rollups : VolumeHigh,
-  blog : Newspaper
+  blog : Newspaper,
+  earlybird : SquareIncCash
 }
 
 const rewarded = (prize, position, sessions) => {
@@ -92,7 +94,7 @@ const Prize = ({ translate, prize, position, sessions }) => {
 
   const Icon = prize.name in Icons ? Icons[prize.name] : Bulb
 
-  return (<Card>
+  return (<Card style={{boxShadow: 'none'}}>
         <CardHeader
 
           avatar={<Icon style={styles.avatar} /> }

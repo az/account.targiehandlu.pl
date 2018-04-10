@@ -13,18 +13,6 @@ import VarLabelTextField from '../../fields/VarLabelTextField';
 import MultiContentField from '../../fields/MultiContentField';
 
 
-const translatable = (record) => {
-
-  const name = record.name;
-
-  if(name === "countries" || name === "keywords")
-  {
-    return `resources.companydata.fields.${name}_choices.`;
-  }
-
-  return false;
-}
-
 
 const ViewList = props => (
 
@@ -35,7 +23,7 @@ const ViewList = props => (
     //
     //         limit={false}
     //       />}
-  
+
     actions={<ListActions/>}
     //filters={<ViewFilter />}
     //sort={{ field: 'cname2', order: 'ASC' }}
@@ -50,7 +38,16 @@ const ViewList = props => (
         sortable={false}
       />
 
-      <MultiContentField source="value" sortable={false} translatable={ translatable } />
+      <MultiContentField source="value" sortable={false} baseLabel={ function(record){
+
+        if(record.name === "countries" || record.name === "keywords")
+        {
+          return `resources.companydata.fields.${record.name}_choices.`;
+        }
+
+        return false;
+
+      } } />
 
       <TextField source="updated_at" sortable={false} />
 

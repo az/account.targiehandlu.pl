@@ -39,12 +39,12 @@ const Configuration = ({
           primary={locale === 'en'}
           onClick={() => changeLocale('en')}
         />
-        <RaisedButton
+        {/* <RaisedButton
           style={styles.button}
           label="de"
           primary={locale === 'de'}
           onClick={() => changeLocale('de')}
-        />
+        /> */}
         <RaisedButton
           style={styles.button}
           label="pl"

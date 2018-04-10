@@ -2,6 +2,8 @@
 import React from 'react';
 import { CardActions } from 'material-ui/Card';
 import FlatButton from 'material-ui/FlatButton';
+import RaisedButton from 'material-ui/RaisedButton';
+
 import {Eye, Refresh} from 'mdi-material-ui';
 
 import {
@@ -11,7 +13,7 @@ import {
   // DeleteButton
 } from 'admin-on-rest';
 
-import { getProfileUrl } from '../../api/helpers'
+import { getProfileUrl } from '../../helpers'
 
 const style = {
   zIndex: 2,
@@ -25,9 +27,7 @@ const Actions = ({ basePath, data, refresh, resource, translate, ...rest }) => (
 
   <CardActions style={style}>
 
-    {console.log(rest)}
-
-    <FlatButton
+    <RaisedButton
       primary
       label={translate(`resources.${resource}.actions.preview`)}
       href={getProfileUrl("", true)}

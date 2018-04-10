@@ -3,7 +3,6 @@ import React from 'react';
 
 //import SettingsIcon from 'material-ui/svg-icons/action/settings';
 import ContentInbox from 'material-ui/svg-icons/content/inbox';
-import IconPeople from 'material-ui/svg-icons/social/people';
 import IconStatus from 'material-ui/svg-icons/action/today';
 import IconTrend from 'material-ui/svg-icons/action/trending-up';
 import IconShare from 'material-ui/svg-icons/av/volume-up';
@@ -12,6 +11,10 @@ import IconImports from 'material-ui/svg-icons/communication/contact-mail';
 import IconLanguage from 'material-ui/svg-icons/action/language';
 import IconSetting from 'material-ui/svg-icons/action/settings';
 
+import {
+  PackageVariantClosed as IconLogistics,
+  AccountMultiple as IconPeople
+} from 'mdi-material-ui'
 
 
 
@@ -24,13 +27,17 @@ const menuItems = [
       to : "/companydata",
       label : "resources.companydata.menu",
       icon : <IconSetting />
+    },
+    {
+      name : "logistics",
+      to : "/logistics",
+      label : "resources.logistics.menu",
+      icon : <IconLogistics />
     },{
-
       name : "representatives",
       to : "/representatives",
       label : "resources.representatives.menu",
-      icon : <IconSetting />
-
+      icon : <IconPeople />
     }
   ]},
   {

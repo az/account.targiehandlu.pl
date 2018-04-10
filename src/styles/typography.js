@@ -5,16 +5,8 @@ const styles = {
     marginLeft: 20,
     marginBottom: 16,
     marginTop: '1em',
-    fontSize: '1em'
-  },
-
-  headingMargin: {
-    fontWeight: 400,
-    color: 'rgba(0, 0, 0, .87)',
-    marginLeft: 20,
-    marginBottom: 16,
-    marginTop: '2em',
-    fontSize: '1em'
+    fontSize: '1em',
+    fontFamily: "'Lato', Helvetica, sans-serif"
   },
 
   heading: {
@@ -24,13 +16,17 @@ const styles = {
     borderBottom: '1px solid #eee'
   },
 
+  sectionTitle : {
+      fontSize: '1em',
+      fontWeight: 600,
+  },
 
   first: {
     paddingTop: 20
   },
 
   subheading: {
-    fontSize: '1.25em',
+    fontSize: '1.15em',
     lineHeight: 1.4
   },
 

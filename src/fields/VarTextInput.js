@@ -13,7 +13,7 @@ import RichTextInput from 'aor-rich-text-input';
 
 //https://quilljs.com/docs/modules/toolbar/
 
-
+import Dropzone from 'react-dropzone'
 
 const styles = {
   error : {
@@ -39,11 +39,17 @@ const FieldError = ({valid, invalid, error}) => {
 
 const VarTextInput = props => {
 
-  const { record, resource, html, checkboxes, radios, source} = props;
-
-
+  const { record, resource, html, uploads, checkboxes, radios, source} = props;
 
   const name = record.name;
+
+  // if(name in uploads){
+  //
+  //     <Dropzone onDrop={() => alert("asd")}>
+  //       <p>upload</p>
+  //     </Dropzone>
+  //
+  // }
 
   if(name in radios)
   {
@@ -67,7 +73,7 @@ const VarTextInput = props => {
   if(html.indexOf(name) > -1)
   {
     return <RichTextInput {...props} toolbar={[
-      [{ 'header': 3 }],
+    //  [{ 'header': 3 }],
       ['bold', 'italic', 'link'],
       ['blockquote', { 'list': 'ordered'}, { 'list': 'bullet' }],
       ['clean']
@@ -81,6 +87,7 @@ const VarTextInput = props => {
 
 VarTextInput.defaultProps = {
   html : [],
+  uploads : [],
   checkboxes : {},
   radios : {}
 }

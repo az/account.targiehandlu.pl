@@ -1,6 +1,6 @@
 import React from 'react';
 
-import { getUserData, getCompanyName } from '../api/helpers';
+import { getUserData, getCompanyName } from '../helpers';
 //import Logout from './Logout';
 
 class AppBarTitle extends React.Component {

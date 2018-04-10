@@ -9,7 +9,7 @@ import PrimaryButton from 'material-ui/RaisedButton';
 import Button from 'material-ui/FlatButton';
 import { httpClient } from '../../../api/restClient';
 import Iframe from '../../../components/Iframe';
-import { getUserId } from '../../../api/helpers';
+import { getUserId } from '../../../helpers';
 
 import CopyToClipboardButton from '../../../components/CopyToClipboardButton';
 

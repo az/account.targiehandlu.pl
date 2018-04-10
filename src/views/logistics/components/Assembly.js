@@ -1,42 +1,21 @@
 import React from 'react';
 
-import { Heading, HeadingMargin, Subheading, Body } from '../../../components/Typography';
-import Wrapper from '../../../components/Wrapper';
+import * as Typo from '../../../components/Typography';
 
+const Assembly = () => (
 
-import {translate} from 'admin-on-rest';
+<div>
 
-// import IconError from 'material-ui/svg-icons/alert/error';
+  <Typo.Subheading label="informer.assembly.assembly" />
 
+  <Typo.List items={["day_before_event", "event_day"]} baseLabel="informer.assembly.options" />
 
-const Assembly = ({translate}) => (
+  <Typo.Subheading label="informer.assembly.disassembly" />
 
-<Wrapper>
+  <Typo.List items={["event_day"]} baseLabel="informer.assembly" />
 
-  <Heading>
-    {translate("informer.assembly.assembly")}
-  </Heading>
-
-    <Body>
-      <ul>
-        <li>{translate("informer.assembly.options.april24")}</li>
-        <li>{translate("informer.assembly.options.april25")}</li>
-      </ul>
-    </Body>
-
-
-  <HeadingMargin>
-    {translate("informer.assembly.disassembly")}
-  </HeadingMargin>
-
-    <Body>
-      <ul>
-        <li>{translate("informer.assembly.april25")}</li>
-      </ul>
-    </Body>
-
-</Wrapper>
+</div>
 
 );
 
-export default translate(Assembly);
+export default Assembly;

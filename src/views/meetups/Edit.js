@@ -9,7 +9,7 @@ import {
 
 import FullNameField from '../../fields/FullNameField';
 import { validate } from './validation';
-//import { getUserFullName, getUserData } from '../../api/helpers';
+//import { getUserFullName, getUserData } from '../../helpers';
 
 const ViewEdit = props => (
   <Edit title="resources.meetups.fields.participant.profile.title" {...props}>

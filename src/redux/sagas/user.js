@@ -3,7 +3,7 @@ import {
   CHANGE_LOCALE
 } from 'admin-on-rest';
 
-import {lsSet} from '../../api/helpers'
+import {lsSet} from '../../helpers'
 
 function* saveLocalePreference(actionData)
 {

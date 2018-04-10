@@ -80,7 +80,7 @@ class Arrangement extends React.Component {
                   <li><h3>tylna ściana OSB</h3></li>
                 </ul>
 
-                <img src={fullcolor_booth} />
+                <img src={osb_booth} />
 
                 <Heading>4200 pln netto</Heading>
 
@@ -93,7 +93,7 @@ class Arrangement extends React.Component {
                 </ul>
 
 
-                  <img src={osb_booth} />
+                  <img src={fullcolor_booth} />
 
                   <Heading>4000 pln netto</Heading>
 

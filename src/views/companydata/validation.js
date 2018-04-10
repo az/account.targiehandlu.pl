@@ -13,6 +13,7 @@ export const validate = ({name, value}) => {
     case "linkedin":
     case "twitter":
     case "website":
+    case "opengraph_image":
 
       if(value && ( ! value.includes("http") || ! value.match( validLink ) ) )
       {

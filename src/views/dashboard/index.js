@@ -1,59 +1,27 @@
-import React, { Component } from 'react';
+
+import React from 'react';
 import withWidth from 'material-ui/utils/withWidth';
 import { AppBarMobile } from 'admin-on-rest';
-
-
-
 import Welcome from './Welcome';
-import Informer from '../logistics/Informer';
-import Contact from '../../components/Contact';
-
+import {List as TaskList} from '../tasks'
 
 const styles = {
-  welcome: { marginBottom: '2em' },
-  flex: { display: 'flex' },
-  leftCol: { flex: 1, marginRight: '1em' },
-  rightCol: { flex: 1, marginLeft: '1em' },
-  singleCol: { marginTop: '2em' }
+  welcome: { marginBottom: '5em' },
 };
 
-class Dashboard extends Component {
-  state = {};
+const Dashboard = ({ width, history }) => (
 
-  render() {
-    const { width } = this.props;
-    return (
-      <div>
-        {width === 1 && <AppBarMobile title="expojuicer" />}
+  <div style={styles.welcome}>
 
-        <Welcome style={styles.welcome} />
+    {width === 1 && <AppBarMobile title={`${process.env.REACT_APP_SITENAME}`} />}
 
-        <Informer />
+    <Welcome />
 
+    {/* <TaskList location={history.location} basePath="tasks" /> */}
 
-        {/* <Contact /> */}
+  </div>
 
+)
 
-
-
-        {/*
-
-       <div style={styles.flex}>
-          <div style={styles.leftCol}>
-            <div style={styles.flex} />
-            <div style={styles.singleCol}>
-              <Welcome style={styles.welcome} />
-            </div>
-          </div>
-          <div style={styles.rightCol}>
-            <div style={styles.flex} />
-          </div>
-        </div>
-
-        */}
-      </div>
-    );
-  }
-}
 
 export default withWidth()(Dashboard);

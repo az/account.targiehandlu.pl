@@ -1,99 +1,32 @@
 import React from 'react';
 
-import { Heading, HeadingMargin, Subheading, Body, Border } from '../../../components/Typography';
-import Wrapper from '../../../components/Wrapper';
-import Divider from 'material-ui/Divider';
-
-import { Link } from 'react-router-dom';
-
-import IconError from 'material-ui/svg-icons/alert/error';
-
-import {translate} from 'admin-on-rest';
-
+import * as Typo from '../../../components/Typography';
+import Important from '../../../components/Important';
 
 
 const ExhibitionSpace = ({translate, style}) => (
-<Wrapper>
 
-  <Heading>
-    {translate("informer.basic.exhibition_space")}
-  </Heading>
+<div>
 
-    <Subheading>
-      {translate("informer.basic.area")}
-    </Subheading>
+    <Typo.SectionTitle label="informer.basic.area" />
 
-      <Body>
-        <ul>
-          <li>{translate("informer.basic.stand_options.standard")}</li>
-          <li>{translate("informer.basic.stand_options.grand")}</li>
-        </ul>
-      </Body>
+    <Typo.List items={["standard", "grand"]} baseLabel="informer.basic.stand_options" />
 
+    <Typo.SectionTitle label="informer.basic.equipment" />
 
-    <Subheading>{
-      translate("informer.basic.equipment")}
-    </Subheading>
+    <Typo.List items={[
+        "hocker",
+        "table",
+        "voucher",
+        "wifi",
+        "electricity",
+    ]} baseLabel="informer.basic.equipment_options" />
 
-      <Body>
-        <ul>
-          <li>{translate("informer.basic.equipment_options.hocker")}</li>
-          <li>{translate("informer.basic.equipment_options.table")}</li>
-          <li>{translate("informer.basic.equipment_options.voucher")}</li>
-          <li>{translate("informer.basic.equipment_options.wifi")}</li>
-          <li>{translate("informer.basic.equipment_options.electricity")}</li>
-        </ul>
-
-        <IconError /> <mark>{translate("informer.basic.backwall")}</mark>
-      </Body>
+    <Important label="informer.basic.backwall" />
 
 
-
-
-  <Divider></Divider>
-
-  <HeadingMargin>
-    {translate("informer.basic.add_equipment")}
-  </HeadingMargin>
-
-    <Body>
-
-      <ul>
-        <li>{translate("informer.basic.carpeting")}<a href="mailto:upgrade@targiehandlu.com.pl">upgrade@targiehandlu.com.pl</a></li>
-      </ul>
-
-      <p></p>
-
-      <ul>
-        <li>{translate("informer.basic.add_eq_contact")}<a href="mailto:upgrade@targiehandlu.com.pl">upgrade@targiehandlu.com.pl</a></li>
-      </ul>
-
-      <p></p>
-
-      <ul>
-        <li>
-          <Link to={{ pathname: '/logistics/arrangement' }}>{translate("informer.basic.see")}</Link>{translate("informer.basic.construction")}<a href="mailto:booths@targiehandlu.pl">booths@targiehandlu.pl</a></li>
-      </ul>
-
-    </Body>
-
-    <Divider></Divider>
-
-  {/* <HeadingMargin>
-    {translate("informer.basic.representative")}
-  </HeadingMargin>
-
-    <Body>
-      {translate("informer.basic.reps_info")}<Link to={{ pathname: '/representatives' }}>
-      {translate('informer.basic.representative')}</Link>.
-    </Body> */}
-
-</Wrapper>
-
-
-
-
+</div>
 
 );
 
-export default translate(ExhibitionSpace);
+export default ExhibitionSpace

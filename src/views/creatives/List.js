@@ -1,16 +1,11 @@
+
+
 import React from 'react';
-import {
-  translate
-  //  List,
-  //  Datagrid,
-  //  DateField,
-  //  ShowButton,
-  //  Filter,
-  //  TextField,
-  //  TextInput
-} from 'admin-on-rest';
+import * as Typo from '../../components/Typography';
+import Wrapper from '../../components/Wrapper';
 
 import Creatives from './Creatives';
+import { Card, CardTitle } from 'material-ui/Card';
 
 // const VisitorFilter = props => (
 //   <Filter {...props}>
@@ -19,40 +14,14 @@ import Creatives from './Creatives';
 // );
 
 const ViewList = props => (
-  <div className="list-page" style={{ marginTop: -25 }}>
+
+  <Card>
+
+    <Typo.PageTitle label="resources.creatives.heading" />
+
     <Creatives />
 
-    {/*
-
-  <List
-    {...props}
-  //  filters={<VisitorFilter />}
-  //  sort={{ field: 'cname2', order: 'ASC' }}
-    perPage={100}
-  >
-    <Datagrid
-      bodyOptions={{
-        stripedRows: true,
-        showRowHover: false,
-        displayRowCheckbox: false
-      }}
-      rowOptions={{ selectable: false }}
-      options={{
-        multiSelectable: false,
-        onRowSelection: test => console.log(test)
-      }}
-    >
-      <TextField source="name" label="Name" />
-      <TextField source="act_as" label="Type" />
-      <DateField source="updated_at" label="Updated" />
-
-      <ShowButton />
-
-    </Datagrid>
-  </List>
-
-  */}
-  </div>
+  </Card>
 );
 
-export default translate(ViewList);
+export default ViewList;

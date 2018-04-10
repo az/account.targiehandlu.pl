@@ -1,37 +1,68 @@
 import React from 'react';
 
-import Avatar from 'material-ui/Avatar';
-import List from 'material-ui/List/List';
-import ListItem from 'material-ui/List/ListItem';
-import { Card } from 'material-ui/Card';
-import { Subheading } from './Typography';
-
 import { translate } from 'admin-on-rest';
+import Avatar from 'material-ui/Avatar';
+import { Card, CardHeader, CardTitle } from 'material-ui/Card';
+import {resolveAssetPath} from '../helpers'
 
-import IconMail from 'material-ui/svg-icons/communication/email';
-import IconPhone from 'material-ui/svg-icons/communication/phone';
-// import IcoPhone from 'mdi-material-ui/microphone'
+const styles = {
+  avatar : {
+    // width : 80,
+    // height : 80,
+    marginTop : 20,
+  },
+  link : {
+    textDecoration : 'none',
+    color : '#000000'
+  }
+}
+
+const Contact = ({translate, avatar, phone, email}) => (
 
 
-const Contact = ({translate}) => (
+  <Card style={{boxShadow : 'none'}}>
+         <CardHeader
 
-  <Card>
+           style={{padding: 12}}
 
-    <List>
-      <ListItem>
-      <Subheading>
-        <b>Potrzebujesz więcej informacji?</b> Skontaktuj się z nami mailowo lub telefonicznie!
+           title={
+              <CardTitle
+                title={translate("pos.support.title")}
+                subtitle={translate("pos.support.description")}
+              />
+           }
 
-          <p><IconMail />  <a href="mailto:targiehandlu@targiehandlu.com.pl">targiehandlu@targiehandlu.com.pl</a></p>
+           subtitle={<CardHeader title={
+              <span><a href={`mailto:${email}`} style={styles.link}>{email}</a> {phone}</span>
+           } />}
 
-          <p><IconPhone />  +48 721 945 134</p>
-      </Subheading>
-    </ListItem>
+           avatar={<Avatar size={80}  src={resolveAssetPath(avatar)} style={styles.avatar} />}
+         />
 
-    </List>
 
-  </Card>
+         {/* <CardText >
+           Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+           Donec mattis pretium massa. Aliquam erat volutpat. Nulla facilisi.
+           Donec vulputate interdum sollicitudin. Nunc lacinia auctor quam sed pellentesque.
+           Aliquam dui mauris, mattis quis lacus id, pellentesque lobortis odio.
+         </CardText> */}
+         {/* <CardActions>
+           <FlatButton label="Expand" onClick={this.handleExpand} />
+           <FlatButton label="Reduce" onClick={this.handleReduce} />
+         </CardActions> */}
+       </Card>
+
+
 
 );
+
+
+Contact.defaultProps = {
+
+  avatar : "bmeller.jpg",
+  phone : "+48 721 945 134",
+  email : "targiehandlu@targiehandlu.pl"
+
+}
 
 export default translate(Contact);

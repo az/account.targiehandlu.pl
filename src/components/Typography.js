@@ -1,8 +1,22 @@
 import React from 'react';
-import pure from 'recompose/pure';
 import styles from '../styles/typography';
+import {translate} from 'admin-on-rest'
+import { Card, CardTitle } from 'material-ui/Card';
 
-const Theading = ({ first, children, style }) => (
+
+
+export const Page = ({children,label}) => (
+  <div className="list-page" style={{ marginTop: 25 }}><Card>{children}</Card></div>
+)
+
+const _PageTitle = ({translate,label}) => (
+  <CardTitle title={translate(label)} />
+)
+
+export const PageTitle = translate(_PageTitle)
+
+
+const _Heading = ({ first, children, style, label, translate }) => (
   <h2
     style={{
       ...styles.paragraph,
@@ -11,31 +25,17 @@ const Theading = ({ first, children, style }) => (
       ...style
     }}
   >
-    {children}
+    {label ? translate(label) : children}
   </h2>
 );
 
-Theading.defaultProps = {
+_Heading.defaultProps = {
   style : {}
 }
 
-const Heading = pure(Theading);
+export const Heading = translate(_Heading);
 
-const TheadingMargin = ({ first, children }) => (
-  <h2
-    style={{
-      ...styles.headingMargin,
-      ...styles.heading,
-      ...(first ? styles.first : {})
-    }}
-  >
-    {children}
-  </h2>
-);
-
-const HeadingMargin = pure(TheadingMargin);
-
-const Tsubheading = ({ first, children, style }) => (
+const _Subheading = ({ first, children, style, label, translate }) => (
   <h3
     style={{
       ...styles.paragraph,
@@ -44,41 +44,66 @@ const Tsubheading = ({ first, children, style }) => (
       ...style
     }}
   >
-    {children}
+  {label ? translate(label) : children}
   </h3>
 );
 
-Theading.defaultProps = {
+_Subheading.defaultProps = {
   style : {}
 }
 
-const Subheading = pure(Tsubheading);
+export const Subheading = translate(_Subheading);
 
 
-const Tparagraph = ({ first, children, style }) => (
+
+const _SectionTitle = ({ children, style, label, translate }) => (
+  <h4
+    style={{
+      ...styles.paragraph,
+      ...styles.sectionTitle,
+      ...style
+    }}
+  >
+  {label ? translate(label) : children}
+  </h4>
+);
+
+_SectionTitle.defaultProps = {
+  style : {}
+}
+
+export const SectionTitle = translate(_SectionTitle);
+
+
+
+const  _Paragraph = ({ first, children, style, label, translate }) => (
   <p style={{ ...styles.paragraph, ...(first ? styles.first : {}), ...style }}>
-    {children}
+    {label ? translate(label) : children}
   </p>
 );
 
-Tparagraph.defaultProps = {
+_Paragraph.defaultProps = {
   style : {}
 }
 
-const Paragraph = pure(Tparagraph);
+const Paragraph = translate(_Paragraph);
 
-const Tborder = ({ first, children }) => (
-  <h3
-    style={{
-      ...styles.paragraph,
-      ...styles.border,
-      ...(first ? styles.first : {})
-    }}
-  >
-    {children}
-  </h3>
-);
 
-const Border = pure(Tborder);
+const _Body = ({translate, children, label, style}) => (<div style={{...style, ...{marginTop: 20}}}>{children}</div>)
 
-export { Heading, HeadingMargin, Subheading, Paragraph, Paragraph as Body, Border };
+_Body.defaultProps = {
+    style : {}
+}
+
+export const Body = translate(_Body);
+
+const _List = ({items, translate, baseLabel, style}) => (<div style={{...style}}>
+  <ul>{items.map((item, idx) => <li key={idx}>{baseLabel ? translate(`${baseLabel}.${item}`) : item}</li>)}</ul>
+</div>)
+
+_List.defaultProps = {
+  items : [],
+  style : {}
+}
+
+export const List = translate(_List)

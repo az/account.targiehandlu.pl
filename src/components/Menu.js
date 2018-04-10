@@ -18,8 +18,20 @@ import Modal from './Modal';
 import Chatlio from '../services/Chatlio';
 import menuItems from './menuItems'
 
-const showableMenuItems = `${process.env.REACT_APP_MENU_ITEMS}`.split(",")
 
+
+const canBeShown = ( menuItemName ) => {
+
+  const showableMenuItems = `${process.env.REACT_APP_MENU_ITEMS}`.trim()
+
+  if(!showableMenuItems)
+  {
+    return true;
+  }
+
+  return showableMenuItems.split(",").indexOf(menuItemName) > -1
+
+}
 
   //
   // //permission value is taken from PROMISE.resolve("value")
@@ -34,12 +46,12 @@ const Menu = ({ resources, onMenuTap, logout, translate }) => (
 
     {
       menuItems.map((section, i) => <div key={i}><Subheader>{translate(`menu.sections.${section.name}`)}</Subheader>{
-        section.items.map((item, j) => showableMenuItems.indexOf(item.name)>-1 && <MenuItemLink key={j}
+        section.items.map((item, j) => canBeShown(item.name) ? <MenuItemLink key={j}
           to={item.to}
           primaryText={ translate(item.label) }
           onClick={onMenuTap}
           leftIcon={item.icon}
-        />)}</div>)
+        /> : null)}</div>)
     }
 
     {logout}
@@ -52,7 +64,6 @@ const Menu = ({ resources, onMenuTap, logout, translate }) => (
 
 const mapStateToProps = state => ({
   resources: getResources(state),
-  //    resources : state.admin.resources,
   locale: state.locale
 });
 

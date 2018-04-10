@@ -12,7 +12,7 @@ import {
   clearUserData,
   refreshUserData,
   getToken
-} from './helpers';
+} from '../helpers';
 
 export default (type, params) => {
   /*

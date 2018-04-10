@@ -32,12 +32,11 @@ const styles = {
 const { accent1Color, accent3Color} = getColorsFromTheme();
 
 
-const MultiContentField = ({basePath, record, resource, source, translate, translatable }) => {
+const MultiContentField = ({basePath, record, resource, source, translate, baseLabel }) => {
 
   const value = _get(record, source);
 
-  const _translatable = translatable(record)
-
+  const _translatable = baseLabel(record)
 
   if(isHTML(value))
   {
@@ -55,14 +54,18 @@ const MultiContentField = ({basePath, record, resource, source, translate, trans
       style={styles.chip}>{_translatable ? translate(_translatable + item) : item}</Chip>)}</div>
   }
 
-  if(_translatable)
+  if(_translatable && value.length)
   {
-    return translate(_translatable + value)
+      return translate(_translatable + value)
   }
 
   return value;
 
 };
+
+MultiContentField.defaultProps = {
+  baseLabel : function(){ return false; }
+}
 
 
 export default translate(MultiContentField);

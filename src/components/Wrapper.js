@@ -10,6 +10,9 @@ const styles = {
     margin: 20
   },
   top : {
+    marginTop: 25
+  },
+  moretop : {
     marginTop: 40
   },
   bottom : {

@@ -7,9 +7,9 @@ import { Card } from 'material-ui/Card';
 import Prize from './Prize';
 //import Photogrid from './Photogrid';
 
-import { getUserData } from '../../api/helpers';
+import { getUserData } from '../../helpers';
 import { httpClient } from '../../api/restClient';
-import { Heading, Body } from '../../components/Typography';
+import { Heading, Body, SectionTitle } from '../../components/Typography';
 import Wrapper from '../../components/Wrapper';
 
 class Stats extends React.Component {
@@ -61,11 +61,12 @@ class Stats extends React.Component {
               {translate('resources.rewards.body_text_3')}
             </Body>
 
-            <Body>
+            <SectionTitle>
               {translate("prizes.place")}
               {sessions ? `#${position}` : translate('prizes.unknown')}
-            </Body>
+            </SectionTitle>
 
+            <Wrapper>
             {prizes &&
               prizes.map(item => (
                 <Prize
@@ -74,7 +75,7 @@ class Stats extends React.Component {
                   position={position}
                   sessions={sessions}
                 />
-              ))}
+              ))}</Wrapper>
 
             {/*
       <Subheading>Rewards in real life</Subheading>

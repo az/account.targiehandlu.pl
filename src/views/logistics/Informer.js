@@ -2,53 +2,57 @@ import React from 'react';
 
 import { translate } from 'admin-on-rest';
 import { Tabs, Tab } from 'material-ui/Tabs';
-import { Card } from 'material-ui/Card';
+
+import {
+  ExhibitionSpace,
+  Shipment,
+  Assembly,
+  Upgrade
+} from './components/';
 
 
-
-import ExhibitionSpace from './components/ExhibitionSpace';
-import Shipment from './components/Shipment';
-import Assembly from './components/Assembly';
-import Title from './components/Title';
-
-
+import * as Typo from '../../components/Typography';
+import Wrapper from '../../components/Wrapper';
 
 const Informer = ({translate, Heading }) => (
 
 
+<Typo.Page>
 
-<Card>
+  <Typo.PageTitle label="informer.title"  />
 
-  <Title />
-
-  {/* <CardTitle
-    title= "Info dla Wystawców"
-  /> */}
+  <div style={{marginTop: 50}}>
 
   <Tabs>
     <Tab label={translate('informer.tabs.basic')}>
-      <div>
+      <Wrapper spacing="top">
+
+        <Typo.Subheading label="informer.basic.exhibition_space" />
+
         <ExhibitionSpace />
-      </div>
+
+        <Upgrade />
+
+      </Wrapper>
     </Tab>
 
     <Tab label={translate('informer.tabs.shipment')} >
-      <div>
+      <Wrapper spacing="top">
         <Shipment />
-      </div>
+      </Wrapper>
     </Tab>
 
     <Tab label={translate('informer.tabs.assembly')} >
-      <div>
+      <Wrapper spacing="top">
         <Assembly />
-      </div>
+      </Wrapper>
     </Tab>
 
   </Tabs>
 
+  </div>
 
-</Card>
-
+</Typo.Page>
 
 
 );
