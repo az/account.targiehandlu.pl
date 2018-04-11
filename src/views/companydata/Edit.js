@@ -38,6 +38,9 @@ const ViewEdit = props => (
             'countries' :  [
               'national', 'europe', 'global', 'other'
             ],
+            'lang' :  [
+              'en', 'pl', 'de'
+            ],
           }
         }
 
