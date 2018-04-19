@@ -38,7 +38,10 @@ const Creative = ({ creative, translate, showModal }) => (
         style={{padding: 0}}
         title={
           <CardTitle
-            title={translate(`resources.creatives.links.${creative.name}.title`)}
+            title={ `
+              ${ translate(`resources.creatives.links.${creative.name}.title`)}
+              ${ translate(`resources.creatives.langs.${creative.lang}`)} 
+              `}
             subtitle={translate(`resources.creatives.links.${creative.name}.description`)}
           />
         }
