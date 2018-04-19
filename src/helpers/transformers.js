@@ -3,7 +3,7 @@
 
 export const transform = (resource, data = {}) => {
 
-  let transformed = {}
+  let transformed = data
 
   switch (resource) {
 
