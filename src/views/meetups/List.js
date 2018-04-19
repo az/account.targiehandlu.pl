@@ -13,8 +13,7 @@ import StatusAwareDeleteButton from './components/StatusAwareDeleteButton';
 
 import ViewTitle from '../../components/ViewTitle';
 import ListActions from './ListActions';
-
-import FullNameField from '../../fields/FullNameField';
+import _get from 'lodash/get'
 
 const ViewFilter = props => (
   <Filter {...props} >
@@ -37,6 +36,27 @@ const ViewFilter = props => (
   weeks before the event. Your limit is 5 invitations.
 </h4>
 */
+/*
+
+
+"/meetups"
+label : "resources.customers.fields.name"
+record : {id: 14, creative_id: 4, agreed: 0, retries: 0, message: "", …}
+resource : "meetups"
+sortable : false
+source : "participant.profile.fname"
+
+
+*/
+const FullNameField = ({resource, source, record }) => {
+
+  return <span>{_get(record, `${source}.fname`)} {_get(record, `${source}.lname`)}</span>
+
+}
+
+FullNameField.defaultProps = {
+  label: 'resources.meetups.fields.participant.name'
+}
 
 const ViewList = props => (
   <List
@@ -49,8 +69,9 @@ const ViewList = props => (
     perPage={50}
   >
     <Datagrid bodyOptions={{ stripedRows: true, showRowHover: true }}>
+
       <FullNameField
-        source="participant.profile.fname"
+        source="participant.profile"
         sortable={false}
       />
 

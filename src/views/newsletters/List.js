@@ -11,7 +11,7 @@ const ViewList = props => (
 
   <Card>
 
-    <Typo.PageTitle label="resources.newsletters.heading" />
+    <Typo.PageTitle label="resources.newsletters.name" />
 
     <Creatives />
 
