@@ -67,6 +67,12 @@ const menuItems = [
       icon : <IconRewards />
     },
     {
+      name : "newsletters",
+      to : "/newsletters",
+      label : "resources.newsletters.menu",
+      icon : <IconTrend />
+    },
+    {
       name : "creatives",
       to : "/creatives",
       label : "resources.creatives.menu",
@@ -108,12 +114,7 @@ const menuItems = [
   {
     name : "settings",
     items : [
-      {
-        name : "newsletters",
-        to : "/newsletters",
-        label : "resources.newsletters.menu",
-        icon : <IconTrend />
-      },{
+    {
         name : "configuration",
         to : "/configuration",
         label : "pos.configuration",

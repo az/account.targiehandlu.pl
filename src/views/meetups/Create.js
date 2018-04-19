@@ -28,7 +28,7 @@ const ViewCreate = props => (
       source="message_create"
       validate={[required, minLength(10)]}
       style={{ maxWidth: 700 }}
-
+      defaultValue={getUserData('company.profile.invitation_template')}
       />
 
       <TextInput

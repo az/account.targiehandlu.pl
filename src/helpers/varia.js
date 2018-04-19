@@ -106,13 +106,10 @@ export const getCompanyId = () => {
 
 
 
-export const opengraphImage = (key = "logotype") => {
+export const opengraphImage = (key = "logotype", lang = "pl") => {
 
-  if(key === "logotype"){
-      return `https://res.cloudinary.com/eventjuicer/image/upload/c_fit,g_center,h_220,w_600,y_30,l_c_${getCompanyId()}_${key}/template_4_en.png`
-  }
+  return `https://res.cloudinary.com/eventjuicer/image/upload/c_fit,g_center,h_220,w_600,y_30,l_c_${getCompanyId()}_${key}/template_4_${lang}.png`
 
-  return `https://res.cloudinary.com/eventjuicer/image/upload/c_${getCompanyId()}_${key}.png`
 }
 
 

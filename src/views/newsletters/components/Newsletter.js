@@ -2,7 +2,7 @@ import React from 'react';
 
 import { translate } from 'admin-on-rest';
 
-import { Card, CardHeader, CardActions } from 'material-ui/Card';
+import { Card, CardHeader, CardActions, CardTitle } from 'material-ui/Card';
 import IconDownload from 'material-ui/svg-icons/file/file-download';
 import IconZip from 'material-ui/svg-icons/content/archive';
 import PrimaryButton from 'material-ui/RaisedButton';
@@ -50,40 +50,65 @@ class Newsletter extends React.Component {
     const { newsletter} = this.state;
 
     return (
-      <Card>
-        <CardHeader title={translate(`resources.creatives.version.${creative.lang}`)} />
 
-        {newsletter && (
-          <div>
-            <Iframe src={`data:text/html, ${newsletter}`} />
 
-            <CardActions>
-              <PrimaryButton
-                primary={true}
-                download={true}
-                target="_blank"
-                label={translate("resources.creatives.actions.download_html")}
-                icon={<IconDownload />}
-                href={newsletterLink(creative.content, 'download')}
+      <Card
+        style={{boxShadow : 'none'}}
+        //containerStyle={{ backgroundColor: "#ffffff" }}
+        >
+
+          <CardHeader
+
+            style={{padding: 0}}
+            title={
+              <CardTitle
+                title={translate(`resources.creatives.newsletters.${creative.name}.title`)}
+                subtitle={translate(`resources.creatives.newsletters.${creative.name}.description`)}
               />
+            }
+          //  subtitle={  <CardHeader
+              //style={{ backgroundColor: colorHeader }}
+              //  title={  }
+                // avatar={! isEnabled(creative) ? <Warning color="#F44336" /> : null }
+                style={{paddingTop:0}}
+            //  />
+            //}
 
-              <Button
-                primary={true}
-                download={true}
-                target="_blank"
-                label={translate("resources.creatives.actions.download_zip")}
-                icon={<IconZip />}
-                href={newsletterLink(creative.content, 'zip')}
-              />
+          />
 
-              <CopyToClipboardButton
-                text={newsletter}
-                label={translate("resources.creatives.actions.copy_html_to_clipboard")}
-              />
-            </CardActions>
-          </div>
-        )}
-      </Card>
+          {newsletter && (
+            <div>
+              <Iframe src={`data:text/html, ${newsletter}`} />
+
+              <CardActions>
+                <PrimaryButton
+                  primary={true}
+                  download={true}
+                  target="_blank"
+                  label={translate("resources.creatives.actions.download_html")}
+                  icon={<IconDownload />}
+                  href={newsletterLink(creative.content, 'download')}
+                />
+
+                <Button
+                  primary={true}
+                  download={true}
+                  target="_blank"
+                  label={translate("resources.creatives.actions.download_zip")}
+                  icon={<IconZip />}
+                  href={newsletterLink(creative.content, 'zip')}
+                />
+
+                <CopyToClipboardButton
+                  text={newsletter}
+                  label={translate("resources.creatives.actions.copy_html_to_clipboard")}
+                />
+              </CardActions>
+            </div>
+          )}
+
+    </Card>
+
     );
   }
 }

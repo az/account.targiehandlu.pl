@@ -62,7 +62,8 @@ const ViewEdit = props => (
             'customer_support',
             'analytics',
             'international_sales',
-            'omnichannel'
+            'omnichannel',
+            'infrastructure'
           ]}}
       />
 

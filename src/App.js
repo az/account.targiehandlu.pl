@@ -34,6 +34,15 @@ import {
   ViewEdit as CompanyDataEdit
 } from './views/companydata';
 
+
+import {
+  ViewList as RepresentativeList,
+  ViewEdit as RepresentativeEdit,
+  ViewCreate as RepresentativeCreate
+} from './views/representatives';
+
+
+
 import {
   ViewList as VisitorList
   // ViewEdit as VisitorEdit,
@@ -121,6 +130,15 @@ class App extends React.Component {
           list={CompanyDataList}
           edit={CompanyDataEdit}
         />
+
+
+        <Resource
+          name="representatives"
+          list={RepresentativeList}
+          edit={RepresentativeEdit}
+          create={RepresentativeCreate}
+        />
+
 
         <Resource
           name="tasks"

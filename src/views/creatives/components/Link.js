@@ -29,7 +29,7 @@ const isEnabled = (creative) => ("enabled" in creative && creative.enabled)
 
 const Creative = ({ creative, translate, showModal }) => (
   <Card
-    //style={{boxShadow : 'nsone'}}
+    style={{boxShadow : 'none'}}
     //containerStyle={{ backgroundColor: "#ffffff" }}
     >
 
@@ -50,8 +50,6 @@ const Creative = ({ creative, translate, showModal }) => (
           />
         }
 
-
-
       />
 
     <CardActions>
@@ -59,13 +57,13 @@ const Creative = ({ creative, translate, showModal }) => (
         <Button
 
           disabled={!isEnabled(creative)}
-          raised={true}
+          raised={false}
           label='resources.creatives.actions.preview'
 
           onClick={() =>
             showModal({
               title: translate("resources.creatives.links.preview"),
-              body: <div><img src={opengraphImage(creative.name)} alt="" style={{maxWidth : 900}} /></div>,
+              body: <div><img src={opengraphImage(creative.name, creative.lang)} alt="" style={{maxWidth : 900}} /></div>,
             })
           }
 
@@ -75,7 +73,7 @@ const Creative = ({ creative, translate, showModal }) => (
           text={ getProfileUrl(creative.link) }
           raised={false}
           label={translate("resources.creatives.actions.copy_to_clipboard")}
-          disabled={!isEnabled(creative)} 
+          disabled={!isEnabled(creative)}
         />
 
 

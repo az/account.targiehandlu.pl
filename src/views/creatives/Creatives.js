@@ -63,11 +63,6 @@ class Creatives extends React.Component {
         </Wrapper>
 
 
-        <SectionTitle style={{marginBottom:100, paddingBottom: 100}}>
-          Szablony newsletterów oraz kreacje graficzne zostaną udostępnione wkrótce.<br/>
-          Newsletter templates and banners will be published soon.
-        </SectionTitle>
-
       </div>
     );
   }

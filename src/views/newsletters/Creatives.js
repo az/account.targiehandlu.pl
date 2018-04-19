@@ -34,8 +34,8 @@ class Creatives extends React.Component {
     const res = await httpClient(
       `${process.env.REACT_APP_API_ENDPOINT}/creatives`
     );
-    const { meta } = await res.json;
-    await this.setStateAsync({ creatives: meta.creatives });
+    const { data } = await res.json;
+    await this.setStateAsync({ creatives: data });
   }
 
   filterByType(type) {
@@ -56,26 +56,18 @@ class Creatives extends React.Component {
     const { translate } = this.props;
 
     return (
-      <Card>
 
-        <Heading first={true}>
-          {translate("resources.creatives.heading")}
-        </Heading>
-
-
-
-        <Subheading>{translate("resources.creatives.newsletters") }</Subheading>
-
-        <Body />
-
-
+      <div>
 
         <Wrapper>
 
           {this.renderNewsletters()}
 
         </Wrapper>
-      </Card>
+
+      </div>
+
+  
     );
   }
 }
