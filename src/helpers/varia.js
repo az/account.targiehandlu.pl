@@ -30,7 +30,16 @@ export const validateToken = token => {
 };
 
 
-export const lsGet = key => JSON.parse(localStorage.getItem(key))
+export const lsGet = key => {
+  try {
+    const data = localStorage.getItem(key)
+    return data ? JSON.parse(data) : ""
+  } catch (error) {
+    return ""
+  }
+}
+
+
 export const lsSet = (key, value) => localStorage.setItem(key, JSON.stringify(value))
 
 export const getLocale = () => {
@@ -59,6 +68,11 @@ export const updatePerms = (redirectTo) => rawFetchApi("/settings", null, (data)
     return false
   }
   
+  //save locale when it wasnt set by user...
+  if("lang" in data && !lsGet("locale")){
+    lsSet("locale", data.locale)
+  }
+
   lsSet("permissions", data["account-modules"]);
   lsSet("permissions_checked",  timestamp() );
   return data["account-modules"];
@@ -77,7 +91,7 @@ export const hasAccessTo = (perms, strOrArr, action) => {
 
 export const checkAccessFor = (redirectTo) => {
   const permissions = lsGet("permissions");
-  const lastCheck = lsGet("permissions_checked");
+  const lastCheck = lsGet("permissions_checked") || 0;
 
   //use cache perms for max 1 hr
   if(permissions && timestamp() - lastCheck < 3600)
