@@ -4,7 +4,7 @@ const validLink = new RegExp(validLinkRegExp);
 
 export const validate = ({name, value}) => {
 
-  console.log(name)
+  //console.log(name)
 
   const errors = {};
 

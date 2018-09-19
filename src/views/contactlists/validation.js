@@ -1,7 +1,7 @@
 const containsEmail = str => str.indexOf('@') > 1;
 
 export const validate = values => {
-  console.log(values);
+  //console.log(values);
 
   const errors = {};
 

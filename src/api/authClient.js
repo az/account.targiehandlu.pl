@@ -11,7 +11,8 @@ import {
   validateToken,
   clearUserData,
   refreshUserData,
-  getToken
+  getToken,
+  checkAccessFor
 } from '../helpers';
 
 export default (type, params) => {
@@ -26,8 +27,11 @@ AUTH_ERROR Error: Unauthorized
     at fetch.js:63
     at <anonymous>
 
-console.log(type, params);
+    console.log(type, params);
+
+
 */
+
 
   if (type === AUTH_ERROR) {
     const { status } = params;
@@ -40,22 +44,17 @@ console.log(type, params);
   }
 
   if (type === AUTH_CHECK) {
-    const { resource } = params;
-
-    if (resource === 'posts') {
-      // check credentials for the posts resource
-    }
-
-    return getToken() ? Promise.resolve() : Promise.reject('AUTH_CHECK error');
+    //const { resource, route } = params;
+   // refreshUserData();
+    return getToken() ? Promise.resolve() : Promise.reject();
   }
 
   if (type === AUTH_GET_PERMISSIONS) {
-    return getToken()
-      ? Promise.resolve('admin')
-      : Promise.reject('AUTH_GET_PERMISSIONS error');
+    return checkAccessFor("/?noperms");
   }
 
   if (type === AUTH_LOGIN) {
+    
     clearUserData();
 
     const { token } = params;

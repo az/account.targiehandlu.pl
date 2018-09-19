@@ -37,17 +37,10 @@ export const getLocale = () => {
   return lsGet("locale") || process.env.REACT_APP_LOCALE || "en"
 }
 
-export const storeUserData = (token, profile) => {
-  lsSet("token", token)
-  lsSet('profile', profile)
-};
-
-
 export const getToken = () => {
   const token = lsGet('token');
   return validateToken(token) ? token : false;
 };
-
 
 export const getUserData = (path, replacement) => {
   const profile = lsGet("profile");
@@ -59,30 +52,77 @@ export const clearUserData = () => {
   localStorage.removeItem('token');
 };
 
+export const timestamp = () => Math.floor(Date.now() / 1000)
 
+export const updatePerms = (redirectTo) => rawFetchApi("/settings", null, (data) => { 
+  if(!"account-modules" in data){
+    return false
+  }
+  
+  lsSet("permissions", data["account-modules"]);
+  lsSet("permissions_checked",  timestamp() );
+  return data["account-modules"];
 
-export const refreshUserData = (token = getToken()) => {
+}, redirectTo);
+
+export const hasAccessTo = (perms, strOrArr, action) => {
+
+  if(perms && perms.trim() === "*"){
+    return true;
+  }
+
+  return [].concat(strOrArr).some(asset => perms.indexOf(asset) > -1 )
+
+}
+
+export const checkAccessFor = (redirectTo) => {
+  const permissions = lsGet("permissions");
+  const lastCheck = lsGet("permissions_checked");
+
+  //use cache perms for max 1 hr
+  if(permissions && timestamp() - lastCheck < 3600)
+  {
+    //refresh permissions...
+    updatePerms();
+    return Promise.resolve(permissions);
+  }
+  return updatePerms(redirectTo);
+}
+
+export const refreshUserData = (newToken) => rawFetchApi("/me", newToken, (data) => {
+  lsSet("token", newToken);
+  lsSet('profile', data);
+  return true;
+});
+
+export const rawFetchApi = (endpoint, token, onSuccess, redirectTo = "/login") => {
   const options = {
     headers: new Headers({
       Accept: 'application/json',
-      'x-token': `${token}`
+      'x-token': `${token || getToken()}`
     })
   };
 
   return fetchUtils
-    .fetchJson(`${process.env.REACT_APP_API_ENDPOINT}/me`, options)
+    .fetchJson(`${process.env.REACT_APP_API_ENDPOINT}${endpoint}`, options)
     .then(response => {
-      if ('data' in response.json) {
-        storeUserData(token, response.json.data);
-        return Promise.resolve();
+
+      if (!'data' in response.json) {
+        return Promise.reject({ redirectTo });
       }
 
-      return Promise.reject('Bad API answer.');
+      if(typeof onSuccess === "function"){
+        const c = onSuccess(response.json.data)
+        if(c === false){
+          return Promise.reject({ redirectTo });
+        }
+        return Promise.resolve(c);
+      }
+
+      return Promise.resolve();
     });
+
 };
-
-
-
 
 
 export const getUserFullName = () => {

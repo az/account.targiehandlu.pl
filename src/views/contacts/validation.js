@@ -1,6 +1,6 @@
 export const validate = values => {
 
-  console.log(values);
+  //console.log(values);
 
   const errors = { data : {}};
 

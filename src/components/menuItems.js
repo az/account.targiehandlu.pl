@@ -16,26 +16,23 @@ import {
   AccountMultiple as IconPeople
 } from 'mdi-material-ui'
 
+export const getSectionItemNames = (section) => section.items.map(item => item.name)
 
 
 const menuItems = [
 
   { name : "crucial",
     items : [{
-
       name : "companydata",
-      to : "/companydata",
       label : "resources.companydata.menu",
       icon : <IconSetting />
     },
     {
       name : "logistics",
-      to : "/logistics",
       label : "resources.logistics.menu",
       icon : <IconLogistics />
     },{
       name : "representatives",
-      to : "/representatives",
       label : "resources.representatives.menu",
       icon : <IconPeople />
     }
@@ -44,37 +41,31 @@ const menuItems = [
     name : "promote",
     items : [{
       name : "ranking",
-      to : "/ranking",
       label : "resources.ranking.menu",
       icon : <IconTrend />
     },
     {
       name : "campaigns",
-      to : "/campaigns",
       label : "resources.campaigns.menu",
       icon : <ContentInbox />
     },
     {
       name : "contacts",
-      to : "/contacts",
       label : "resources.contacts.menu",
       icon : <IconImports />
     },
     {
       name : "rewards",
-      to : "/rewards",
       label : "resources.rewards.menu",
       icon : <IconRewards />
     },
     {
       name : "newsletters",
-      to : "/newsletters",
       label : "resources.newsletters.menu",
       icon : <IconTrend />
     },
     {
       name : "creatives",
-      to : "/creatives",
       label : "resources.creatives.menu",
       icon : <IconShare />
     },
@@ -83,13 +74,11 @@ const menuItems = [
     items : [
       {
         name : "visitors",
-        to : "/visitors",
         label : "resources.visitors.menu",
         icon : <IconPeople />
       },
       {
         name : "meetups",
-        to : "/meetups",
         label : "resources.meetups.menu",
         icon : <IconStatus />
       },
@@ -98,14 +87,12 @@ const menuItems = [
     name : "leads",
     items : [
       {
-        name : "scans",
-        to : "/badgescanner",
+        name : "badgescanner",
         label : "resources.scans.menu",
         icon : <IconTrend />
       },
       {
         name : "scans",
-        to : "/scans",
         label : "resources.scans.menu",
         icon : <IconTrend />
       }
@@ -116,7 +103,6 @@ const menuItems = [
     items : [
     {
         name : "configuration",
-        to : "/configuration",
         label : "pos.configuration",
         icon : <IconLanguage />
       }
@@ -124,6 +110,7 @@ const menuItems = [
   }
 
 ];
+
 
 
 

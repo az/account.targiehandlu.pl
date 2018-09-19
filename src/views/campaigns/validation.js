@@ -2,7 +2,7 @@ import {translate} from 'admin-on-rest';
 
 export const validate = (values) => {
 
-  console.log(values);
+  //console.log(values);
 
   const errors = { data : {} };
 
