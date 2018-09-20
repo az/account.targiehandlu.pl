@@ -68,9 +68,9 @@ export const updatePerms = (redirectTo) => rawFetchApi("/settings", null, (data)
     return false
   }
   
-  //save locale when it wasnt set by user...
-  if("lang" in data){
-    lsSet("locale", data.locale)
+  //save locale only when valid...
+  if("lang" in data && data.lang.length){
+    lsSet("locale", data.lang)
   }
 
   lsSet("permissions", data["account-modules"]);
