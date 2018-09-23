@@ -30,12 +30,12 @@ export const validateToken = token => {
 };
 
 
-export const lsGet = key => {
+export const lsGet = (key, ifNotFound = "") => {
   try {
     const data = localStorage.getItem(key)
-    return data ? JSON.parse(data) : ""
+    return data ? JSON.parse(data) : ifNotFound
   } catch (error) {
-    return ""
+    return ifNotFound
   }
 }
 
@@ -59,16 +59,17 @@ export const getUserData = (path, replacement) => {
 export const clearUserData = () => {
   localStorage.removeItem('profile');
   localStorage.removeItem('token');
+  localStorage.removeItem('permissions');
 };
 
 export const timestamp = () => Math.floor(Date.now() / 1000)
 
-export const updatePerms = (redirectTo) => rawFetchApi("/settings", null, (data) => { 
+export const updatePerms = (redirectTo = "") => rawFetchApi("/settings", null, (data) => { 
   if(!"account-modules" in data){
     return false
   }
   
-  //save locale only when valid...
+  //save locale only when we dont have local one!
   if("lang" in data && data.lang.length){
     lsSet("locale", data.lang)
   }
@@ -81,39 +82,48 @@ export const updatePerms = (redirectTo) => rawFetchApi("/settings", null, (data)
 
 export const hasAccessTo = (perms, strOrArr, action) => {
 
+  if(perms === undefined){
+    return false;
+  }
+
   if(perms && perms.trim() === "*"){
     return true;
   }
 
   return [].concat(strOrArr).some(asset => perms.indexOf(asset) > -1 )
-
 }
 
 export const checkAccessFor = (redirectTo) => {
   const permissions = lsGet("permissions");
-  const lastCheck = lsGet("permissions_checked") || 0;
+  const lastCheck = lsGet("permissions_checked", 0);
 
   //use cache perms for max 1 hr
   if(permissions && timestamp() - lastCheck < 3600)
   {
-    //refresh permissions...
-    updatePerms();
+    //moved to AUTH SAGA
+    //updatePerms();
     return Promise.resolve(permissions);
   }
   return updatePerms(redirectTo);
 }
 
-export const refreshUserData = (newToken) => rawFetchApi("/me", newToken, (data) => {
-  lsSet("token", newToken);
+export const refreshUserData = (newToken = null) => rawFetchApi("/me", newToken, (data) => {
+ 
+  if(newToken){
+    lsSet("token", newToken);
+  }
   lsSet('profile', data);
   return true;
 });
 
-export const rawFetchApi = (endpoint, token, onSuccess, redirectTo = "/login") => {
+export const rawFetchApi = (endpoint, newToken, onSuccess, redirectTo = "/login") => {
+  
+  const token = newToken || getToken();
+  
   const options = {
     headers: new Headers({
       Accept: 'application/json',
-      'x-token': `${token || getToken()}`
+      'x-token': `${token}`
     })
   };
 
