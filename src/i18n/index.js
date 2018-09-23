@@ -1,6 +1,8 @@
 import { englishMessages } from 'admin-on-rest';
 
-import { en, de, pl } from 'eventjuicer-aor-translations';
+import en from "./langs/en"
+import de from "./langs/de"
+import pl from "./langs/pl"
 
 export default {
   en: { ...englishMessages, ...en },
