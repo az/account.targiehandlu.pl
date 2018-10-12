@@ -34,6 +34,7 @@ import {
   ViewEdit as CompanyDataEdit
 } from './views/companydata';
 
+import { UpgradeList, UpgradeShow } from './views/upgrades';
 
 import {
   ViewList as RepresentativeList,
@@ -143,6 +144,12 @@ edit={hasAccessTo(permissions, "representatives", "edit") ? RepresentativeEdit :
 create={hasAccessTo(permissions, "representatives", "create") ? RepresentativeCreate : null}
 />,
 
+
+<Resource
+name="upgrades"
+list={hasAccessTo(permissions, "upgrades", "list") ? UpgradeList : null}
+show={hasAccessTo(permissions, "upgrades", "edit") ? UpgradeShow : null}
+/>,
 
 <Resource
 name="tasks"

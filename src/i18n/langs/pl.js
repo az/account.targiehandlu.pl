@@ -114,6 +114,26 @@ export default {
 
   common : {
 
+    sales : {
+      starts : "start sprzedaży",
+      ends : "koniec sprzedaży",
+      net : "+23% VAT",
+      gross : "zawiera 23% VAT",
+      remaining : "Pozostało",
+      pcs : "sztuk",
+    
+    },
+    
+    actions : {
+      buy : "Kup teraz"
+    },
+
+    statuses : {
+      unavailable : "Niedostępne",
+      already_bought : "Już zakupione",
+      success : "Sukces!"
+    },
+
     langs : {
 
         pl : "polski",
@@ -355,7 +375,7 @@ export default {
     shipment: {
 
       address: "Adres do wysyłki:",
-      describe: "XIV Targi eHandlu, [nr stoiska, NAZWA FIRMY]",
+      describe: "XV Targi eHandlu, [nr stoiska, NAZWA FIRMY]",
       country: "",
       contact_number: "Numer kontaktowy dla Kuriera: +48 690 960 279",
       fill_in_form: "Przed nadaniem paczki, wypełnij ",
@@ -387,11 +407,11 @@ export default {
 
       options: {
 
-        day_before_event: "24 kwietnia (16:00 - 20:00)",
-        event_day: "25 kwietnia (8:00 - 9:30)"
+        day_before_event: "6 listopada  (16:00 - 20:00)",
+        event_day: "7 listopada (8:00 - 9:30)"
       },
 
-      event_day: "25 kwietnia (17:15 - 20:00)",
+      event_day: "7 listopada (17:15 - 20:00)",
 
 
      },
@@ -401,6 +421,53 @@ export default {
 
 
   resources: {
+
+    upgrades : {
+
+      name : "Zakup usługi dodatkowe",
+      menu : "Usługi dodatkowe",
+
+      booth : {
+        fullprint : {
+          name : "Kompleksowa zabudowa FULLPRINT",
+          description : "lorem ipsum"
+        },
+        counter : {
+          name : "Lada z nadrukiem, wykładzina",
+          description : "lorem ipsum"
+        },
+        flooring : {
+          name : "Dodatkowe meble, wykładzina",
+          description : "lorem ipsum"
+        },
+        osb : {
+          name : "Kompleksowa zabudowa OSB",
+          description : "lorem ipsum"
+        }
+      },
+
+      misc : {
+        leaflets : {
+          name : "Prawo do dystrybucji ulotek",
+          description : "lorem ipsum"
+        },
+        welcomepacks : {
+          name : "Ddoatkowe ID, vouchery, karta parkingowa",
+          description : "lorem ipsum"
+        },
+        electricity : {
+          name : "Indywidualne podłączenie prądu 3kW",
+          description : "lorem ipsum"
+        }
+      },
+
+      actions : {
+
+        details : "Szczegóły i zakup"
+
+      } 
+
+    },
 
     companydata:{
 

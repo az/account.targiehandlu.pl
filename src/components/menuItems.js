@@ -10,6 +10,7 @@ import IconRewards from 'material-ui/svg-icons/action/favorite';
 import IconImports from 'material-ui/svg-icons/communication/contact-mail';
 import IconLanguage from 'material-ui/svg-icons/action/language';
 import IconSetting from 'material-ui/svg-icons/action/settings';
+import IconBuild from 'material-ui/svg-icons/action/build';
 
 import {
   PackageVariantClosed as IconLogistics,
@@ -26,6 +27,11 @@ const menuItems = [
       name : "companydata",
       label : "resources.companydata.menu",
       icon : <IconSetting />
+    },
+    {
+      name : "upgrades",
+      label : "resources.upgrades.menu",
+      icon : <IconBuild />
     },
     {
       name : "logistics",

@@ -4,11 +4,17 @@ import {
   SPECIAL_MESSAGE_SHOW,
   SHOW_MODAL,
   CLOSE_MODAL,
-
   RESOURCE_LIMIT_SHOW,
-
-
+  UPGRADE_CREATE
 } from './types';
+
+import { CREATE } from 'admin-on-rest';
+
+export const upgradeCreate = (data, basePath) => ({
+    type: UPGRADE_CREATE,
+    payload: { data },
+    meta: { resource: 'upgrades', fetch: CREATE, cancelPrevious: false },
+});
 
 export const changeTheme = theme => ({
   type: CHANGE_THEME,
