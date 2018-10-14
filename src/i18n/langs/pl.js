@@ -430,40 +430,52 @@ export default {
       booth : {
         fullprint : {
           name : "Kompleksowa zabudowa FULLPRINT",
-          description : "lorem ipsum"
+          description : "DOTYCZY TYLKO STOISK 3x2m. Chcesz przyjść na gotowe stoisko? Oto opcja dla Twojej firmy.",
+          specs : "Specyfikacja plików do druku: a) LADA - 100x100cm, TIFF, 120dpi (skala 1:1) b) ŚCIANKA - 300x250cm, TIFF, 120 dpi (skala 1:1)"
         },
         counter : {
           name : "Lada z nadrukiem, wykładzina",
-          description : "lorem ipsum"
+          description : "Opcja dla firm, które dysponują własnymi elementami brandingowymi - jak na przykład reklamową ścianką tekstylną",
+          specs : "Specyfikacja pliku do druku 100x100cm, TIFF, 120dpi (skala 1:1)"
         },
         flooring : {
           name : "Dodatkowe meble, wykładzina",
-          description : "lorem ipsum"
+          description : "Jeśli standardowe umeblowanie (2 wysokie stołki)  wydaje się Tobie niewystarczające - jest możliwość dodania wykładziny oraz 2 dodatkowych stołków barowych ",
+          specs : ""
         },
         osb : {
           name : "Kompleksowa zabudowa OSB",
-          description : "lorem ipsum"
+          description : "DOTYCZY TYLKO STOISK 3x2m. Chcesz przyjść na gotowe stoisko? Oto opcja dla Twojej firmy. ",
+          specs : "Specyfikacja plików do druku: a) LADA - 100x100cm, TIFF, 120dpi (skala 1:1) b) ŚCIANKA - 300x250cm, TIFF, 120 dpi (skala 1:1)"
         }
       },
 
       misc : {
         leaflets : {
           name : "Prawo do dystrybucji ulotek",
-          description : "lorem ipsum"
+          description : "Jeśli chcesz wynająć hostessy aby prowadziły działania reklamowe poza stoiskiem musisz wykupić zezwolenie organizatora.",
+          specs : ""
         },
         welcomepacks : {
-          name : "Ddoatkowe ID, vouchery, karta parkingowa",
-          description : "lorem ipsum"
+          name : "2 dodatkowe vouchery + 1 karta parkingowa",
+          description : "W ramach standardowej oferty stoiska otrzymujesz 4 welcome packi, w których znajdują się 4 vouchery cateringowe oraz 1 karta parkingowa. Jeśli potrzebujesz dodatkowej karty parkingowej i/lub dodatkowych voucherów obiadowych, kup ten pakiet.",
+          specs : ""
         },
         electricity : {
-          name : "Indywidualne podłączenie prądu 3kW",
-          description : "lorem ipsum"
+          name : "Niezależne podłączenie prądu 3kW",
+          description : "Potrzebujesz więcej niż standardowe 300W? Wykup niezależne podłączenie prądu. ",
+          specs : ""
+        },
+        display : {
+          name : "50inch LED display",
+          description : "Delivered to your booth. Allows to connect HDMI device or display from USB pendrive",
+          specs : ""
         }
       },
 
       actions : {
 
-        details : "Szczegóły i zakup"
+        details : "Check details & buy"
 
       } 
 

@@ -2,14 +2,11 @@ import React from 'react';
 import { translate } from 'admin-on-rest';
 import { Link } from 'react-router-dom';
 
-import { Card, CardTitle } from 'material-ui/Card';
-import { Tabs, Tab } from 'material-ui/Tabs';
-
 import { httpClient } from '../../api/restClient';
 import CreativeLink from './components/Link';
-import { Heading, SectionTitle, Body } from '../../components/Typography';
+//import { Heading, SectionTitle, Body } from '../../components/Typography';
 import Wrapper from '../../components/Wrapper';
-import Important from '../../components/Important'
+//import Important from '../../components/Important'
 
 function handleActive(tab) {
   //  alert(`A tab with this route property ${tab.props['data-route']} was activated.`);

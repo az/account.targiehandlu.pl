@@ -1,9 +1,6 @@
 import React from 'react';
 import {
-  Datagrid,
-  EditButton,
-  List,
-  TextField
+  List
 } from 'admin-on-rest';
 
 import ListActions from './ShowActions';

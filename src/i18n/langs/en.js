@@ -105,6 +105,41 @@ export default {
 
   },
 
+
+  common : {
+
+    sales : {
+      starts : "start sprzedaży",
+      ends : "koniec sprzedaży",
+      net : "+23% VAT",
+      gross : "zawiera 23% VAT",
+      remaining : "Pozostało",
+      pcs : "sztuk",
+    
+    },
+    
+    actions : {
+      buy : "Kup teraz"
+    },
+
+    statuses : {
+      unavailable : "Niedostępne",
+      already_bought : "Już zakupione",
+      success : "Sukces!"
+    },
+
+    langs : {
+
+        pl : "polski",
+        en : "english",
+        de : "deutsch",
+
+    },
+
+  },
+
+
+
   menu : {
 
     sections : {
@@ -359,6 +394,60 @@ export default {
 
 
   resources: {
+
+    upgrades : {
+
+      name : "Purchase additional services",
+      menu : "Add Services",
+
+      booth : {
+        fullprint : {
+          name : "Full booth arrangement (fullprint)",
+          description : "Only for standard booth 3x2m. Chcesz przyjść na gotowe stoisko? Oto opcja dla Twojej firmy.",
+          specs : "Specyfikacja plików do druku: a) LADA - 100x100cm, TIFF, 120dpi (skala 1:1) b) ŚCIANKA - 300x250cm, TIFF, 120 dpi (skala 1:1)"
+        },
+        counter : {
+          name : "Lada z nadrukiem, wykładzina",
+          description : "Opcja dla firm, które dysponują własnymi elementami brandingowymi - jak na przykład reklamową ścianką tekstylną",
+          specs : "Specyfikacja pliku do druku 100x100cm, TIFF, 120dpi (skala 1:1)"
+        },
+        flooring : {
+          name : "Dodatkowe meble, wykładzina",
+          description : "Jeśli standardowe umeblowanie (2 wysokie stołki)  wydaje się Tobie niewystarczające - jest możliwość dodania wykładziny oraz 2 dodatkowych stołków barowych "
+        },
+        osb : {
+          name : "Kompleksowa zabudowa OSB",
+          description : "DOTYCZY TYLKO STOISK 3x2m. Chcesz przyjść na gotowe stoisko? Oto opcja dla Twojej firmy. "
+        }
+      },
+
+      misc : {
+        leaflets : {
+          name : "Prawo do dystrybucji ulotek",
+          description : "Jeśli chcesz wynająć hostessy aby prowadziły działania reklamowe poza stoiskiem musisz wykupić zezwolenie organizatora."
+        },
+        welcomepacks : {
+          name : "2 dodatkowe vouchery + 1 karta parkingowa",
+          description : "W ramach standardowej oferty stoiska otrzymujesz 4 welcome packi, w których znajdują się 4 vouchery cateringowe oraz 1 karta parkingowa. Jeśli potrzebujesz dodatkowej karty parkingowej i/lub dodatkowych voucherów obiadowych, kup ten pakiet."
+        },
+        electricity : {
+          name : "Niezależne podłączenie prądu 3kW",
+          description : "Potrzebujesz więcej niż standardowe 300W? Wykup niezależne podłączenie prądu. "
+        },
+        display : {
+          name : "TV 50 cali + statyw",
+          description : "TV z wejściem HDMI i USB. Dostarczany na stoisko."
+        }
+      },
+
+      actions : {
+
+        details : "Szczegóły i zakup"
+
+      } 
+
+    },
+
 
     companydata : {
 
