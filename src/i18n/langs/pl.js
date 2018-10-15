@@ -430,30 +430,30 @@ export default {
       booth : {
         fullprint : {
           name : "Kompleksowa zabudowa FULLPRINT",
-          description : "DOTYCZY TYLKO STOISK 3x2m. Chcesz przyjść na gotowe stoisko? Oto opcja dla Twojej firmy.",
-          specs : "Specyfikacja plików do druku: a) LADA - 100x100cm, TIFF, 120dpi (skala 1:1) b) ŚCIANKA - 300x250cm, TIFF, 120 dpi (skala 1:1)"
+          description : "DOTYCZY TYLKO STOISK 3x2m (stoiska standardowe). Chcesz przyjść na gotowe stoisko? Oto opcja dla Twojej firmy. Tylna ścianka z pełnoformatowym nadrukiem, lada z nadrukiem, wykładzina, dodatkowe umeblowanie.",
+          specs : "Musimy otrzymać od Ciebie pliki do wydruków na adres booths@targiehandlu.pl. Specyfikacja plików: a) LADA - 100x100cm, TIFF, 120dpi (skala 1:1) b) ŚCIANKA - 300x250cm, TIFF, 120 dpi (skala 1:1)"
         },
         counter : {
-          name : "Lada z nadrukiem, wykładzina",
-          description : "Opcja dla firm, które dysponują własnymi elementami brandingowymi - jak na przykład reklamową ścianką tekstylną",
-          specs : "Specyfikacja pliku do druku 100x100cm, TIFF, 120dpi (skala 1:1)"
+          name : "Lada z nadrukiem + wykładzina",
+          description : "Opcja dla firm, które dysponują własnymi elementami brandingowymi -  na przykład reklamową ścianką tekstylną wielorazowego użytku.",
+          specs : "Musimy otrzymać od Ciebie pliki do wydruków na adres booths@targiehandlu.pl. Specyfikacja pliku do druku: projekt 100x100cm, TIFF, 120dpi (skala 1:1)"
         },
         flooring : {
-          name : "Dodatkowe meble, wykładzina",
-          description : "Jeśli standardowe umeblowanie (2 wysokie stołki)  wydaje się Tobie niewystarczające - jest możliwość dodania wykładziny oraz 2 dodatkowych stołków barowych ",
+          name : "Dodatkowe meble + wykładzina",
+          description : "Jeśli standardowa konfiguracja stoiska jest niewystarczająca, istnieje możliwość dodania wykładziny oraz 2 dodatkowych stołków barowych ",
           specs : ""
         },
         osb : {
           name : "Kompleksowa zabudowa OSB",
-          description : "DOTYCZY TYLKO STOISK 3x2m. Chcesz przyjść na gotowe stoisko? Oto opcja dla Twojej firmy. ",
-          specs : "Specyfikacja plików do druku: a) LADA - 100x100cm, TIFF, 120dpi (skala 1:1) b) ŚCIANKA - 300x250cm, TIFF, 120 dpi (skala 1:1)"
+          description : "DOTYCZY TYLKO STOISK 3x2m (stoiska standardowe). Chcesz przyjść na gotowe stoisko? Oto opcja dla Twojej firmy. Tylna ścianka z płyty OSB z minimalistycznym nadrukiem, lada z nadrukiem, wykładzina, dodatkowe umeblowanie. ",
+          specs : "Musimy otrzymać od Ciebie pliki do wydruków na adres booths@targiehandlu.pl. Specyfikacja plików do druku: logotyp w formacie wektorowym (ai, pdf, eps)."
         }
       },
 
       misc : {
         leaflets : {
           name : "Prawo do dystrybucji ulotek",
-          description : "Jeśli chcesz wynająć hostessy aby prowadziły działania reklamowe poza stoiskiem musisz wykupić zezwolenie organizatora.",
+          description : "Jeśli chcesz wynająć hostessy aby prowadziły działania reklamowe poza stoiskiem musisz wykupić zezwolenie organizatora na taką formę reklamy.",
           specs : ""
         },
         welcomepacks : {
@@ -463,19 +463,19 @@ export default {
         },
         electricity : {
           name : "Niezależne podłączenie prądu 3kW",
-          description : "Potrzebujesz więcej niż standardowe 300W? Wykup niezależne podłączenie prądu. ",
+          description : "Standardowe przyłącze prądu pozwala na podłączenie kilku laptopów i ew. ekranu LCD. Potrzebujesz więcej niż standardowe 300W? Wykup niezależne podłączenie prądu o mocy 3000W.",
           specs : ""
         },
         display : {
-          name : "50inch LED display",
-          description : "Delivered to your booth. Allows to connect HDMI device or display from USB pendrive",
+          name : "Ekran LCD 50 cali",
+          description : "Ekran pozwala na podłączenie źródła HDMI bądź USB. Dostarczany na stoisko.",
           specs : ""
         }
       },
 
       actions : {
 
-        details : "Check details & buy"
+        details : "Szczegóły i zakup"
 
       } 
 

@@ -109,23 +109,23 @@ export default {
   common : {
 
     sales : {
-      starts : "start sprzedaży",
-      ends : "koniec sprzedaży",
+      starts : "sales starts",
+      ends : "sales ends",
       net : "+23% VAT",
-      gross : "zawiera 23% VAT",
-      remaining : "Pozostało",
-      pcs : "sztuk",
+      gross : "includes 23% VAT",
+      remaining : "Remaining",
+      pcs : "pcs",
     
     },
     
     actions : {
-      buy : "Kup teraz"
+      buy : "Buy now!"
     },
 
     statuses : {
-      unavailable : "Niedostępne",
-      already_bought : "Już zakupione",
-      success : "Sukces!"
+      unavailable : "Unavailable",
+      already_bought : "Already bought",
+      success : "Success!"
     },
 
     langs : {
@@ -403,46 +403,53 @@ export default {
       booth : {
         fullprint : {
           name : "Full booth arrangement (fullprint)",
-          description : "Only for standard booth 3x2m. Chcesz przyjść na gotowe stoisko? Oto opcja dla Twojej firmy.",
-          specs : "Specyfikacja plików do druku: a) LADA - 100x100cm, TIFF, 120dpi (skala 1:1) b) ŚCIANKA - 300x250cm, TIFF, 120 dpi (skala 1:1)"
+          description : "Only for standard (not Grand) booths - 3x2m. Do you want to come to fully prepared booth? Full print backwall, branded counter, carpet flooring and leaflets holder can await for your company's representatives.",
+          specs : "To complete this order we need some graphic design! Please prepare them and send to booths@targiehandlu.pl. Specs:  a) Counter - 100x100cm, TIFF, 120dpi (scale 1:1) b) Back wall - 300x250cm, TIFF, 120 dpi (scale 1:1)"
         },
         counter : {
-          name : "Lada z nadrukiem, wykładzina",
-          description : "Opcja dla firm, które dysponują własnymi elementami brandingowymi - jak na przykład reklamową ścianką tekstylną",
-          specs : "Specyfikacja pliku do druku 100x100cm, TIFF, 120dpi (skala 1:1)"
+          name : "Fullprint counter + flooring",
+          description : "This is a recommended option if you have your branding/advertising elements like textile ad wall or roll-ups. This option is a cost-saver and provides some luxury :) (flooring) and convenience (counter)",
+          specs : "To complete this order we need some graphic design! Please prepare them and send to booths@targiehandlu.pl. Counter - 100x100cm, TIFF, 120dpi (scale 1:1) "
         },
         flooring : {
-          name : "Dodatkowe meble, wykładzina",
-          description : "Jeśli standardowe umeblowanie (2 wysokie stołki)  wydaje się Tobie niewystarczające - jest możliwość dodania wykładziny oraz 2 dodatkowych stołków barowych "
+          name : "Additional furniture + flooring",
+          description : "2 high chairs and 1 high table are included in basic offer. If you need more furniture please upgrade with this package. You will get carpet flooring and additional 2 high chairs.",
+          specs : ""
         },
         osb : {
-          name : "Kompleksowa zabudowa OSB",
-          description : "DOTYCZY TYLKO STOISK 3x2m. Chcesz przyjść na gotowe stoisko? Oto opcja dla Twojej firmy. "
+          name : "Full booth arrangement OSB",
+          description : "Only for standard (not Grand) booths - 3x2m. Do you want to come to fully prepared booth? OSB back wall with minimalistic graphics (your company logotype), branded counter, carpet flooring and leaflets holder. ",
+          specs : "To complete this order we need some graphics design! Please prepare them and send to booths@targiehandlu.pl. Specs: company logotype in vector format (ai, pdf, eps)."
+
         }
       },
 
       misc : {
         leaflets : {
-          name : "Prawo do dystrybucji ulotek",
-          description : "Jeśli chcesz wynająć hostessy aby prowadziły działania reklamowe poza stoiskiem musisz wykupić zezwolenie organizatora."
+          name : "Permission for marketing outside booth",
+          description : "If you want to engange a hostess in order to distribute leaflets you are asked to purchase a permission. Does not include printing materials and distribution.",
+          specs : ""
         },
         welcomepacks : {
-          name : "2 dodatkowe vouchery + 1 karta parkingowa",
-          description : "W ramach standardowej oferty stoiska otrzymujesz 4 welcome packi, w których znajdują się 4 vouchery cateringowe oraz 1 karta parkingowa. Jeśli potrzebujesz dodatkowej karty parkingowej i/lub dodatkowych voucherów obiadowych, kup ten pakiet."
+          name : "2 additional vouchers + parking card",
+          description : "There are 4 welcome packs (including 4 vouchers and 1 parking card) per booth. If you need more vouchers or more parking card - buy this option.",
+          specs : ""
         },
         electricity : {
-          name : "Niezależne podłączenie prądu 3kW",
-          description : "Potrzebujesz więcej niż standardowe 300W? Wykup niezależne podłączenie prądu. "
+          name : "3000 Watts electricity",
+          description : "As a standard option you will get only 300 Watt. This is sufficient when having 1-2 laptops and 1 bigger display but insufficient if you are planning to have some additional equipment. Buy this option to avoid surprises. ",
+          specs : ""
         },
         display : {
-          name : "TV 50 cali + statyw",
-          description : "TV z wejściem HDMI i USB. Dostarczany na stoisko."
+          name : "50inch LED display",
+          description : "Huge LED display with a stand, delivered to your booth. You can connect via HDMI or use USB pendrive",
+          specs : ""
         }
       },
 
       actions : {
 
-        details : "Szczegóły i zakup"
+        details : "Check details and buy!"
 
       } 
 
