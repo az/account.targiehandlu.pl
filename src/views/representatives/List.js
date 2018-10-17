@@ -3,7 +3,8 @@ import {
   Datagrid,
   EditButton,
   List,
-  TextField
+  TextField,
+  DeleteButton
 } from 'admin-on-rest';
 
 
@@ -26,6 +27,7 @@ const ViewList = props => (
 
 
       <EditButton />
+      <DeleteButton />
 
     </Datagrid>
 </List>

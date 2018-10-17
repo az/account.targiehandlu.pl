@@ -599,7 +599,7 @@ export default {
     representatives:{
 
       menu: "Przedstawiciele firmy",
-      name: "Zarejestruj przedstawicieli firmy",
+      name: "Przedstawiciele firmy",
 
       fields:{
 
