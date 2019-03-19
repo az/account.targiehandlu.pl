@@ -1,6 +1,6 @@
 //import 'babel-polyfill';
 import React from 'react';
-import { Admin, Resource, Delete } from 'admin-on-rest';
+import { Admin, Resource, Delete, fetchUtils } from 'admin-on-rest';
 
 
 import AppBarTitle from './components/AppBarTitle';
@@ -16,12 +16,11 @@ import restClient from './api/restClient';
 import sagas from './redux/sagas';
 import reducers from './redux/reducers';
 
-import translations from './i18n';
+import translations from './localise';
 import Dashboard from './views/dashboard';
 
 import {getLocale, hasAccessTo} from './helpers'
 import {getTheme} from './styles/muiTheme'
-
 
 import {
   ViewList as MeetupList,
@@ -93,9 +92,33 @@ import { ViewList as ScanList, ViewEdit as ScanEdit } from './views/scans';
 import { ViewList as RankingList } from './views/ranking';
 
 
-
 class App extends React.Component {
+
+  // state = {
+  //   texts : null
+  // }
+
+  // componentDidMount(){
+    
+  //   const localiseUrl = encodeURIComponent(`https://localise.biz/api/export/all.json?format=multi&pretty&key=${process.env.REACT_APP_LOCALISE}`)
+
+  //   fetchUtils.fetchJson(`https://api.eventjuicer.com/v1/services/no-cors?url=${localiseUrl}`)
+  //   .then(response => response.json)
+  //   .then(texts => this.setState({texts}) )  
+  // }
+
   render() {
+
+    // const {texts} = this.state;
+
+    // if(!texts){
+    //   return (
+    //     <div className="loader-container">
+    //       <div className="loader">Loading...</div>
+    //     </div>
+    //   )
+    // }
+
     return (
       <Admin
         catchAll={NotFound}
@@ -110,7 +133,7 @@ class App extends React.Component {
         logoutButton={Logout}
         menu={Menu}
         locale={ getLocale() }
-        messages={translations}
+        messages={ translations }
         theme={ getTheme() }
       >
        {(permissions) => [

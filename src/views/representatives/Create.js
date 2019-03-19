@@ -2,44 +2,41 @@ import React from 'react';
 import {
   Create,
   SimpleForm,
-  TextInput,
-  required,
-  email,
-  minLength
+  TextInput
 } from 'admin-on-rest';
 
-
-import { validate } from './validation';
+import { basicValidation, basicValidationEmail } from './validation';
 
 const ViewCreate = props => (
+  
   <Create {...props}>
 
     <SimpleForm redirect="list" submitOnEnter={false}>
 
       <TextInput
         source="profile.fname"
-        validate={[required, minLength(3)]}
+        validate={[basicValidation]}
         options={{ fullWidth: true }}
         style={{ width: 544 }}
       />
 
       <TextInput
         source="profile.lname"
-        validate={[required, minLength(3)]}
+        validate={[basicValidation]}
         options={{ fullWidth: true }}
         style={{ width: 544 }}
       />
 
       <TextInput
         source="profile.position"
-        validate={[required, minLength(3)]}
+        validate={[basicValidation]}
         options={{ fullWidth: true }}
         style={{ width: 544 }}
       />
 
       <TextInput
         source="profile.phone"
-        validate={[required, minLength(3)]}
+        validate={[basicValidation]}
         options={{ fullWidth: true }}
         style={{ width: 544 }}
       />
@@ -47,7 +44,7 @@ const ViewCreate = props => (
       <TextInput
         type="email"
         source="profile.email"
-        validate={[required, email]}
+        validate={[basicValidationEmail]}
         options={{ fullWidth: true }}
         style={{ width: 544 }}
       />

@@ -1,48 +1,72 @@
 import React from 'react'
-import RaisedButton from 'material-ui/RaisedButton';
 import {
     translate
 } from 'admin-on-rest';
-import {Cart, Check} from 'mdi-material-ui'
-import {upgradeCreate} from '../../redux/actions';
+import RaisedButton from 'material-ui/RaisedButton';
+import {Cart, Check, Cancel, Pencil} from 'mdi-material-ui'
 import {connect} from 'react-redux'
 import compose from 'recompose/compose'
+import {showModal} from '../../redux/actions';
+import QuantityBox from './QuantityBox'
 
 class BuyAction extends React.Component {
 
     handleClick = () => {
 
-        const {upgradeCreate, data} = this.props;
+        const {showModal, data, translate} = this.props;
 
-        upgradeCreate({
-            ticket_id: data.id
-        });
+        showModal({
+            title: translate("resources.upgrades.dialog"),
+            body: <QuantityBox data={data} />,
+        })
 
-    }
-
-    renderDisabled(reason){
-        const {translate, resource} = this.props
-
-        return  <RaisedButton
-            disabled={true}
-            primary
-            label={translate(`common.statuses.${reason}`)}
-            icon={<Check />}
-           
-          />
     }
 
     render(){
 
-        const {translate, resource, data} = this.props
+        const {translate, data} = this.props    
 
-        if("bookable" in data && !data.bookable){
-            return this.renderDisabled("unavailable");
+        if("booked" in data && data.booked > 0){
+        
+            if(data.changeable){
+
+                return  (<RaisedButton
+                    primary
+                    label={translate(`common.actions.modify`, {
+                        smart_count : data.booked
+                    })}
+                    icon={<Pencil />}
+                    onClick={this.handleClick}
+                    />
+                )
+
+            }else{
+                return  (<RaisedButton
+                    disabled={true}
+                    primary
+                    disabledBackgroundColor="green"
+                    disabledLabelColor="#cccccc"
+                    label={translate(`common.statuses.already_bought`, {
+                        smart_count : data.booked
+                    })}
+                    icon={<Check />}
+                   
+                    />
+                )
+            }
         }
 
-        if("booked" in data && data.booked){
-            return this.renderDisabled("already_bought");
-        }
+
+        if("bookable" in data && data.bookable <= 0){
+
+            return  (<RaisedButton
+            disabled={true}
+            primary
+            label={translate(`common.statuses.unavailable`)}
+            icon={<Cancel />}
+          />)
+       }
+
 
         return (
             <RaisedButton
@@ -62,7 +86,7 @@ BuyAction.defaultProps = {
 
 const enhance = compose(
     translate,
-    connect(null, {upgradeCreate})
+    connect(null, {showModal})
 )
 
 export default enhance(BuyAction)

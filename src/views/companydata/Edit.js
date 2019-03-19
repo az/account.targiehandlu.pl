@@ -10,6 +10,8 @@ import { Field } from 'redux-form';
 import { validate } from './validation';
 import {translate} from 'admin-on-rest';
 
+const langs = `${process.env.REACT_APP_LOCALES}`.split(",");
+
 const ViewEdit = props => (
 
   <Edit {...props}
@@ -38,9 +40,7 @@ const ViewEdit = props => (
             'countries' :  [
               'national', 'europe', 'global', 'other'
             ],
-            'lang' :  [
-              'en', 'pl', 'de'
-            ],
+            'lang' :  langs || ["en"],
           }
         }
 

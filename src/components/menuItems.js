@@ -45,11 +45,13 @@ const menuItems = [
   ]},
   {
     name : "promote",
-    items : [{
-      name : "ranking",
-      label : "resources.ranking.menu",
-      icon : <IconTrend />
-    },
+    items : [
+      
+    // {
+    //   name : "ranking",
+    //   label : "resources.ranking.menu",
+    //   icon : <IconTrend />
+    // },
     {
       name : "campaigns",
       label : "resources.campaigns.menu",

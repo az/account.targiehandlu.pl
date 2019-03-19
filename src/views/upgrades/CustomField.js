@@ -11,7 +11,7 @@ const CustomField = ({basePath, record, resource, translate, locale}) => {
    <div>
 
         <ul>
-        <li>{translate("common.sales.ends")}: {record.start}</li>
+        <li>{translate("common.sales.ends")}: {record.end}</li>
         <li>{translate("common.sales.remaining")}: {record.remaining}</li>
         </ul>
 

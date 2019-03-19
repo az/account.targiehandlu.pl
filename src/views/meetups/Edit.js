@@ -8,7 +8,7 @@ import {
 } from 'admin-on-rest';
 
 import FullNameField from '../../fields/FullNameField';
-import { validate } from './validation';
+import { validate, basicValidation } from './validation';
 //import { getUserFullName, getUserData } from '../../helpers';
 
 const ViewEdit = props => (
@@ -18,7 +18,7 @@ const ViewEdit = props => (
 
       <TextField
         source="message"
-        validate={[minLength(10)]}
+        validate={[basicValidation]}
         style={{ maxWidth: 544 }}
       />
 

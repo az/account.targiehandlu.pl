@@ -10,6 +10,7 @@ const httpClient = (url, options = {}) => {
 
   const token = getToken();
   options.headers.set('x-token', `${token}`);
+  options.headers.set('x-basehost', `${process.env.REACT_APP_BASEHOST}`);
   return fetchUtils.fetchJson(url, options);
 };
 

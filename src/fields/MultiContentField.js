@@ -40,10 +40,7 @@ const MultiContentField = ({basePath, record, resource, source, translate, baseL
 
   if(isHTML(value))
   {
-    return (<Chip
-            backgroundColor={accent1Color}
-            labelColor="#ffffff"
-            >html</Chip>);
+    return stripTags(value)
   }
 
   if(Array.isArray(value))

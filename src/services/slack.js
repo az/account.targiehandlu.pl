@@ -8,6 +8,7 @@ const buildMessage = message => {
   };
 };
 
+
 const slack = message => {
   /*
 
@@ -26,6 +27,7 @@ const slack = message => {
   options.body = JSON.stringify(buildMessage(message));
 
   return fetchUtils.fetchJson(`${process.env.REACT_APP_SLACK}`, options);
+
 };
 
 export default slack;

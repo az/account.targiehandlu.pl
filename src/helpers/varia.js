@@ -43,7 +43,7 @@ export const lsGet = (key, ifNotFound = "") => {
 export const lsSet = (key, value) => localStorage.setItem(key, JSON.stringify(value))
 
 export const getLocale = () => {
-  return lsGet("locale") || process.env.REACT_APP_LOCALE || "en"
+  return lsGet("locale") || `${process.env.REACT_APP_LOCALE}` || "en"
 }
 
 export const getToken = () => {
@@ -86,7 +86,7 @@ export const hasAccessTo = (perms, strOrArr, action) => {
     return false;
   }
 
-  if(perms && perms.trim() === "*"){
+  if(perms && perms.trim() === "*" || `${process.env.REACT_APP_FULL_ACCESS_ACCOUNT}` == getCompanyId() ){
     return true;
   }
 
@@ -169,16 +169,6 @@ export const getCompanyId = () => {
 };
 
 
-
-export const opengraphImage = (key = "logotype", lang = "pl") => {
-
-  return `https://res.cloudinary.com/eventjuicer/image/upload/c_fit,g_center,h_220,w_600,y_30,l_c_${getCompanyId()}_${key}/template_4_${lang}.png`
-
-}
-
-
-
-
 export const capitalizeFirstLetter = (string) => {
     return string.charAt(0).toUpperCase() + string.slice(1);
 }
@@ -193,7 +183,7 @@ export const slug = (str = "") => slugify(str, {
 export const removeSlashes = (str = "") => str.replace(/^\/|\/$/g, '')
 
 export const getFullUrl = (str) => {
-  const homepage = removeSlashes(process.env.REACT_APP_HOMEPAGE)
+  const homepage = removeSlashes(`${process.env.REACT_APP_HOMEPAGE}`)
   return `${homepage}/${removeSlashes(str)}`
 }
 

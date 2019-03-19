@@ -13,8 +13,11 @@ import {
 import get from 'lodash/get';
 import qs from 'query-string';
 
-import { validate } from './validation';
+import { validate, basicValidation, basicValidationEmail } from './validation';
 import { getUserFullName, getUserData } from '../../helpers';
+
+
+
 
 const ViewCreate = props => (
   <Create title="aor.page.meeting_request" {...props}>
@@ -26,14 +29,14 @@ const ViewCreate = props => (
 
       <LongTextInput
       source="message"
-      validate={[required, minLength(10)]}
+      validate={[basicValidation]}
       style={{ maxWidth: 700 }}
       defaultValue={getUserData('company.profile.invitation_template')}
       />
 
       <TextInput
         source="data.from_name"
-        validate={[required, minLength(4)]}
+        validate={[basicValidation]}
         options={{ fullWidth: true }}
         style={{ width: 544 }}
         defaultValue={getUserFullName()}
@@ -42,7 +45,7 @@ const ViewCreate = props => (
       <TextInput
         type="email"
         source="data.from_email"
-        validate={[required, email]}
+        validate={[basicValidationEmail]}
         options={{ fullWidth: true }}
         style={{ width: 544 }}
         defaultValue={getUserData('email')}

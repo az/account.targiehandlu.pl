@@ -22,6 +22,7 @@ const styles = {
 const Configuration = ({
   theme,
   locale,
+  locales,
   changeTheme,
   changeLocale,
   translate,
@@ -33,28 +34,26 @@ const Configuration = ({
 
       <CardText>
         <div style={styles.label}>{translate('pos.language')}</div>
-        <RaisedButton
-          style={styles.button}
-          label="en"
-          primary={locale === 'en'}
-          onClick={() => changeLocale('en')}
-        />
-        {/* <RaisedButton
-          style={styles.button}
-          label="de"
-          primary={locale === 'de'}
-          onClick={() => changeLocale('de')}
-        /> */}
-        <RaisedButton
-          style={styles.button}
-          label="pl"
-          primary={locale === 'pl'}
-          onClick={() => changeLocale('pl')}
-        />
+
+        {
+          locales.map(newLocale => <RaisedButton
+            key={newLocale}
+            style={styles.button}
+            label={newLocale}
+            primary={locale === newLocale}
+            onClick={() => changeLocale(newLocale)}
+          />)
+        }
+
+      
       </CardText>
     </Card>
   </Restricted>
 );
+
+Configuration.defaultProps = {
+  locales : `${process.env.REACT_APP_LOCALES}`.split(",")
+}
 
 const mapStateToProps = state => ({
   theme: state.theme,

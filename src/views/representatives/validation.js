@@ -1,28 +1,12 @@
 
-const validLinkRegExp = /[-a-zA-Z0-9@:%_+.~#?&//=]{2,256}\.[a-z]{2,4}\b(\/[-a-zA-Z0-9@:%_+.~#?&//=]*)?/gi;
-const validLink = new RegExp(validLinkRegExp);
+import React from 'react';
 
-export const validate = ({name, value}) => {
+import {
+  required,
+  email,
+  minLength
+} from 'admin-on-rest';
 
-  //console.log(name)
+export const basicValidation = (value, record, props) => required(value, record, props) || minLength(3)(value, record, props) || undefined
+export const basicValidationEmail = (value, record, props) => basicValidation(value, record, props) || email(value, record, props) || undefined
 
-  const errors = {};
-
-  switch(name)
-  {
-    case "logotype":
-
-
-      if(value && ( ! value.includes("http") || ! value.match( validLink ) ) )
-      {
-        errors["value"] = 'Must contain valid link http(s)://'
-      }
-
-      break;
-
-    default:
-
-
-  }
-  return errors;
-};
