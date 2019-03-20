@@ -110,7 +110,8 @@ const languages = {
             },
             "actions": {
                 "buy": "Buy now!",
-                "modify": "Modify"
+                "modify": "Modify",
+                "buy_more": "Buy more"
             },
             "statuses": {
                 "unavailable": "Unavailable",
@@ -120,8 +121,7 @@ const languages = {
                 "new": "New",
                 "hold": "Waiting for payment",
                 "ok": "Completed",
-                "confirmed": "Confirmed",
-                "buy_more": "Buy more"
+                "confirmed": "Confirmed"
             },
             "langs": {
                 "pl": "polski",
@@ -265,7 +265,7 @@ const languages = {
                 "equipment": "If you have not ordered additional equipment to your booth, there will be:",
                 "equipment_options": {
                     "hocker": "2 hockers",
-                    "table": "1 table",
+                    "table": "1 cocktail table",
                     "voucher": "4 lunch vouchers",
                     "wifi": "WiFi password",
                     "electricity": "electric socket (300 W)"
@@ -319,7 +319,7 @@ const languages = {
                         "specs": "To complete this order we need some graphic design! Please prepare them and send to booths@targiehandlu.pl. Specs:  a) Counter - 100x100cm, TIFF, 120dpi (scale 1:1) b) Back wall - 300x250cm, TIFF, 120 dpi (scale 1:1)"
                     },
                     "counter": {
-                        "name": "Fullprint counter + flooring",
+                        "name": "Fullprint counter",
                         "description": "This is a recommended option if you have your branding/advertising elements like textile ad wall or roll-ups. This option is a cost-saver and provides some luxury :) (flooring) and convenience (counter)",
                         "specs": "To complete this order we need some graphic design! Please prepare them and send to booths@targiehandlu.pl. Counter - 100x100cm, TIFF, 120dpi (scale 1:1) "
                     },
@@ -332,6 +332,11 @@ const languages = {
                         "name": "Full booth arrangement OSB",
                         "description": "Only for standard (not Grand) booths - 3x2m. Do you want to come to fully prepared booth? OSB back wall with minimalistic graphics (your company logotype), branded counter, carpet flooring and leaflets holder. ",
                         "specs": "To complete this order we need some graphics design! Please prepare them and send to booths@targiehandlu.pl. Specs: company logotype in vector format (ai, pdf, eps)."
+                    },
+                    "carpet": {
+                        "name": "Carpet",
+                        "description": "Only for standard (not Grand) booths - 3x2m. The Expo floor is made of concrete. If you want your booth to look different you can choose from 6 different carpet colours.",
+                        "specs": "To complete this order let us know which colour you've chosen at: booths@targiehandlu.pl"
                     }
                 },
                 "misc": {
@@ -354,6 +359,25 @@ const languages = {
                         "name": "50inch LED display",
                         "description": "Huge LED display with a stand, delivered to your booth. You can connect via HDMI or use USB pendrive",
                         "specs": ""
+                    },
+                    "catering": {
+                        "name": "1 catering voucher",
+                        "description": "1 catering voucher for lunch.",
+                        "specs": "Remember that 4 catering vouchers are already included in the standard package."
+                    },
+                    "parking": {
+                        "name": "1 parking card",
+                        "description": "1 parking card is valid for 1 car only on the assembly day and on the day of the Expo.",
+                        "specs": "Remember that 1 parking card is already included in the standard package."
+                    },
+                    "chair": {
+                        "description": "Do you need more chairs for your representatives? Choose this option and additional hocker will be waiting for you at your booth.",
+                        "specs": "Remember that 2 hockers and 1 cocktail table are already included in the standard package.\n"
+                    },
+                    "table": {
+                        "name": "1 cocktail table",
+                        "description": "Do you need more tables for your representatives and company's gadgets? Choose this option and additional table will be waiting for you at your booth.",
+                        "specs": "Remember that 2 hockers and 1 cocktail table are already included in the standard package."
                     }
                 },
                 "actions": {
@@ -738,6 +762,19 @@ const languages = {
             },
             "participants-by-code": {
                 "name": "Participants"
+            },
+            "purchases": {
+                "menu": "Purchases",
+                "name": "Purchases"
+            }
+        },
+        " resources": {
+            "upgrades": {
+                "misc": {
+                    "chair": {
+                        "name": "1 Hocker"
+                    }
+                }
             }
         }
     },
@@ -852,7 +889,8 @@ const languages = {
             },
             "actions": {
                 "buy": "Kup teraz",
-                "modify": "Usuń"
+                "modify": "Usuń",
+                "buy_more": "Dokup więcej"
             },
             "statuses": {
                 "unavailable": "Niedostępne",
@@ -862,8 +900,7 @@ const languages = {
                 "new": "Nowe",
                 "hold": "Oczekiwanie na płatność",
                 "ok": "Sfinalizowane",
-                "confirmed": "Potwierdzone",
-                "buy_more": "Dokup więcej"
+                "confirmed": "Potwierdzone"
             },
             "langs": {
                 "pl": "polski",
@@ -1007,7 +1044,7 @@ const languages = {
                 "equipment": "Jeżeli nie dokonałeś zamówienia dodatkowego wyposażenia, na Twoim stoisku znajdować się będą:",
                 "equipment_options": {
                     "hocker": "2 hockery",
-                    "table": "1 stół koktajlowy",
+                    "table": "1 stolik koktajlowy",
                     "voucher": "4 vouchery na lunch",
                     "wifi": "hasło do WiFi",
                     "electricity": "gniazdo elektryczne obsługujące maksimum 300W"
@@ -1058,22 +1095,27 @@ const languages = {
                     "fullprint": {
                         "name": "Kompleksowa zabudowa FULLPRINT",
                         "description": "DOTYCZY TYLKO STOISK 3x2m (stoiska standardowe). Chcesz przyjść na gotowe stoisko? Oto opcja dla Twojej firmy. Tylna ścianka z pełnoformatowym nadrukiem, lada z nadrukiem, wykładzina, dodatkowe umeblowanie.",
-                        "specs": "Musimy otrzymać od Ciebie pliki do wydruków na adres booths@targiehandlu.pl. Specyfikacja plików: a) LADA - 100x100cm, TIFF, 120dpi (skala 1:1) b) ŚCIANKA - 300x250cm, TIFF, 120 dpi (skala 1:1)"
+                        "specs": "Musimy otrzymać od Ciebie pliki do wydruków na adres booths@targiehandlu.pl. Specyfikacja plików: a) LADA - 100x100cm, TIFF, 120dpi (skala 1:1) b) ŚCIANKA - 300x250cm, TIFF, 120 dpi (skala 1:1)."
                     },
                     "counter": {
-                        "name": "Lada z nadrukiem + wykładzina",
+                        "name": "Lada z nadrukiem",
                         "description": "Opcja dla firm, które dysponują własnymi elementami brandingowymi -  na przykład reklamową ścianką tekstylną wielorazowego użytku.",
                         "specs": "Musimy otrzymać od Ciebie pliki do wydruków na adres booths@targiehandlu.pl. Specyfikacja pliku do druku: projekt 100x100cm, TIFF, 120dpi (skala 1:1)"
                     },
                     "flooring": {
                         "name": "Dodatkowe meble + wykładzina",
-                        "description": "Jeśli standardowa konfiguracja stoiska jest niewystarczająca, istnieje możliwość dodania wykładziny oraz 2 dodatkowych stołków barowych ",
+                        "description": "Jeśli standardowa konfiguracja stoiska jest niewystarczająca, istnieje możliwość dodania wykładziny oraz 2 dodatkowych stołków barowych",
                         "specs": ""
                     },
                     "osb": {
                         "name": "Kompleksowa zabudowa OSB",
                         "description": "DOTYCZY TYLKO STOISK 3x2m (stoiska standardowe). Chcesz przyjść na gotowe stoisko? Oto opcja dla Twojej firmy. Tylna ścianka z płyty OSB z minimalistycznym nadrukiem, lada z nadrukiem, wykładzina, dodatkowe umeblowanie. ",
                         "specs": "Musimy otrzymać od Ciebie pliki do wydruków na adres booths@targiehandlu.pl. Specyfikacja plików do druku: logotyp w formacie wektorowym (ai, pdf, eps)."
+                    },
+                    "carpet": {
+                        "name": "Wykładzina",
+                        "description": "DOTYCZY TYLKO STOISK 3x2m (stoiska standardowe). Na podłodze hali położony jest beton techniczny. Jeżeli chcesz żeby Twoje stoisko wyglądało inaczej możesz wybrać wykładzinę w jednym z sześciu kolorów.",
+                        "specs": "Prosimy o wysłanie wiadomości z wybranym kolorem wykładziny na adres booths@targiehandlu.pl"
                     }
                 },
                 "misc": {
@@ -1096,6 +1138,25 @@ const languages = {
                         "name": "Ekran LCD 50 cali",
                         "description": "Ekran pozwala na podłączenie źródła HDMI bądź USB. Dostarczany na stoisko.",
                         "specs": ""
+                    },
+                    "catering": {
+                        "name": "1 voucher cateringowy",
+                        "description": "1 voucher cateringowy na lunch.",
+                        "specs": "Pamiętaj, że w podstawowym pakiecie otrzymujesz 4 vouchery cateringowe."
+                    },
+                    "parking": {
+                        "name": "1 karta parkingowa",
+                        "description": "1 karta parkingowa jest ważna na 1 samochód podczas dnia montażowego oraz w dzień Targów.",
+                        "specs": "Pamiętaj, że w podstawowym pakiecie otrzymujesz 1 kartę parkingową."
+                    },
+                    "chair": {
+                        "description": "Potrzebujesz więcej krzeseł dla swoich przedstawicieli? Wybierz tę opcję, a dodatkowy stołek barowy będzie czekał na Ciebie na stoisku.",
+                        "specs": "Pamiętaj, że w podstawowym pakiecie otrzymujesz 2 stołki barowe i 1 stolik koktajlowy."
+                    },
+                    "table": {
+                        "name": "1 stolik koktajlowy",
+                        "description": "Potrzebujesz więcej stolików do rozmów i rozłożenia materiałów promocyjnych? Wybierz tę opcję, a dodatkowy stolik będzie czekał na Ciebie na stoisku.",
+                        "specs": "Pamiętaj, że w podstawowym pakiecie otrzymujesz 2 stołki barowe i 1 stolik koktajlowy."
                     }
                 },
                 "actions": {
@@ -1480,6 +1541,19 @@ const languages = {
             },
             "participants-by-code": {
                 "name": "Uczestnicy"
+            },
+            "purchases": {
+                "menu": "Zamówienia",
+                "name": "Zamówienia"
+            }
+        },
+        " resources": {
+            "upgrades": {
+                "misc": {
+                    "chair": {
+                        "name": "1 Stołek barowy"
+                    }
+                }
             }
         }
     },
@@ -1594,7 +1668,8 @@ const languages = {
             },
             "actions": {
                 "buy": "Buy now!",
-                "modify": "Modify"
+                "modify": "Modify",
+                "buy_more": "Buy more"
             },
             "statuses": {
                 "unavailable": "Unavailable",
@@ -1604,8 +1679,7 @@ const languages = {
                 "new": "New",
                 "hold": "Waiting for payment",
                 "ok": "Completed",
-                "confirmed": "Confirmed",
-                "buy_more": "Buy more"
+                "confirmed": "Confirmed"
             },
             "langs": {
                 "pl": "polski",
@@ -1749,7 +1823,7 @@ const languages = {
                 "equipment": "If you have not ordered additional equipment to your booth, there will be:",
                 "equipment_options": {
                     "hocker": "2 hockers",
-                    "table": "1 table",
+                    "table": "1 cocktail table",
                     "voucher": "4 lunch vouchers",
                     "wifi": "WiFi password",
                     "electricity": "electric socket (300 W)"
@@ -1803,7 +1877,7 @@ const languages = {
                         "specs": "To complete this order we need some graphic design! Please prepare them and send to booths@targiehandlu.pl. Specs:  a) Counter - 100x100cm, TIFF, 120dpi (scale 1:1) b) Back wall - 300x250cm, TIFF, 120 dpi (scale 1:1)"
                     },
                     "counter": {
-                        "name": "Fullprint counter + flooring",
+                        "name": "Fullprint counter",
                         "description": "This is a recommended option if you have your branding/advertising elements like textile ad wall or roll-ups. This option is a cost-saver and provides some luxury :) (flooring) and convenience (counter)",
                         "specs": "To complete this order we need some graphic design! Please prepare them and send to booths@targiehandlu.pl. Counter - 100x100cm, TIFF, 120dpi (scale 1:1) "
                     },
@@ -1816,6 +1890,11 @@ const languages = {
                         "name": "Full booth arrangement OSB",
                         "description": "Only for standard (not Grand) booths - 3x2m. Do you want to come to fully prepared booth? OSB back wall with minimalistic graphics (your company logotype), branded counter, carpet flooring and leaflets holder. ",
                         "specs": "To complete this order we need some graphics design! Please prepare them and send to booths@targiehandlu.pl. Specs: company logotype in vector format (ai, pdf, eps)."
+                    },
+                    "carpet": {
+                        "name": "Carpet",
+                        "description": "Only for standard (not Grand) booths - 3x2m. The Expo floor is made of concrete. If you want your booth to look different you can choose from 6 different carpet colours.",
+                        "specs": "To complete this order let us know which colour you've chosen at: booths@targiehandlu.pl"
                     }
                 },
                 "misc": {
@@ -1838,6 +1917,25 @@ const languages = {
                         "name": "50inch LED display",
                         "description": "Huge LED display with a stand, delivered to your booth. You can connect via HDMI or use USB pendrive",
                         "specs": ""
+                    },
+                    "catering": {
+                        "name": "1 catering voucher",
+                        "description": "1 catering voucher for lunch.",
+                        "specs": "Remember that 4 catering vouchers are already included in the standard package."
+                    },
+                    "parking": {
+                        "name": "1 parking card",
+                        "description": "1 parking card is valid for 1 car only on the assembly day and on the day of the Expo.",
+                        "specs": "Remember that 1 parking card is already included in the standard package."
+                    },
+                    "chair": {
+                        "description": "Do you need more chairs for your representatives? Choose this option and additional hocker will be waiting for you at your booth.",
+                        "specs": "Remember that 2 hockers and 1 cocktail table are already included in the standard package."
+                    },
+                    "table": {
+                        "name": "1 cocktail table",
+                        "description": "Do you need more tables for your representatives and company's gadgets? Choose this option and additional table will be waiting for you at your booth.",
+                        "specs": "Remember that 2 hockers and 1 cocktail table are already included in the standard package."
                     }
                 },
                 "actions": {
@@ -2222,6 +2320,19 @@ const languages = {
             },
             "participants-by-code": {
                 "name": "Participants"
+            },
+            "purchases": {
+                "menu": "Purchases",
+                "name": "Purchases"
+            }
+        },
+        " resources": {
+            "upgrades": {
+                "misc": {
+                    "chair": {
+                        "name": "1 Hocker"
+                    }
+                }
             }
         }
     }
