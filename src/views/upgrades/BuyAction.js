@@ -32,8 +32,8 @@ class BuyAction extends React.Component {
                 primary
                 label={
                     ("booked" in data && data.booked > 0) ? 
-                    translate(`common.statuses.buy_more`) :
-                    translate(`common.statuses.buy`)
+                    translate(`common.actions.buy_more`) :
+                    translate(`common.actions.buy`)
                 }
                 icon={<Cart />}
                 onClick={this.handleClick}

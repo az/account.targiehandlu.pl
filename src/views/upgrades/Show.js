@@ -3,20 +3,21 @@ import {
   Show,
   SimpleShowLayout,
   Datagrid,
-  TextField,
   DateField,
-  ReferenceManyField,
-  FunctionField
+  ReferenceManyField
 } from 'admin-on-rest';
- 
-import ShowActions from './ShowActions';
-import CustomField from './CustomField' 
+
 import ShowTitle from './ShowTitle'
+import ShowActions from './ShowActions';
+
+
+
 import ModifyPurchaseField from './ModifyPurchaseField'
 import AmountField from './AmountField'
 import PurchaseStatusField from './PurchaseStatusField'
 import PurchaseTicketsField from './PurchaseTicketsField'
 
+import CustomField from './CustomField' 
 
 const MyImageField = ({record}) => (
   <div><img src={record.image} style={{width : '100%'}} /></div>
@@ -36,15 +37,15 @@ const ViewEdit = (props) => (
 
     <SimpleShowLayout>
       
-      <ReferenceManyField label="asd" reference="purchases" target="ticket_id">
+      <ReferenceManyField label="Purchases" reference="purchases" target="ticket_id">
 
         <Datagrid>
 
-          <DateField source="ts" />
-          <PurchaseTicketsField source="quantity" />
-          <AmountField source="amount" />
-          <PurchaseStatusField source="status" />
-          <ModifyPurchaseField />
+          <DateField source="ts" label="Date" sortable={false} />
+          <PurchaseTicketsField showItems={false} source="quantity" sortable={false} />
+          <AmountField source="amount" sortable={false} />
+          <PurchaseStatusField source="status" sortable={false} />
+          <ModifyPurchaseField sortable={false} />
 
         </Datagrid>
       </ReferenceManyField>

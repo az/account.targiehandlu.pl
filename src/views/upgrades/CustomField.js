@@ -21,7 +21,7 @@ const CustomField = ({basePath, record, resource, translate, locale}) => {
 
         </p>
             
-        { specs ? <p style={{
+        { specs.length ? <p style={{
             backgroundColor : 'lightyellow',
             marginTop : 20, 
             marginBottom: 20,

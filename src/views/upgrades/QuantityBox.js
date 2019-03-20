@@ -1,7 +1,8 @@
 import React from 'react'
 import RaisedButton from 'material-ui/RaisedButton';
 import {
-    translate
+    translate,
+    refreshView
 } from 'admin-on-rest';
 import {Cart, Check} from 'mdi-material-ui'
 import SelectField from 'material-ui/SelectField'; 
@@ -48,7 +49,7 @@ class QuantityBox extends React.Component {
 
     handleBuy = () => {
 
-        const {purchaseCreate, data, locale} = this.props;
+        const {purchaseCreate, data, locale, refreshView} = this.props;
         const {itemsCount} = this.state;
 
         purchaseCreate({
@@ -58,6 +59,8 @@ class QuantityBox extends React.Component {
             template : `${process.env.REACT_APP_UPGRADES_TEMPLATE}`,
             cc :  `${process.env.REACT_APP_UPGRADES_CC}`,
         });
+
+        refreshView();
 
     }
 
@@ -111,7 +114,7 @@ QuantityBox.defaultProps = {
 
 const enhance = compose(
     translate,
-    connect(null, {purchaseCreate})
+    connect(null, {purchaseCreate, refreshView})
 )
 
 export default enhance(QuantityBox)

@@ -1,5 +1,5 @@
 import React from 'react'
-import {translate} from 'admin-on-rest'
+import {translate, refreshView} from 'admin-on-rest'
 import RaisedButton from 'material-ui/RaisedButton';
 import {Check, Cancel, Pencil} from 'mdi-material-ui';
 
@@ -11,7 +11,7 @@ class ModifyPurchaseField extends React.Component {
 
     handleClick = () => {
 
-        const {purchaseUpdate, basePath, record, resource, locale} = this.props;
+        const {purchaseUpdate, refreshView, basePath, record, locale} = this.props;
 
         purchaseUpdate(record.id, {
                 quantity : 0,
@@ -22,6 +22,8 @@ class ModifyPurchaseField extends React.Component {
             {...record},
             basePath
         );
+
+        refreshView();
     }
 
     canBeModified(){
@@ -54,7 +56,7 @@ ModifyPurchaseField.defaultProps = {
 
 const enhance = compose(
     translate,
-    connect(null, {purchaseUpdate})
+    connect(null, {purchaseUpdate, refreshView})
 )
 
 export default enhance(ModifyPurchaseField)
