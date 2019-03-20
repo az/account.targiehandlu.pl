@@ -9,8 +9,8 @@ const languages = {
                 "create": "Create",
                 "edit": "Edit",
                 "cancel": "Cancel",
-                "refresh": "Refresh",
                 "preview": "Preview",
+                "refresh": "Refresh",
                 "add_filter": "Add filter",
                 "remove_filter": "Delete filter",
                 "back": "Back",
@@ -32,12 +32,6 @@ const languages = {
                 "meeting_request": "Send meeting request",
                 "participant_id": "Participant"
             },
-            "input": {
-                "image": {
-                    "upload_several": "",
-                    "upload_single": ""
-                }
-            },
             "message": {
                 "yes": "Yes",
                 "no": "No",
@@ -54,19 +48,19 @@ const languages = {
                 "next": "Next",
                 "prev": "Prev"
             },
-            "auth": {
-                "username": "Username",
-                "password": "Password",
-                "sign_in": "Sign In",
-                "sign_in_error": "Authorization failed, please try again",
-                "logout": "Logout"
-            },
             "notification": {
                 "updated": "Updated successfully",
                 "created": "Created successfully",
                 "deleted": "Removed successfully",
                 "item_doesnt_exist": "The element does not exist",
                 "http_error": "There was a connection error with the server"
+            },
+            "auth": {
+                "username": "Username",
+                "password": "Password",
+                "sign_in": "Sign In",
+                "sign_in_error": "Authorization failed, please try again",
+                "logout": "Logout"
             },
             "validation": {
                 "required": "Required",
@@ -77,6 +71,12 @@ const languages = {
                 "number": "Must be a number",
                 "email": "Must be a valid email address",
                 "name": "Name must be more descriptive"
+            },
+            "input": {
+                "image": {
+                    "upload_several": "",
+                    "upload_single": ""
+                }
             }
         },
         "pos": {
@@ -91,41 +91,49 @@ const languages = {
                 "light": "Light",
                 "dark": "Dark"
             },
-            "sections": {
-                "suggest_a_meeting": ""
-            },
             "support": {
                 "title": "Technical support",
-                "description": "Need assistance? Some features are not so self-explanatory? Shoot me an email or give me a call. "
+                "description": "Need assistance? Some features are not so self-explanatory? Im ready to help, just let me know I am needed :)"
+            },
+            "sections": {
+                "suggest_a_meeting": ""
             }
         },
         "common": {
             "sales": {
                 "starts": "sales starts",
                 "ends": "sales ends",
-                "net": "net",
-                "gross": "net",
+                "net": "+23% VAT",
+                "gross": "includes 23% VAT",
                 "remaining": "Remaining",
                 "pcs": "pcs"
             },
             "actions": {
-                "buy": "Buy now!"
+                "buy": "Buy now!",
+                "modify": "Modify"
             },
             "statuses": {
                 "unavailable": "Unavailable",
                 "already_bought": "Already bought",
-                "success": "Success!"
+                "success": "Success!",
+                "cancelled": "Cancelled",
+                "new": "New",
+                "hold": "Waiting for payment",
+                "ok": "Completed",
+                "confirmed": "Confirmed",
+                "buy_more": "Buy more"
             },
             "langs": {
                 "pl": "polski",
                 "en": "english",
                 "de": "deutsch"
-            }
+            },
+            "thankyou": "Thank you"
         },
         "menu": {
             "sections": {
                 "promote": "Promote your participation",
-                "suggest_a_meeting": "Booth Meeting Invitation ",
+                "suggest_a_meeting": "Invite to your booth",
                 "crucial": "Exhibitor's profile",
                 "leads": "Your leads",
                 "settings": "Settings"
@@ -160,37 +168,37 @@ const languages = {
             }
         },
         "prizes": {
-            "name": "Ranking & Rewards",
             "must_be_winner": "You must be #1",
-            "position_2": "Only for position #",
+            "name": "Ranking & Rewards",
             "position_1": "Your position must be beetween #",
+            "position_2": "Only for position #",
             "and": " and #",
             "points": " points.",
             "place": "Your current position: ",
             "unknown": "#unknown",
             "presentation": {
                 "title": "Presentation slot",
-                "description": "A 30-minute presentation slot at the expo. Your presentation will be added to the official E-Commerce Berlin Expo presentations agenda.",
+                "description": "A 15 minute presentation slot at the expo. Your presentation will be added to the official E-Commerce Poland Expo presentations agenda.",
                 "image": ""
             },
             "video_interview": {
                 "title": "Video Interview",
-                "description": "It will be carried out during the event and then published on the fanpage of the E-commerce Berlin Expo and the ecommercegermany.com portal",
+                "description": "It will be carried out during the event and then published on the fanpage of the E-commerce Poland Expo and the ehandelmag.com portal.",
                 "image": ""
             },
             "brand_highlight": {
                 "title": "Logo highlight",
-                "description": "Your logo will be displayed on the official E-commerce Berlin Expo website among the leading e-commerce companies.",
+                "description": "Your logo will be displayed on the official E-commerce Poland Expo website among the leading e-commerce companies.",
                 "image": ""
+            },
+            "earlybird": {
+                "title": "Access to earl-bird sales",
+                "description": "Next E-commerce Poland Expo edition will be held in Warsaw (7th of November)."
             },
             "leaflets": {
                 "title": "Permission of Distribution of flyers",
                 "description": "Distribution of flyer at the venue by a hostess (*) Costs of production, hostess hire and delivery are borne by the sponsor",
                 "image": ""
-            },
-            "earlybird": {
-                "title": "Access to earl-bird sales",
-                "description": "Next E-commerce Berlin Expo edition will be held in Berlin (February, 2020)."
             },
             "meetups": {
                 "title": "Mega package of invitations",
@@ -208,8 +216,8 @@ const languages = {
                 "image": ""
             },
             "blog": {
-                "title": "A guest article on the ecommercegermany.com portal",
-                "description": "One-time inclusion of company content on the ecommercegermany.com portal. The article will be promoted in the newsletter and on the Facebook, Linked and Twitter channels of the E-commerce Berlin Expo.",
+                "title": "A guest article on the ehandelmag.com portal",
+                "description": "One-time inclusion of company content on the ehandelmag.com portal. The blogpost will be promoted on the Facebook and Twitter channels of the E-Commerce Poland Expo.",
                 "image": ""
             }
         },
@@ -235,7 +243,7 @@ const languages = {
             "welcome": {
                 "title": "Welcome to Exhibitor's Panel!",
                 "subtitle": " ",
-                "description": "This is the administration panel for exhibitors which allows you to promote your presence at the E-commerce Berlin Expo 2019. The options provided here will help you schedule meetings with registered attendees, invite your clients and get additional promotional services at the event.",
+                "description": "This is the administration panel for exhibitors which allows you to promote your presence at the E-commerce Poland Expo.The options provided here will help you to schedule meetings with registered attendees, invite your clients (soon!) and get extra promotional services at the event.",
                 "aor_button": "Link",
                 "demo_button": "Link #2"
             }
@@ -251,13 +259,13 @@ const languages = {
                 "exhibition_space": "Exhibition space",
                 "area": "Area:",
                 "stand_options": {
-                    "standard": "3m x 3m (Start-up, Standard, Hot, Super-Hot)",
-                    "grand": "6m x 3m (Grand)"
+                    "standard": "3m x 2m (Light, Standard, Hot, Super-Hot, Ultra)",
+                    "grand": "6m x 4m (Grand, Ultra-Grand)"
                 },
                 "equipment": "If you have not ordered additional equipment to your booth, there will be:",
                 "equipment_options": {
-                    "hocker": "4 hockers",
-                    "table": "2 table",
+                    "hocker": "2 hockers",
+                    "table": "1 table",
                     "voucher": "4 lunch vouchers",
                     "wifi": "WiFi password",
                     "electricity": "electric socket (300 W)"
@@ -273,67 +281,57 @@ const languages = {
             },
             "shipment": {
                 "address": "Shipping address:",
-                "describe": "E-commerce Berlin Expo [booth number, COMPANY NAME]",
-                "country": ", Germany",
-                "contact_number": "",
-                "fill_in_form": "",
-                "form": "",
+                "describe": "E-commerce Poland Expo [booth number, COMPANY NAME]",
+                "country": ", Poland",
                 "deliver_hours": "Delivers of the materials will take place in the following hours:",
                 "date": {
                     "day_before_event": "April 24 (4:00 PM)",
-                    "event_day": "February 18 (8:00 AM)"
+                    "event_day": "April 25 (8:00 AM)"
                 },
-                "deliver": "Materials can be delivered to the Expo no earlier than February 18",
+                "deliver": "Materials can be delivered to the Expo no earlier than April 23",
                 "sped": "The official forwarding agent of the Expo is Transmeble International Sp. z o.o.",
-                "contact_person": "Contact person:"
+                "contact_person": "Contact person:",
+                "contact_number": "",
+                "fill_in_form": "",
+                "form": ""
             },
             "assembly": {
                 "assembly": "Assembly",
                 "disassembly": "Disassembly",
+                "options": {
+                    "day_before_event": "April 24 (from 6:00 PM)",
+                    "event_day": "April 25 (8:00 AM - 9:30 AM)"
+                },
+                "event_day": "April 25 (5:15 PM - 8:00 PM)",
                 "delivery": "",
                 "go_to_info": "",
-                "tape": "",
-                "options": {
-                    "day_before_event": "February 19 (from 2:00 PM)",
-                    "event_day": "February 19 (8:00 AM - 9:30 AM)"
-                },
-                "event_day": "February 20 (5:15 PM - 8:00 PM)"
+                "tape": ""
             }
         },
         "resources": {
             "upgrades": {
-                "name": "Weitere Standdienste erwerben",
-                "menu": "Add services",
+                "name": "Purchase additional services",
+                "menu": "Add Services",
                 "booth": {
                     "fullprint": {
                         "name": "Full booth arrangement (fullprint)",
-                        "description": "Only for standard (not Grand) booths - 3x3m. Do you want to come to fully prepared booth? Full print back wall, branded counter, carpet flooring and leaflets holder can await for your company's representatives.",
-                        "specs": "To complete this order we need some graphic design! Graphics need to be sent until January 20th at the latest to Joanna Bartoszewicz on booths@ecommerceberlin.com Specs:  a) Counter - 100x100cm, TIFF, 120dpi (scale 1:1) b) Back wall - 300x250cm, TIFF, 120 dpi (scale 1:1) "
+                        "description": "Only for standard (not Grand) booths - 3x2m. Do you want to come to fully prepared booth? Full print backwall, branded counter, carpet flooring and leaflets holder can await for your company's representatives.",
+                        "specs": "To complete this order we need some graphic design! Please prepare them and send to booths@targiehandlu.pl. Specs:  a) Counter - 100x100cm, TIFF, 120dpi (scale 1:1) b) Back wall - 300x250cm, TIFF, 120 dpi (scale 1:1)"
                     },
                     "counter": {
                         "name": "Fullprint counter + flooring",
                         "description": "This is a recommended option if you have your branding/advertising elements like textile ad wall or roll-ups. This option is a cost-saver and provides some luxury :) (flooring) and convenience (counter)",
-                        "specs": "To complete this order we need some graphic design! Please prepare them and send to hello@ecommerceberlin.com. Counter - 100x100cm, TIFF, 120dpi (scale 1:1) "
+                        "specs": "To complete this order we need some graphic design! Please prepare them and send to booths@targiehandlu.pl. Counter - 100x100cm, TIFF, 120dpi (scale 1:1) "
                     },
                     "flooring": {
-                        "name": "9 sqm carpet lay",
-                        "description": "4 high chairs and 2 high table are included in basic offer. If you need carpet on your exhibition please upgrade with this package. You will get carpet flooring.",
-                        "specs": "Available colors: light grey, dark grey, red, orange, blue, green, red)\nPlease inform branding supplier which color you'd like to use: Joanna Bartoszewicz on booths@ecommerceberlin.com"
+                        "name": "Additional furniture + flooring",
+                        "description": "2 high chairs and 1 high table are included in basic offer. If you need more furniture please upgrade with this package. You will get carpet flooring and additional 2 high chairs.",
+                        "specs": ""
                     },
                     "osb": {
-                        "name": "Full booth arrangement with OSB back wall",
-                        "description": "Only for standard (not Grand) booths - 3x3m. Do you want to come to fully prepared booth? OSB back wall with minimalistic graphics (your company logotype), branded counter, carpet flooring and leaflets holder. ",
-                        "specs": "To complete this order we need some graphics design! Graphics need to be sent until January 20th at the latest to Joanna Bartoszewicz on booths@ecommerceberlin.com Specs: company logotype in vector format (ai, pdf, eps)."
-                    },
-                    "grand": {
-                        "name": "Full booth arrangement for 18 sqm exhibition space",
-                        "specs": "To complete this order we need some graphic design! Graphics need to be sent until January 20th at the latest to Joanna Bartoszewicz on booths@ecommerceberlin.com Specs:  a) Counter - 100x100cm, TIFF, 120dpi (scale 1:1) b) Back wall - 600x250cm, TIFF, 120 dpi (scale 1:1) ",
-                        "description": "Only for Grand booths - 6x3m. Do you want to come to fully prepared booth? Full print back wall, branded counter, carpet flooring and leaflets holder can await for your company's representatives."
-                    },
-                    "grandflooring": {
-                        "name": "18 sqm carpet lay",
-                        "description": "6 high chairs and 2 high table are included in basic offer. If you need carpet on your exhibition please upgrade with this package. You will get carpet flooring.",
-                        "specs": "Available colors: light grey, dark grey, red, orange, blue, green, red) Please inform branding supplier which color you'd like to use: Joanna Bartoszewicz on booths@ecommerceberlin.com"
+                        "name": "Full booth arrangement OSB",
+                        "description": "Only for standard (not Grand) booths - 3x2m. Do you want to come to fully prepared booth? OSB back wall with minimalistic graphics (your company logotype), branded counter, carpet flooring and leaflets holder. ",
+                        "specs": "To complete this order we need some graphics design! Please prepare them and send to booths@targiehandlu.pl. Specs: company logotype in vector format (ai, pdf, eps)."
                     }
                 },
                 "misc": {
@@ -354,33 +352,14 @@ const languages = {
                     },
                     "display": {
                         "name": "50inch LED display",
-                        "description": "Huge LED display with a stand, delivered to your booth. You can connect via HDMI or use a USB pen drive",
-                        "specs": ""
-                    },
-                    "badgesponsor": {
-                        "name": "Visitor Badge Sponsoring",
-                        "description": "Exclusive branding visitor badges, which will be hand out to all visitors of the Fairs (approx. 5000)",
-                        "specs": ""
-                    },
-                    "ecobags": {
-                        "name": "Exclusive sponsoring of visitor eco bags",
-                        "description": "Distribution of visitor bags during the event to E-commerce Berlin Expo participants (approx. 1000 pieces)",
-                        "specs": ""
-                    },
-                    "rack": {
-                        "name": "Foldable brochure rack display",
-                        "description": "Would you like to share materials with the audience? Then we recommend you to book the cos tam reckhold to make your stand looking more professional",
-                        "specs": ""
-                    },
-                    "deckchairs": {
-                        "name": "20x deck chair in the chillout/coffee zone's with your logo",
-                        "description": "20x deck chair in the chillout/coffee zone's with your logo",
+                        "description": "Huge LED display with a stand, delivered to your booth. You can connect via HDMI or use USB pendrive",
                         "specs": ""
                     }
                 },
                 "actions": {
-                    "details": "Check details and buy!"
-                }
+                    "details": "Details"
+                },
+                "dialog": "Buy items"
             },
             "companydata": {
                 "name": "Company data",
@@ -393,11 +372,11 @@ const languages = {
                         "description": ""
                     },
                     "expo": {
-                        "name": "Special offer for the expo",
+                        "name": "Special offer for the Expo",
                         "description": ""
                     },
                     "facebook": {
-                        "name": "Facebook company profile",
+                        "name": "Company profile on Facebook",
                         "description": ""
                     },
                     "keywords": {
@@ -405,7 +384,7 @@ const languages = {
                         "description": ""
                     },
                     "linkedin": {
-                        "name": "LinkedIn company profile",
+                        "name": "Company profile on LinkedIn",
                         "description": ""
                     },
                     "logotype": {
@@ -417,7 +396,7 @@ const languages = {
                         "description": ""
                     },
                     "twitter": {
-                        "name": "Twitter company profile",
+                        "name": "Company profile on Twitter",
                         "description": ""
                     },
                     "website": {
@@ -433,34 +412,34 @@ const languages = {
                         "description": ""
                     },
                     "opengraph_image": {
-                        "name": "Customized image for social media activities",
-                        "description": "A customized image which you can post on your social media channels to promote your attendance at the E-commerce Berlin Expo 2019. "
+                        "name": "Alt image shared on social websites",
+                        "description": "If not set your logotype is shared"
                     },
                     "event_manager": {
-                        "name": "Head of the delegation during the Expo",
-                        "description": "Please provide an E-mail address"
+                        "name": "Logistics person e-mail address",
+                        "description": ""
                     },
                     "lang": {
                         "name": "Preferred language of communication",
                         "description": ""
                     },
                     "invitation_template": {
-                        "name": "Visitor invitation template",
-                        "description": "Prepare a template ready to be sent to visitors you would like to meet at the expo. "
+                        "name": "Visitor invitaion template",
+                        "description": "Fill in to speed up inviting visitors to your booth"
                     },
                     "pr_manager": {
-                        "name": "PR Manager"
+                        "name": "PR Manager email address "
                     },
                     "sales_manager": {
-                        "name": "Contact person for Visitors"
+                        "name": "Sales representative email address"
                     },
                     "xing": {
-                        "name": "Xing company profile"
+                        "name": "Xing profile"
                     }
                 },
                 "fields": {
                     "countries_choices": {
-                        "national": "Germany",
+                        "national": "Poland",
                         "europe": "Europe",
                         "global": "World",
                         "other": "Other"
@@ -488,7 +467,7 @@ const languages = {
                     }
                 },
                 "actions": {
-                    "preview": "Profile preview"
+                    "preview": "Podgląd profilu"
                 }
             },
             "representatives": {
@@ -518,15 +497,15 @@ const languages = {
                 "menu": "Ranking",
                 "name": "Ranking",
                 "limit": "",
-                "subtitle": "You earn points by showing your participation in the event as an exhibitor. Use the promo materials we have prepared for you. Every unique page view of the E-commerce Berlin Expo homepage with your tracking link equals 1 point.",
+                "subtitle": "You earn points by showing your participation in event as an exhibitor. Use the promo materials we have prepared for you. Every unique pageview of E-commerce Poland Expo with your tracking link equals 1pt.",
                 "fields": {
                     "stats": "Points",
                     "domain": "Domain",
                     "slug": "Domain",
+                    "export": "Export",
                     "profile": {
-                        "name": "Company"
-                    },
-                    "export": "Export"
+                        "name": "Brand name"
+                    }
                 },
                 "list": {
                     "brand_name": "",
@@ -538,6 +517,7 @@ const languages = {
                 "menu": "Your Scans",
                 "name": "Your Scans",
                 "fields": {
+                    "refresh": "refresh",
                     "participant": {
                         "profile": {
                             "fname": "First name",
@@ -545,8 +525,7 @@ const languages = {
                             "cname2": "Company name",
                             "position": "Position"
                         }
-                    },
-                    "refresh": "refresh"
+                    }
                 },
                 "status": {
                     "agreed": "Confirmed",
@@ -554,8 +533,8 @@ const languages = {
                     "scheduled": "Scheduled"
                 },
                 "info": {
-                    "menu": "Badge Scanner Instructions",
-                    "name": "Badge Scanner Instructions"
+                    "menu": "Badge Scanner How-to",
+                    "name": "Badge Scanner How-to"
                 },
                 "noresults": "This feature may not be enabled for you. Sorry.",
                 "noresultsmore": ""
@@ -567,8 +546,8 @@ const languages = {
                 "subheading": "Wait... there is more!",
                 "newsletters": {
                     "invite": {
-                        "title": "Booth Meeting Invitation!",
-                        "description": "Use this customized newsletter to inform your partners and clients about participating in the expo. The tracking link is already applied."
+                        "title": "Invite to your booth!",
+                        "description": "Use this ready-to-send newsletter to inform your partners and clients about participating in the Expo. Tracking link already applied."
                     }
                 },
                 "banners": "Banners",
@@ -608,8 +587,8 @@ const languages = {
                     "copy_tracking_link_to_clipboard": "Copy tracking link to clipboard",
                     "copy_embed_code": "Copy embed code",
                     "preview": "Preview",
-                    "jumpto": "Jump to Profile",
-                    "close": "Close"
+                    "close": "Close",
+                    "jumpto": "Jump to Profile"
                 },
                 "types": {
                     "link": {
@@ -633,7 +612,7 @@ const languages = {
                 "menu": "RSVPs",
                 "name": "RSVPs",
                 "limit": " %{limit} invite(s) left.",
-                "subtitle": "You receive 5 invitation for free. For every additional 5 points in the ranking, you earn 1 additional invite for a meeting.- I.e. A company with 50 points wins 10 invites.",
+                "subtitle": "Your start limit is 5 invites. For every 5 pts in the Ranking you earn 1 additional invite, i.e. company with 50 pts should have 10 invites.",
                 "noresults": "Navigate to Browse participants to invite some people.",
                 "noresultsmore": "",
                 "fields": {
@@ -641,7 +620,6 @@ const languages = {
                     "message_create": "Type in your message",
                     "creative_id": "Choose your template",
                     "comment": "Private comment",
-                    "participant_id": "",
                     "status": {
                         "agreed": "Confirmed",
                         "rejected": "Rejected",
@@ -660,7 +638,8 @@ const languages = {
                             "cname2": "Company name",
                             "position": "Position"
                         }
-                    }
+                    },
+                    "participant_id": ""
                 },
                 "tabs": {
                     "form": "Create new meeting request",
@@ -670,9 +649,9 @@ const languages = {
             "campaigns": {
                 "menu": "Email campaigns",
                 "name": "Email campaigns",
-                "creative": "Create new campaign",
                 "noresults": "This feature is not yet enabled for your company.",
                 "noresultsmore": "However...",
+                "creative": "Create new campaign",
                 "fields": {
                     "fname": "First name",
                     "lname": "Last name",
@@ -762,6 +741,748 @@ const languages = {
             }
         }
     },
+    "pl": {
+        "aor": {
+            "action": {
+                "delete": "Usuń",
+                "show": "Pokaż",
+                "list": "Lista",
+                "save": "Zapisz",
+                "create": "Utwórz",
+                "edit": "Edytuj",
+                "cancel": "Anuluj",
+                "preview": "Podgląd",
+                "refresh": "Odśwież",
+                "add_filter": "Dodaj filtr",
+                "remove_filter": "Usuń filtr",
+                "back": "Powrót",
+                "close": "Zamknij",
+                "export": "Eksportuj"
+            },
+            "boolean": {
+                "true": "Tak",
+                "false": "Nie"
+            },
+            "page": {
+                "list": "%{name}",
+                "edit": "%{name} #%{id}",
+                "show": "%{name} #%{id}",
+                "create": "Utwórz %{name}",
+                "delete": "Usuń %{name} #%{id}",
+                "dashboard": "Panel główny",
+                "not_found": "Strona nie została znaleziona",
+                "meeting_request": "Wyślij prośbę o spotkanie",
+                "participant_id": "Participant"
+            },
+            "message": {
+                "yes": "Tak",
+                "no": "Nie",
+                "are_you_sure": "Czy jesteś pewien?",
+                "about": "O",
+                "not_found": "Strona której szukasz nie istnieje"
+            },
+            "navigation": {
+                "no_results": "Nie znaleziono",
+                "page_out_of_boundaries": "Strona %{page} jest poza limitem",
+                "page_out_from_end": "Nie można wyjść poza ostatnią stronę",
+                "page_out_from_begin": "Nie można wyjść poza pierwszą stronę",
+                "page_range_info": "%{offsetBegin}-%{offsetEnd} z %{total}",
+                "next": "Następna",
+                "prev": "Poprzednia"
+            },
+            "notification": {
+                "updated": "Zaktualizowano pomyślnie",
+                "created": "Utworzono pomyślnie",
+                "deleted": "Usunięto pomyślnie",
+                "item_doesnt_exist": "Element nie istnieje",
+                "http_error": "Wystąpił błąd połączenia z serwerem"
+            },
+            "auth": {
+                "username": "Nazwa użytkownika",
+                "password": "Hasło",
+                "sign_in": "Zaloguj",
+                "sign_in_error": "Autoryzacja nie powiodła się, spróbuj ponownie",
+                "logout": "Wyloguj"
+            },
+            "validation": {
+                "required": "Wymagane",
+                "minLength": "Minimum %{min} znaków",
+                "maxLength": "Maksimum %{max} znaków",
+                "minValue": "Minimum %{min}",
+                "maxValue": "Maksimum %{max}",
+                "number": "Wprowadź liczbę",
+                "email": "Wprowadź prawidłowy adres e-mail",
+                "name": "Nazwa musi być dłuższa"
+            },
+            "input": {
+                "image": {
+                    "upload_several": "Upuść pliki tutaj lub naciśnij, aby załadować.",
+                    "upload_single": "Upuść plik tutaj lub naciśnij, aby załadować."
+                }
+            }
+        },
+        "pos": {
+            "logout": "Wyloguj",
+            "ranking": "Ranking",
+            "sros": "test",
+            "search": "Szukaj",
+            "configuration": "Język",
+            "language": "Język",
+            "theme": {
+                "name": "Theme",
+                "light": "Light",
+                "dark": "Dark"
+            },
+            "support": {
+                "title": "Pomoc techniczna",
+                "description": "Ktoraś z funkcji jest niejasna? Potrzebujesz krótkiego szkolenia? Zapraszam do kontaktu"
+            },
+            "sections": {
+                "suggest_a_meeting": "Zaproś do stoiska"
+            }
+        },
+        "common": {
+            "sales": {
+                "starts": "start sprzedaży",
+                "ends": "koniec sprzedaży",
+                "net": "+23% VAT",
+                "gross": "zawiera 23% VAT",
+                "remaining": "Pozostało",
+                "pcs": "sztuk"
+            },
+            "actions": {
+                "buy": "Kup teraz",
+                "modify": "Usuń"
+            },
+            "statuses": {
+                "unavailable": "Niedostępne",
+                "already_bought": "Już zakupione",
+                "success": "Sukces!",
+                "cancelled": "Anulowane",
+                "new": "Nowe",
+                "hold": "Oczekiwanie na płatność",
+                "ok": "Sfinalizowane",
+                "confirmed": "Potwierdzone",
+                "buy_more": "Dokup więcej"
+            },
+            "langs": {
+                "pl": "polski",
+                "en": "english",
+                "de": "deutsch"
+            },
+            "thankyou": "Dziękujemy"
+        },
+        "menu": {
+            "sections": {
+                "promote": "Promuj swój udział",
+                "suggest_a_meeting": "Zaproś do swojego stoiska",
+                "crucial": "Profil wystawcy",
+                "leads": "Twoje leady",
+                "settings": "Ustawienia"
+            }
+        },
+        "actions": {
+            "copied": "Skopiowano do schowka",
+            "share_linkedin": "Udostępnij na Linkedin",
+            "share_twitter": "Udostępnij na Twitter",
+            "share_facebook": "Udostępnij na Facebook"
+        },
+        "auth": {
+            "errors": {
+                "badtoken": "Zły token!"
+            },
+            "unauthorized": "Brak dostepu",
+            "support": "Skontaktuj się z nami, jeśli nie masz dostępu do aplikacji.",
+            "checkEmail": "Sprawdź swoją skrzynkę pocztową, w celu uzyskania dalszych informacji",
+            "fields": {
+                "email": "Twój służbowy adres e-mail",
+                "password": "Hasło"
+            },
+            "loginByPassword": {
+                "hint": "loginByPassword podpowiedź"
+            },
+            "loginByRequest": {
+                "hint": "loginByRequest podpowiedź"
+            },
+            "actions": {
+                "loginWithPassword": "Zaloguj się",
+                "requestAccess": "Poproś o dostęp"
+            }
+        },
+        "prizes": {
+            "must_be_winner": "Musisz zająć #1 miejsce",
+            "name": "Ranking i nagrody",
+            "position_1": "Musisz zająć miejsce pomiędzy #",
+            "position_2": "Wyłacznie dla miejsca #",
+            "and": " a #",
+            "points": " punktów.",
+            "place": "Twoja obecna pozycja: ",
+            "unknown": "nie odnotowaliśmy aktywności",
+            "presentation": {
+                "title": "Prezentacja",
+                "description": "15-minutowy slot prezentacyjny podczas wydarzenia. Twoja prezentacja zostanie dodana do oficjalnej agendy Targów eHandlu.",
+                "image": ""
+            },
+            "video_interview": {
+                "title": "Wywiad wideo z przedstawicielem firmy",
+                "description": "Zostanie on przeprowadzony podczas wydarzenia, a następnie opublikowany na fanpage'u Targów eHandlu oraz portalu ehandelmag.com.",
+                "image": ""
+            },
+            "brand_highlight": {
+                "title": "Wyróżnienie logotypu",
+                "description": "Twój logotyp zostanie wyświetlony na oficjalnej stronie Targów eHandlu wśród wiodących firm z branży e-commerce.",
+                "image": ""
+            },
+            "earlybird": {
+                "title": "Dostęp do najtańszej puli sprzedaży na kolejne Targi",
+                "description": "Kolejne Targi eHandlu już w listopadzie. Najbardziej zaangażowani Wystawcy dostaną informację apropos otwarcia sprzedaży wcześniej. Niższe ceny, lepszy wybór lokalizacji stoiska."
+            },
+            "leaflets": {
+                "title": "Dystrybucja ulotek na terenie Targów",
+                "description": "Twoja firma będzie miała mozliwość dystrybuowania ulotek na terenie całej hali targowej. (*) Koszty produkcji, dostawy i wynajęcia hostess ponosi wystawca.",
+                "image": ""
+            },
+            "meetups": {
+                "title": "Mega pakiet zaproszeń",
+                "description": "Otrzymasz 50 personalnych zaproszeń do wykorzystania w swoim Panelu Wystawcy.",
+                "image": ""
+            },
+            "scanner": {
+                "title": "Aplikacja do skanowania badgów",
+                "description": "Otrzymasz dostęp do aplikacji umożliwiającej skanowanie identyfikatorów zwiedzających. Każdy z przedstawicieli Twojej firmy będzie mógł zbierać dane o odwiedzających i eksportować wyniki do .xls lub .csv.",
+                "image": ""
+            },
+            "rollups": {
+                "title": "Roll-up w strefie Business Lounge",
+                "description": "Twój firmowy roll-up znajdzie się w strefie networkingowej i gastronomicznej dla Wystawców.",
+                "image": ""
+            },
+            "blog": {
+                "title": "Gościnny artykuł na branżowym portalu ehandelmag.com",
+                "description": "Możliwość opublikowania autorskiego artykułu na portalu ehandelmag.com. Wpis będzie promowany na oficjalnych kanałach social media Targów eHandlu.",
+                "image": ""
+            }
+        },
+        "fields": {
+            "skip": "Pomiń, nie importuj",
+            "fname": "Imię",
+            "lname": "Nazwisko",
+            "cname2": "Nazwa firmy",
+            "email": "Adres e-mail",
+            "phone": "Numer telefonu"
+        },
+        "invites": {
+            "pagetitle": "Wyślij zaproszenia do swojej listy kontaktów",
+            "import_manually": "Wklej lub wprowadź ręcznie",
+            "import_csv": "Załaduj plik CSV",
+            "errors": {
+                "no_email_assigned": "Wybierz e-mail",
+                "mappings_overlap": "Sprawdź mapowania"
+            }
+        },
+        "dashboard": {
+            "tutorial": "Zobacz nasz tutorial na temat korzystania z materiałów promocyjnych!",
+            "welcome": {
+                "title": "Witaj w Panelu Wystawcy!",
+                "subtitle": " ",
+                "description": "Masz przed sobą panel administracyjny dla wystawców, który umożliwia promowanie Twojej obecności na Targach eHandlu. Dostępne opcje pomogą Ci zaplanować spotkania z zarejestrowanymi uczestnikami, zaprosić swoich klientów (wkrótce!) i zdobyć dodatkowe usługi promocyjne podczas wydarzenia.",
+                "aor_button": "Link",
+                "demo_button": "Link #2"
+            }
+        },
+        "informer": {
+            "title": "Informacje logistyczne",
+            "tabs": {
+                "basic": "Podstawowe informacje",
+                "shipment": "Wysyłka materiałów",
+                "assembly": "Montaż/demontaż"
+            },
+            "basic": {
+                "exhibition_space": "Przestrzeń wystawiennicza",
+                "area": "Powierzchnia:",
+                "stand_options": {
+                    "standard": "3m x 2m (Light, Standard, Hot, Super-Hot, Ultra)",
+                    "grand": "6m x 4m (Grand, Ultra-Grand)"
+                },
+                "equipment": "Jeżeli nie dokonałeś zamówienia dodatkowego wyposażenia, na Twoim stoisku znajdować się będą:",
+                "equipment_options": {
+                    "hocker": "2 hockery",
+                    "table": "1 stół koktajlowy",
+                    "voucher": "4 vouchery na lunch",
+                    "wifi": "hasło do WiFi",
+                    "electricity": "gniazdo elektryczne obsługujące maksimum 300W"
+                },
+                "backwall": "Maksymalne wymiary tylnej ściany to 3m szer. x 2,5m wys.",
+                "add_equipment": "Usługi dodatkowe",
+                "carpeting": "Jeśli chcesz, aby na Twoim stoisku znalazła się wykładzina w dowolnie wybranym przez Ciebie kolorze - zgłoś się do nas na: ",
+                "add_eq_contact": "Potrzebujesz dodatkowych mebli, voucherów, prądu lub chcesz wynająć ekran TV? Odezwij się do nas!",
+                "see": "Zobacz wizualizację",
+                "construction": " przygotowaną przez firmę All in Event. Zamówienia możesz dokonać do 6 kwietnia pod adresem: ",
+                "representative": "Przedstawiciele firmy",
+                "reps_info": "Liczba przedstawicieli Twojej firmy znajdujących się na stanowisku jest dowolna. Pamiętaj, aby wprowadzić ich dane w zakładce "
+            },
+            "shipment": {
+                "address": "Adres do wysyłki:",
+                "describe": "XV Targi eHandlu, [nr stoiska, NAZWA FIRMY]",
+                "country": ", Poland",
+                "deliver_hours": "Dostawy materiałów na halę, odbędą się w godzinach:",
+                "date": {
+                    "day_before_event": "24 kwietnia (16:00)",
+                    "event_day": "25 kwietnia (8:00)"
+                },
+                "deliver": "Doręczenie materiałów przez Kuriera na teren EXPO może odbyć się nie wcześniej niż 23 kwietnia",
+                "sped": "Oficjalnym Spedytorem Targów jest firma Transmeble International Sp. z o.o.",
+                "contact_person": "Contact person:",
+                "contact_number": "Numer kontaktowy dla Kuriera: +48 690 960 279",
+                "fill_in_form": "Przed nadaniem paczki, wypełnij ",
+                "form": "FORMULARZ"
+            },
+            "assembly": {
+                "assembly": "Montaż",
+                "disassembly": "Demontaż",
+                "options": {
+                    "day_before_event": "6 listopada  (16:00 - 20:00)",
+                    "event_day": "7 listopada (8:00 - 9:30)"
+                },
+                "event_day": "7 listopada (17:15 - 20:00)",
+                "delivery": "W dniu montażowym wszystkie bramy wjazdowe będą otwarte. Dostawcy będą mogli korzystać z wejścia oznaczonego numerem \"D3\". Zobacz mapkę poniżej:",
+                "go_to_info": "Po przyjściu na halę, udaj się bezpośrednio do punktu INFO - tam dowiesz się co zrobić dalej",
+                "tape": "Pamiętaj, aby podczas montażu używać materiałów nie pozostawiających śladów na podłodze hali. Szczególną uwagę należy zwrócić na taśmę do podklejania wykładziny. Polecamy ETG Imawex."
+            }
+        },
+        "resources": {
+            "upgrades": {
+                "name": "Zakup usługi dodatkowe",
+                "menu": "Usługi dodatkowe",
+                "booth": {
+                    "fullprint": {
+                        "name": "Kompleksowa zabudowa FULLPRINT",
+                        "description": "DOTYCZY TYLKO STOISK 3x2m (stoiska standardowe). Chcesz przyjść na gotowe stoisko? Oto opcja dla Twojej firmy. Tylna ścianka z pełnoformatowym nadrukiem, lada z nadrukiem, wykładzina, dodatkowe umeblowanie.",
+                        "specs": "Musimy otrzymać od Ciebie pliki do wydruków na adres booths@targiehandlu.pl. Specyfikacja plików: a) LADA - 100x100cm, TIFF, 120dpi (skala 1:1) b) ŚCIANKA - 300x250cm, TIFF, 120 dpi (skala 1:1)"
+                    },
+                    "counter": {
+                        "name": "Lada z nadrukiem + wykładzina",
+                        "description": "Opcja dla firm, które dysponują własnymi elementami brandingowymi -  na przykład reklamową ścianką tekstylną wielorazowego użytku.",
+                        "specs": "Musimy otrzymać od Ciebie pliki do wydruków na adres booths@targiehandlu.pl. Specyfikacja pliku do druku: projekt 100x100cm, TIFF, 120dpi (skala 1:1)"
+                    },
+                    "flooring": {
+                        "name": "Dodatkowe meble + wykładzina",
+                        "description": "Jeśli standardowa konfiguracja stoiska jest niewystarczająca, istnieje możliwość dodania wykładziny oraz 2 dodatkowych stołków barowych ",
+                        "specs": ""
+                    },
+                    "osb": {
+                        "name": "Kompleksowa zabudowa OSB",
+                        "description": "DOTYCZY TYLKO STOISK 3x2m (stoiska standardowe). Chcesz przyjść na gotowe stoisko? Oto opcja dla Twojej firmy. Tylna ścianka z płyty OSB z minimalistycznym nadrukiem, lada z nadrukiem, wykładzina, dodatkowe umeblowanie. ",
+                        "specs": "Musimy otrzymać od Ciebie pliki do wydruków na adres booths@targiehandlu.pl. Specyfikacja plików do druku: logotyp w formacie wektorowym (ai, pdf, eps)."
+                    }
+                },
+                "misc": {
+                    "leaflets": {
+                        "name": "Prawo do dystrybucji ulotek",
+                        "description": "Jeśli chcesz wynająć hostessy aby prowadziły działania reklamowe poza stoiskiem musisz wykupić zezwolenie organizatora na taką formę reklamy.",
+                        "specs": ""
+                    },
+                    "welcomepacks": {
+                        "name": "2 dodatkowe vouchery + 1 karta parkingowa",
+                        "description": "W ramach standardowej oferty stoiska otrzymujesz 4 welcome packi, w których znajdują się 4 vouchery cateringowe oraz 1 karta parkingowa. Jeśli potrzebujesz dodatkowej karty parkingowej i/lub dodatkowych voucherów obiadowych, kup ten pakiet.",
+                        "specs": ""
+                    },
+                    "electricity": {
+                        "name": "Niezależne podłączenie prądu 3kW",
+                        "description": "Standardowe przyłącze prądu pozwala na podłączenie kilku laptopów i ew. ekranu LCD. Potrzebujesz więcej niż standardowe 300W? Wykup niezależne podłączenie prądu o mocy 3000W.",
+                        "specs": ""
+                    },
+                    "display": {
+                        "name": "Ekran LCD 50 cali",
+                        "description": "Ekran pozwala na podłączenie źródła HDMI bądź USB. Dostarczany na stoisko.",
+                        "specs": ""
+                    }
+                },
+                "actions": {
+                    "details": "Szczegóły"
+                },
+                "dialog": "Wybierz ilość i potwierdź zakup"
+            },
+            "companydata": {
+                "name": "Dane firmy",
+                "menu": "Dane firmy",
+                "subtitle": "",
+                "limit": "",
+                "customfields": {
+                    "about": {
+                        "name": "Opis firmy",
+                        "description": ""
+                    },
+                    "expo": {
+                        "name": "Oferta specjalna na Targi",
+                        "description": ""
+                    },
+                    "facebook": {
+                        "name": "Profil firmy na Facebook",
+                        "description": ""
+                    },
+                    "keywords": {
+                        "name": "Słowa kluczowe",
+                        "description": ""
+                    },
+                    "linkedin": {
+                        "name": "Profil firmy na LinkedIn",
+                        "description": ""
+                    },
+                    "logotype": {
+                        "name": "Adres URL do logotypu (.png, .gif, .jpg)",
+                        "description": ""
+                    },
+                    "products": {
+                        "name": "Kluczowe produkty / usług",
+                        "description": ""
+                    },
+                    "twitter": {
+                        "name": "Profil firmy na Twitter",
+                        "description": ""
+                    },
+                    "website": {
+                        "name": "Adres URL strony firmowej",
+                        "description": ""
+                    },
+                    "countries": {
+                        "name": "Zasięg działalności",
+                        "description": ""
+                    },
+                    "name": {
+                        "name": "Nazwa firmy",
+                        "description": ""
+                    },
+                    "opengraph_image": {
+                        "name": "Obrazek udostępniany na serwisach społecznościowych",
+                        "description": "Jeśli nie zostanie ustawiony użyjemy Twojego logotypu"
+                    },
+                    "event_manager": {
+                        "name": "E-mail osoby koordynującej tematy logistyczne",
+                        "description": ""
+                    },
+                    "lang": {
+                        "name": "Język komunikacji z organizatorem",
+                        "description": ""
+                    },
+                    "invitation_template": {
+                        "name": "Szablon wiadomości Zaproszenie",
+                        "description": "aby zapraszać szybciej przygotuj wstępną treść wiadomośc... "
+                    },
+                    "pr_manager": {
+                        "name": "E-mail osoby odpowiedzialnej za PR w Firmie"
+                    },
+                    "sales_manager": {
+                        "name": "Adres email osoby odpowiedzialnej za sprzedaż w firmie"
+                    },
+                    "xing": {
+                        "name": "Profil na Xing"
+                    }
+                },
+                "fields": {
+                    "countries_choices": {
+                        "national": "Polska",
+                        "europe": "Europa",
+                        "global": "Świat",
+                        "other": "Inne"
+                    },
+                    "name": "Co edytujesz?",
+                    "value": "Aktualna wartość",
+                    "updated_at": "Edytowano",
+                    "keywords_choices": {
+                        "logistics": "Logistyka",
+                        "payment": "Płatności",
+                        "platform": "Platforma dla e-sklepów",
+                        "sales_generation": "Generowanie sprzedaży",
+                        "software": "Dostawca oprogramowania",
+                        "communication": "Komunikacja",
+                        "customer_support": "Obsługa klienta",
+                        "analytics": "Analiza danych",
+                        "international_sales": "Sprzedaż międzynarodowa",
+                        "omnichannel": "Omnichannel",
+                        "infrastructure": "Rozwiązania infrastrukturalne"
+                    },
+                    "lang_choices": {
+                        "en": "english",
+                        "pl": "polski",
+                        "de": "deutsch"
+                    }
+                },
+                "actions": {
+                    "preview": "Podgląd profilu"
+                }
+            },
+            "representatives": {
+                "menu": "Przedstawiciele firmy",
+                "name": "Przedstawiciele firmy",
+                "fields": {
+                    "profile": {
+                        "fname": "Imię",
+                        "lname": "Nazwisko",
+                        "position": "Stanowisko",
+                        "phone": "Telefon"
+                    }
+                }
+            },
+            "rewards": {
+                "menu": "Nagrody",
+                "name": "Nagrody",
+                "body_text_1": "Aby zdobywać punkty w ",
+                "body_text_2": "u i wygrywać nagrody, musisz użyć swojego unikatowego linku URL. Zobacz ",
+                "body_text_3": ", aby zapoznać się ze szczegółami!"
+            },
+            "logistics": {
+                "menu": "Logistyka",
+                "name": "Logistyka"
+            },
+            "ranking": {
+                "menu": "Ranking",
+                "name": "Ranking",
+                "limit": "",
+                "subtitle": "Promuj swój udział w Targach eHandlu i zdobywaj dodatkowe świadczenia. Użyj materiałów promocyjnych, które dla Ciebie przygotowaliśmy. Każda wizyta na Twoim profilu na stronie Targów eHandlu poprzez Twój unikatowy link to 1 pkt w Rankingu.",
+                "fields": {
+                    "stats": "Punkty",
+                    "domain": "Domena",
+                    "slug": "Domena",
+                    "export": "Export",
+                    "profile": {
+                        "name": "Nazwa handlowa"
+                    }
+                },
+                "list": {
+                    "brand_name": "Nazwa handlowa",
+                    "domain": "Domena",
+                    "points": "Punkty"
+                }
+            },
+            "scans": {
+                "menu": "Twoje skany",
+                "name": "Twoje skany",
+                "fields": {
+                    "refresh": "refresh",
+                    "participant": {
+                        "profile": {
+                            "fname": "Imię",
+                            "lname": "Nazwisko",
+                            "cname2": "Nazwa firmy",
+                            "position": "Pozycja w firmie"
+                        }
+                    }
+                },
+                "status": {
+                    "agreed": "Potwierdzony",
+                    "rejected": "Odrzucony",
+                    "scheduled": "Umówiony"
+                },
+                "info": {
+                    "menu": "Pobierz skaner kodów QR",
+                    "name": "Pobierz skaner kodów QR"
+                },
+                "noresults": "Ta funkcja nie jest jeszcze dostępna dla Twojej firmy.",
+                "noresultsmore": ""
+            },
+            "creatives": {
+                "menu": "Materiały promocyjne",
+                "name": "Materiały promocyjne",
+                "heading": "Chcesz dołączyć do konkursu? Wykorzystaj materiały promocyjne zamieszczone poniżej.",
+                "subheading": "Poczekaj... to nie wszystko!",
+                "newsletters": {
+                    "invite": {
+                        "title": "Zaproszenie do stoiska",
+                        "description": "Użyj tego szablonu by poinformować swoich Partnerów i Klientów o tym, że uczestniczysz w Targach. Szablon ma dodany Twój unikatowy link zliczający punkty."
+                    }
+                },
+                "banners": "Banery",
+                "choose_size": "Wybierz rozmiar",
+                "langs": {
+                    "pl": "POLSKI",
+                    "en": "ENGLISH",
+                    "undefined": ""
+                },
+                "version": {
+                    "english": "Szablon newslettera - angielski",
+                    "german": "Szablon newslettera - niemiecki"
+                },
+                "fields": {
+                    "image_downloaded": "Obraz został pobrany",
+                    "image_body": "Uwaga! Pamiętaj, że aby zdobywać punkty w Rankingu, musisz użyć swojego unikatowego linku URL."
+                },
+                "links": {
+                    "disabled": "Musisz coś zrobić! Ustaw następujące pola w Dane firmy: ",
+                    "preview": "Oto obrazek, który będzie widoczny w serwisie społecznościowym po opublikowaniu",
+                    "logotype": {
+                        "title": "Obrazek z logotypem Twojej firmy",
+                        "description": "Po opublikowaniu na serwisie społecznościowym będzie widoczna grafika zapraszająca na Targi z Twoim logotypem"
+                    },
+                    "opengraph_image": {
+                        "title": "Twoja własna grafika",
+                        "description": "Po opublikowaniu na serwisie społecznościowym będzie widoczna Twoja własne grafika. Wymagane dodanie kreacji w Dane firmy."
+                    }
+                },
+                "actions": {
+                    "copy_html_to_clipboard": "Kopiuj HTML do schowka",
+                    "copy_to_clipboard": "Kopiuj do schowka",
+                    "copy_url_to_clipboard": "Kopiuj URL do schowka",
+                    "download_html": "Pobierz HTML",
+                    "download_zip": "Pobierz .zip",
+                    "download": "Pobierz",
+                    "copy_tracking_link_to_clipboard": "Kopiuj link URL",
+                    "copy_embed_code": "Kopiuj kod źródłowy",
+                    "preview": "Podgląd",
+                    "close": "Close",
+                    "jumpto": "Pokaż profil"
+                },
+                "types": {
+                    "link": {
+                        "title": "Your company universal tracking link"
+                    }
+                }
+            },
+            "newsletters": {
+                "menu": "Szablony newslettera",
+                "name": "Szablony newslettera",
+                "fields": {
+                    "name": "Nazwa newslettera",
+                    "data": {
+                        "sender_name": "Nadawca"
+                    },
+                    "sender_email": "Adres e-mail nadawcy",
+                    "template": "Treść wiadomości"
+                }
+            },
+            "meetups": {
+                "menu": "RSVPs",
+                "name": "RSVPs",
+                "limit": " Pozostało %{limit} zaproszeń",
+                "subtitle": "Twój początkowy limit wynosi 5 zaproszeń. Za każde 5 pkt w Rankingu otrzymasz 1 dodatkowe zaproszenie, tzn. firma, która zdobyła 50 pkt powinna mieć 10 zaproszeń.",
+                "noresults": "Przejdź do zakładki \"Przeglądaj uczestników\", aby zaprosić wybrane osoby.",
+                "noresultsmore": "",
+                "fields": {
+                    "message": "Wiadomość",
+                    "message_create": "Wpisz swoją wiadomość",
+                    "creative_id": "Wybierz swój szablon",
+                    "comment": "Komentarz",
+                    "status": {
+                        "agreed": "Potwierdzony",
+                        "rejected": "Odrzucony",
+                        "scheduled": "Umówiony"
+                    },
+                    "data": {
+                        "from_name": "Nadawca",
+                        "from_email": "Adres e-mail nadawcy"
+                    },
+                    "participant": {
+                        "name": "Imię i nazwisko",
+                        "profile": {
+                            "title": "Sprawdź szczegóły zaproszenia",
+                            "fname": "Imię",
+                            "lname": "Nazwisko",
+                            "cname2": "Nazwa firmy",
+                            "position": "Pozycja w firmie"
+                        }
+                    },
+                    "participant_id": "Uczestnik"
+                },
+                "tabs": {
+                    "form": "Stwórz nową prośbę o spotkanie",
+                    "help": "Potrzebujesz pomocy?"
+                }
+            },
+            "campaigns": {
+                "menu": "Kampania e-mail",
+                "name": "Kampania e-mail",
+                "noresults": "Ta funkcja nie jest jeszcze dostępna dla Twojej firmy.",
+                "noresultsmore": "Jednak...",
+                "creative": "Utwórz nową kampanię",
+                "fields": {
+                    "fname": "Imię",
+                    "lname": "Nazwisko",
+                    "cname2": "Nazwa firmy",
+                    "position": "Pozycja",
+                    "name": "Nazwa",
+                    "scheduled_at": "Zaplanuj na",
+                    "contactlist_ids": "Wybierz listy, do których chcesz wysłać...",
+                    "creative_id": "Wybierz szablon newslettera",
+                    "data": {
+                        "from_email": "Od (e-mail)",
+                        "from_name": "Od (imię)",
+                        "subject": "Temat"
+                    }
+                }
+            },
+            "imports": {
+                "menu": "Zaimportowane kontakty",
+                "name": "Zaimportowane kontakty",
+                "fields": {
+                    "title": "Importuj kontakty",
+                    "name": "Nazwa importu",
+                    "created_at": "Utworzono",
+                    "contactlist": "Nazwa listy kontaktowej",
+                    "created_by": "Utworzono przez",
+                    "hint": "Wklej lub wprowadź adresy e-mail ręcznie. Każdy adres powinien zaczynać się od nowej linii.",
+                    "drop": "Upuść pliki lub kliknij tutaj, aby wybrać pliki do przesłania.",
+                    "success": "Udało się! Plik został załadowany pomyślnie!",
+                    "found": "Znalezione dane",
+                    "assignment": "Przypisz do",
+                    "assignment_body": "Co to jest?"
+                },
+                "tabs": {
+                    "import_manually": "Importuj ręcznie",
+                    "import_csv": "Załaduj plik CSV"
+                }
+            },
+            "contacts": {
+                "menu": "Kontakty",
+                "name": "Kontakty",
+                "noresults": "Nie znaleziono wyników",
+                "fields": {
+                    "comment": "Komentuj",
+                    "contactlist_ids": "Listy",
+                    "data": {
+                        "fname": "Imię",
+                        "lname": "Nazwisko",
+                        "phone": "Numer telefonu",
+                        "cname2": "Nazwa firmy",
+                        "position": "Pozycja w firmie",
+                        "linkedin": "Linkedin",
+                        "twitter": "Twitter",
+                        "facebook": "Facebook",
+                        "contactlist_ids": "Wybierz listę/listy",
+                        "name": "Nazwa importu",
+                        "sent_at": "Wysłano na"
+                    }
+                },
+                "actions": {
+                    "import": "Dodaj/importuj kontakty"
+                }
+            },
+            "visitors": {
+                "menu": "Przeglądaj uczestników",
+                "name": "Przeglądaj uczestników",
+                "tabs": {
+                    "invitation": "Wyślij zaproszenie",
+                    "subject": "Temat",
+                    "message": "Wiadomość"
+                },
+                "actions": {
+                    "invite": "Zaproś"
+                },
+                "fields": {
+                    "creative": "Wybierz newsletter",
+                    "profile": {
+                        "fname": "Imię",
+                        "lname": "Nazwisko",
+                        "cname2": "Nazwa firmy",
+                        "position": "Pozycja",
+                        "domain": "Domena"
+                    }
+                }
+            },
+            "participants-by-code": {
+                "name": "Uczestnicy"
+            }
+        }
+    },
     "de": {
         "aor": {
             "action": {
@@ -769,11 +1490,11 @@ const languages = {
                 "show": "Show",
                 "list": "List",
                 "save": "Save",
-                "create": "Erstellen",
+                "create": "Create",
                 "edit": "Edit",
                 "cancel": "Cancel",
-                "refresh": "Aktualisieren",
                 "preview": "Preview",
+                "refresh": "Refresh",
                 "add_filter": "Add filter",
                 "remove_filter": "Delete filter",
                 "back": "Back",
@@ -795,12 +1516,6 @@ const languages = {
                 "meeting_request": "Send meeting request",
                 "participant_id": "Participant"
             },
-            "input": {
-                "image": {
-                    "upload_several": "",
-                    "upload_single": ""
-                }
-            },
             "message": {
                 "yes": "Yes",
                 "no": "No",
@@ -817,19 +1532,19 @@ const languages = {
                 "next": "Next",
                 "prev": "Prev"
             },
+            "notification": {
+                "updated": "Updated successfully",
+                "created": "Created successfully",
+                "deleted": "Removed successfully",
+                "item_doesnt_exist": "The element does not exist",
+                "http_error": "There was a connection error with the server"
+            },
             "auth": {
                 "username": "Username",
                 "password": "Password",
                 "sign_in": "Sign In",
                 "sign_in_error": "Authorization failed, please try again",
                 "logout": "Logout"
-            },
-            "notification": {
-                "updated": "Updated successfully",
-                "created": "Erfolgreich erstellt",
-                "deleted": "Removed successfully",
-                "item_doesnt_exist": "The element does not exist",
-                "http_error": "There was a connection error with the server"
             },
             "validation": {
                 "required": "Required",
@@ -840,6 +1555,12 @@ const languages = {
                 "number": "Must be a number",
                 "email": "Must be a valid email address",
                 "name": "Name must be more descriptive"
+            },
+            "input": {
+                "image": {
+                    "upload_several": "",
+                    "upload_single": ""
+                }
             }
         },
         "pos": {
@@ -847,51 +1568,59 @@ const languages = {
             "ranking": "Ranking",
             "sros": "test",
             "search": "Search",
-            "configuration": "Sprache",
-            "language": "Sprache",
+            "configuration": "Language",
+            "language": "Language",
             "theme": {
                 "name": "Theme",
                 "light": "Light",
                 "dark": "Dark"
             },
+            "support": {
+                "title": "Technical support",
+                "description": "Need assistance? Some features are not so self-explanatory? Im ready to help, just let me know I am needed :)"
+            },
             "sections": {
                 "suggest_a_meeting": ""
-            },
-            "support": {
-                "title": "Kundendienst",
-                "description": "Benötigst du Unterstützung bei der Nutzung des Forums? Schreib mir eine E-Mail oder rufe mich gerne an. "
             }
         },
         "common": {
             "sales": {
                 "starts": "sales starts",
-                "ends": "Verkauf endet",
-                "net": "net",
-                "gross": "net",
+                "ends": "sales ends",
+                "net": "+23% VAT",
+                "gross": "includes 23% VAT",
                 "remaining": "Remaining",
                 "pcs": "pcs"
             },
             "actions": {
-                "buy": "Buy now!"
+                "buy": "Buy now!",
+                "modify": "Modify"
             },
             "statuses": {
                 "unavailable": "Unavailable",
                 "already_bought": "Already bought",
-                "success": "Success!"
+                "success": "Success!",
+                "cancelled": "Cancelled",
+                "new": "New",
+                "hold": "Waiting for payment",
+                "ok": "Completed",
+                "confirmed": "Confirmed",
+                "buy_more": "Buy more"
             },
             "langs": {
                 "pl": "polski",
                 "en": "english",
                 "de": "deutsch"
-            }
+            },
+            "thankyou": "Thank you"
         },
         "menu": {
             "sections": {
-                "promote": "Teilnahme promoten",
-                "suggest_a_meeting": "Einladung zum Stand Meeting",
-                "crucial": "Ausstellerprofil",
-                "leads": "Kundenkontakte",
-                "settings": "Einstellungen"
+                "promote": "Promote your participation",
+                "suggest_a_meeting": "Invite to your booth",
+                "crucial": "Exhibitor's profile",
+                "leads": "Your leads",
+                "settings": "Settings"
             }
         },
         "actions": {
@@ -923,17 +1652,17 @@ const languages = {
             }
         },
         "prizes": {
-            "name": "Ranking & Rewards",
             "must_be_winner": "You must be #1",
-            "position_2": "Only for position #",
+            "name": "Ranking & Rewards",
             "position_1": "Your position must be beetween #",
+            "position_2": "Only for position #",
             "and": " and #",
             "points": " points.",
             "place": "Your current position: ",
             "unknown": "#unknown",
             "presentation": {
                 "title": "Presentation slot",
-                "description": "A 30-minute presentation slot at the expo. Your presentation will be added to the official E-Commerce Berlin Expo presentations agenda.",
+                "description": "A 15 minute presentation slot at the expo. Your presentation will be added to the official E-Commerce Poland Expo presentations agenda.",
                 "image": ""
             },
             "video_interview": {
@@ -946,14 +1675,14 @@ const languages = {
                 "description": "Your logo will be displayed on the official E-commerce Poland Expo website among the leading e-commerce companies.",
                 "image": ""
             },
+            "earlybird": {
+                "title": "Access to earl-bird sales",
+                "description": "Next E-commerce Poland Expo edition will be held in Warsaw (7th of November)."
+            },
             "leaflets": {
                 "title": "Permission of Distribution of flyers",
                 "description": "Distribution of flyer at the venue by a hostess (*) Costs of production, hostess hire and delivery are borne by the sponsor",
                 "image": ""
-            },
-            "earlybird": {
-                "title": "Access to earl-bird sales",
-                "description": "Next E-commerce Poland Expo edition will be held in Warsaw (7th of November)."
             },
             "meetups": {
                 "title": "Mega package of invitations",
@@ -978,9 +1707,9 @@ const languages = {
         },
         "fields": {
             "skip": "Skip, don't import",
-            "fname": "Vorname",
-            "lname": "Nachname",
-            "cname2": "Firma",
+            "fname": "First name",
+            "lname": "Last name",
+            "cname2": "Company name",
             "email": "E-mail address",
             "phone": "Phone number"
         },
@@ -996,9 +1725,9 @@ const languages = {
         "dashboard": {
             "tutorial": "Check out our tutorial about using promo materials!",
             "welcome": {
-                "title": "Willkommen zum Ausstellerforum!",
+                "title": "Welcome to Exhibitor's Panel!",
                 "subtitle": " ",
-                "description": "Hier findet ihr das Administrationsforum für Aussteller der E-commerce Berlin Expo 2019. Ihr könnt innerhalb des Forums, Meetings mit registrierten Besuchern arrangieren, Klienten zum Event einladen und sogar erweiterte Materialien für eure Teilnahme an der Expo gewinnen.",
+                "description": "This is the administration panel for exhibitors which allows you to promote your presence at the E-commerce Poland Expo.The options provided here will help you to schedule meetings with registered attendees, invite your clients (soon!) and get extra promotional services at the event.",
                 "aor_button": "Link",
                 "demo_button": "Link #2"
             }
@@ -1014,8 +1743,8 @@ const languages = {
                 "exhibition_space": "Exhibition space",
                 "area": "Area:",
                 "stand_options": {
-                    "standard": "3m x 3m (Start-up, Standard, Hot, Super-Hot)",
-                    "grand": "6m x 3m (Grand)"
+                    "standard": "3m x 2m (Light, Standard, Hot, Super-Hot, Ultra)",
+                    "grand": "6m x 4m (Grand, Ultra-Grand)"
                 },
                 "equipment": "If you have not ordered additional equipment to your booth, there will be:",
                 "equipment_options": {
@@ -1038,71 +1767,61 @@ const languages = {
                 "address": "Shipping address:",
                 "describe": "E-commerce Poland Expo [booth number, COMPANY NAME]",
                 "country": ", Poland",
-                "contact_number": "",
-                "fill_in_form": "",
-                "form": "",
                 "deliver_hours": "Delivers of the materials will take place in the following hours:",
                 "date": {
                     "day_before_event": "April 24 (4:00 PM)",
-                    "event_day": "February 18 (8:00 AM)"
+                    "event_day": "April 25 (8:00 AM)"
                 },
-                "deliver": "Materials can be delivered to the Expo no earlier than February 18",
+                "deliver": "Materials can be delivered to the Expo no earlier than April 23",
                 "sped": "The official forwarding agent of the Expo is Transmeble International Sp. z o.o.",
-                "contact_person": "Contact person:"
+                "contact_person": "Contact person:",
+                "contact_number": "",
+                "fill_in_form": "",
+                "form": ""
             },
             "assembly": {
                 "assembly": "Assembly",
                 "disassembly": "Disassembly",
+                "options": {
+                    "day_before_event": "April 24 (from 6:00 PM)",
+                    "event_day": "April 25 (8:00 AM - 9:30 AM)"
+                },
+                "event_day": "April 25 (5:15 PM - 8:00 PM)",
                 "delivery": "",
                 "go_to_info": "",
-                "tape": "",
-                "options": {
-                    "day_before_event": "February 19 (from 2:00 PM)",
-                    "event_day": "February 19 (8:00 AM - 9:30 AM)"
-                },
-                "event_day": "February 20 (5:15 PM - 8:00 PM)"
+                "tape": ""
             }
         },
         "resources": {
             "upgrades": {
                 "name": "Purchase additional services",
-                "menu": "Dienste hinzufügen",
+                "menu": "Add Services",
                 "booth": {
                     "fullprint": {
-                        "name": "Vollständig angefertigter Stand (Voll bedruckt)",
-                        "description": "Nur für die Kategorien Standard - Super Hot 3x3. Wollen Sie einen fertigen Stand vorfinden bestehend aus gebrandeter Rückwand, gebrandeter Theke, Teppichbelag und Broschürenhalter? Das Branding kann hierbei nach Wunsch erfolgen. Dann buchen Sie diese Option!",
-                        "specs": "Zusatzinformation: Um die Bestellung zu vervollständigen, benötigen wir Grafikmaterial! Bitte kontaktieren Sie unseren externen Kontakt, Joanna Bartoszewicz an booths@ecommerceberlin.com schicken. Benötigt:  a) Theke - 100x100cm, TIFF, 120dpi (scale 1:1) b) Rückwand - 300x250cm, TIFF, 120 dpi (scale 1:1)"
+                        "name": "Full booth arrangement (fullprint)",
+                        "description": "Only for standard (not Grand) booths - 3x2m. Do you want to come to fully prepared booth? Full print backwall, branded counter, carpet flooring and leaflets holder can await for your company's representatives.",
+                        "specs": "To complete this order we need some graphic design! Please prepare them and send to booths@targiehandlu.pl. Specs:  a) Counter - 100x100cm, TIFF, 120dpi (scale 1:1) b) Back wall - 300x250cm, TIFF, 120 dpi (scale 1:1)"
                     },
                     "counter": {
                         "name": "Fullprint counter + flooring",
                         "description": "This is a recommended option if you have your branding/advertising elements like textile ad wall or roll-ups. This option is a cost-saver and provides some luxury :) (flooring) and convenience (counter)",
-                        "specs": "Um die Bestellung zu vervollständigen, benötigen wir Grafikmaterial! Bitte in Maße 100x100cm, TIFF, 120dpi (scale 1:1) (Theke) an hello@ecommerceberlin.com schicken. "
+                        "specs": "To complete this order we need some graphic design! Please prepare them and send to booths@targiehandlu.pl. Counter - 100x100cm, TIFF, 120dpi (scale 1:1) "
                     },
                     "flooring": {
-                        "name": "Teppichbelag 9m2",
-                        "description": "4 Hocker und 2 Tische sind in dieser Leistung inbegriffen. Falls Sie einen Teppich benötigen, buchen Sie bitte diese Option",
-                        "specs": "Zusatzinformation (verfügbare Farben): Hellgrau, dunkelgrau, rot, orange, grün, blau \nBitte kontaktieren Sie unseren externen Kontakt, Joanna Bartoszewicz,  bzgl. der Farbauswahl per E-Mail an: booths@ecommerceberlin.com"
+                        "name": "Additional furniture + flooring",
+                        "description": "2 high chairs and 1 high table are included in basic offer. If you need more furniture please upgrade with this package. You will get carpet flooring and additional 2 high chairs.",
+                        "specs": ""
                     },
                     "osb": {
-                        "name": "Vollständiger Stand mit OSB Rückwand (einfaches Branding)",
-                        "description": "Only for standard (not Grand) booths - 3x3m. Do you want to come to fully prepared booth? OSB back wall with minimalistic graphics (your company logotype), branded counter, carpet flooring and leaflets holder. ",
-                        "specs": "Um die Bestellung zu vervollständigen, benötigen wir Grafikmaterial! Bitte kontaktieren Sie unseren externen Kontakt, Joanna Bartoszewicz an booths@ecommerceberlin.com schicken. Benötigt:  Logo des Unternehmens in Vectorformat (ai, pdf, eps)"
-                    },
-                    "grand": {
-                        "name": "Vollständig angefertigter Stand (18m2 - volles Branding)",
-                        "specs": "Um die Bestellung zu vervollständigen, benötigen wir Grafikmaterial! Bitte kontaktieren Sie unseren externen Kontakt, Joanna Bartoszewicz an booths@ecommerceberlin.com schicken. Benötigt:  a) Theke - 100x100cm, TIFF, 120dpi (scale 1:1) b) Rückwand - 600x250cm, TIFF, 120 dpi (scale 1:1)",
-                        "description": "Gilt nur für diejenigen, die eine Grandfläche (6x3) gebucht haben. \nWollen Sie einen fertigen Stand vorfinden bestehend aus gebrandeter Rückwand, gebrandeter Theke, Teppichbelag und Broschürenhalter? Das Branding kann hierbei nach Wunsch erfolgen. Dann buchen Sie diese Option!"
-                    },
-                    "grandflooring": {
-                        "name": "Teppichbelag 18m2",
-                        "description": "6 Hocker und 2 Tische sind in dieser Leistung inbegriffen. Falls Sie einen Teppich benötigen, buchen Sie bitte diese Option",
-                        "specs": "Hellgrau, dunkelgrau, rot, orange, grün, blau Bitte kontaktieren Sie unseren externen Kontakt, Joanna Bartoszewicz,  bzgl. der Farbauswahl per E-Mail an: booths@ecommerceberlin.com"
+                        "name": "Full booth arrangement OSB",
+                        "description": "Only for standard (not Grand) booths - 3x2m. Do you want to come to fully prepared booth? OSB back wall with minimalistic graphics (your company logotype), branded counter, carpet flooring and leaflets holder. ",
+                        "specs": "To complete this order we need some graphics design! Please prepare them and send to booths@targiehandlu.pl. Specs: company logotype in vector format (ai, pdf, eps)."
                     }
                 },
                 "misc": {
                     "leaflets": {
-                        "name": "Marketing durch Flyerverteilung",
-                        "description": "Möchtet ihr Messehostessen nutzen um Werbematerial zu verteilen? Bitte holt euch dazu die Erlaubnis. Wir bieten dazu keine Materialien an. Kosten der Hostessen und Druckkosten fallen beim Sponsor an",
+                        "name": "Permission for marketing outside booth",
+                        "description": "If you want to engange a hostess in order to distribute leaflets you are asked to purchase a permission. Does not include printing materials and distribution.",
                         "specs": ""
                     },
                     "welcomepacks": {
@@ -1116,109 +1835,90 @@ const languages = {
                         "specs": ""
                     },
                     "display": {
-                        "name": "50 Zoll LED Bildschirm",
-                        "description": "Großer LED Bildschirm mit Ständer (wird an Stand geliefert). Verbindung via HDMI oder USB.",
-                        "specs": ""
-                    },
-                    "badgesponsor": {
-                        "name": "Sponsoring der Besucherpässe",
-                        "description": "Hierbei handelt es sich um das Sponsoring der Besucherpässe (ca. 5000) mit dem Logo des Sponsors",
-                        "specs": ""
-                    },
-                    "ecobags": {
-                        "name": "Sponsoring der Besuchertaschen",
-                        "description": "Ca. 1000 gebrandete Taschen für die Besucher der E-commerce Berlin Expo, welche während der Veranstaltung ausgeteilt werden.",
-                        "specs": ""
-                    },
-                    "rack": {
-                        "name": "Broschürenhalter",
-                        "description": "Sie möchten Sachen auslegen und das ansehnlich? Dann buchen Sie unseren Broschürehalter und lassen Sie die Standfläche noch besser aussehen.",
-                        "specs": ""
-                    },
-                    "deckchairs": {
-                        "name": "Sponsoring von Liegestühlen in der Kaffeezone",
-                        "description": "Wollen Sie, dass die Besucher auf von Ihnen gebrandeten Stühlen entspannen und die Expo aus einer ruhigeren Atmosphäre betrachten? Dann ist dieses Paket genau das richtige. Durch diese Möglichkeit bieten wir Ihnen an, 20 angefertigte, mit Ihrem Logo bedruckte Liegestühle zur Entspannung bereitzustellen",
+                        "name": "50inch LED display",
+                        "description": "Huge LED display with a stand, delivered to your booth. You can connect via HDMI or use USB pendrive",
                         "specs": ""
                     }
                 },
                 "actions": {
                     "details": "Check details and buy!"
-                }
+                },
+                "dialog": "Buy items"
             },
             "companydata": {
-                "name": "Firma",
-                "menu": "Firma",
+                "name": "Company data",
+                "menu": "Company data",
                 "subtitle": "",
                 "limit": "",
                 "customfields": {
                     "about": {
-                        "name": "Unternehmensbeschreibung",
+                        "name": "Company description",
                         "description": ""
                     },
                     "expo": {
-                        "name": "Angebot für die Expo",
+                        "name": "Special offer for the Expo",
                         "description": ""
                     },
                     "facebook": {
-                        "name": "Facebook Firmenseite",
+                        "name": "Company profile on Facebook",
                         "description": ""
                     },
                     "keywords": {
-                        "name": "Stichwörter",
+                        "name": "Keywords",
                         "description": ""
                     },
                     "linkedin": {
-                        "name": "LinkedIn Firmenprofil",
+                        "name": "Company profile on LinkedIn",
                         "description": ""
                     },
                     "logotype": {
-                        "name": "URL zum Logo (.png, .gif, .jpg)",
+                        "name": "URL to the logotype (.png, .gif, .jpg)",
                         "description": ""
                     },
                     "products": {
-                        "name": "Produkt / Dienstleistung",
+                        "name": "Key products / services",
                         "description": ""
                     },
                     "twitter": {
-                        "name": "Twitter Firmenseite",
+                        "name": "Company profile on Twitter",
                         "description": ""
                     },
                     "website": {
-                        "name": "URL der Homepage",
+                        "name": "Company website URL",
                         "description": ""
                     },
                     "countries": {
-                        "name": "Aktive Operationsregionen",
+                        "name": "Countries of operation",
                         "description": ""
                     },
                     "name": {
-                        "name": "Firma",
+                        "name": "Company name",
                         "description": ""
                     },
                     "opengraph_image": {
-                        "name": "Angepasstes Bild für soziale Netzwerkaktivitäten",
-                        "description": "Ein individuell erstelltes Bild, um eure Anwesenheit auf der E-commerce Berlin Expo 2019, auf euren sozialen Netzwerken zu promoten. "
+                        "name": "Alt image shared on social websites",
+                        "description": "If not set your logotype is shared"
                     },
                     "event_manager": {
-                        "name": "Ansprechpartner für die Messeteilnahme",
-                        "description": "Bitte E-Mail Adresse eintragen"
+                        "name": "Logistics person e-mail address",
+                        "description": ""
                     },
                     "lang": {
-                        "name": "Bevorzugte Kommunikationssprache",
+                        "name": "Preferred language of communication",
                         "description": ""
                     },
                     "invitation_template": {
-                        "name": "Einladungsvorlage für Besucher",
-                        "description": "Prepare a template ready to be sent to visitors you would like to meet at the expo. Erstelle eine Vorlage, welche du schnell an Besucher bezüglich eines Meetings auf der Expo, schicken kannst. "
+                        "name": "Visitor invitaion template",
+                        "description": "Fill in to speed up inviting visitors to your booth"
                     },
                     "pr_manager": {
-                        "name": "PR Manager"
+                        "name": "PR Manager email address "
                     },
                     "sales_manager": {
-                        "name": "Kontaktperson für Besucher"
+                        "name": "Sales representative email address"
                     },
                     "xing": {
-                        "name": "Xing Firmenprofil"
+                        "name": "Xing profile"
                     }
                 },
                 "fields": {
@@ -1228,9 +1928,9 @@ const languages = {
                         "global": "World",
                         "other": "Other"
                     },
-                    "name": "Feld",
-                    "value": "Inhalt",
-                    "updated_at": "Aktualisiert am",
+                    "name": "Field name",
+                    "value": "Value",
+                    "updated_at": "Updated at",
                     "keywords_choices": {
                         "logistics": "Logistics",
                         "payment": "Payment",
@@ -1251,25 +1951,25 @@ const languages = {
                     }
                 },
                 "actions": {
-                    "preview": "Profilvorschau"
+                    "preview": "Podgląd profilu"
                 }
             },
             "representatives": {
-                "menu": "Firmenvertreter",
-                "name": "Firmenvertreter registrieren",
+                "menu": "Company representatives",
+                "name": "Register company representatives",
                 "fields": {
                     "profile": {
-                        "fname": "Vorname",
-                        "lname": "Nachname",
+                        "fname": "First name",
+                        "lname": "Last name",
                         "position": "Position",
                         "phone": "Phone"
                     }
                 }
             },
             "rewards": {
-                "menu": "Belohnungen",
-                "name": "Belohnungen",
-                "body_text_1": "Um in der Platzierung",
+                "menu": "Rewards",
+                "name": "Rewards",
+                "body_text_1": "To participate in the ",
                 "body_text_2": " and be able to win rewards you must use dedicated tracking link. See ",
                 "body_text_3": " for details."
             },
@@ -1278,18 +1978,18 @@ const languages = {
                 "name": "Logistics"
             },
             "ranking": {
-                "menu": "Platzierung",
-                "name": "Platzierung",
+                "menu": "Ranking",
+                "name": "Ranking",
                 "limit": "",
-                "subtitle": "Du gewinnst Punkte, indem du deine Teilnahme an der Expo als Aussteller promotest. Nutze das Werbematerial, welches wir vorbereitet haben. Jeder Klick auf die E-commerce Berlin Expo Homepage mit deinem persönlich angestellten Link ergibt ein Punkt.",
+                "subtitle": "You earn points by showing your participation in event as an exhibitor. Use the promo materials we have prepared for you. Every unique pageview of E-commerce Poland Expo with your tracking link equals 1pt.",
                 "fields": {
-                    "stats": "Punkte",
+                    "stats": "Points",
                     "domain": "Domain",
                     "slug": "Domain",
+                    "export": "Export",
                     "profile": {
-                        "name": "Firma"
-                    },
-                    "export": "Export"
+                        "name": "Brand name"
+                    }
                 },
                 "list": {
                     "brand_name": "",
@@ -1298,18 +1998,18 @@ const languages = {
                 }
             },
             "scans": {
-                "menu": "Deine Scans",
-                "name": "Deine Scans",
+                "menu": "Your Scans",
+                "name": "Your Scans",
                 "fields": {
+                    "refresh": "refresh",
                     "participant": {
                         "profile": {
-                            "fname": "Vorname",
-                            "lname": "Nachname",
-                            "cname2": "Firma",
+                            "fname": "First name",
+                            "lname": "Last name",
+                            "cname2": "Company name",
                             "position": "Position"
                         }
-                    },
-                    "refresh": "Aktualisieren"
+                    }
                 },
                 "status": {
                     "agreed": "Confirmed",
@@ -1317,21 +2017,21 @@ const languages = {
                     "scheduled": "Scheduled"
                 },
                 "info": {
-                    "menu": "Anleitung zum Badge Scanner",
-                    "name": "Anleitung zum Badge Scanner"
+                    "menu": "Badge Scanner How-to",
+                    "name": "Badge Scanner How-to"
                 },
                 "noresults": "This feature may not be enabled for you. Sorry.",
                 "noresultsmore": ""
             },
             "creatives": {
-                "menu": "Werbematerial",
-                "name": "Werbematerial",
-                "heading": " Nimm am Contest teil! Nutze dazu unser Werbematerial.",
+                "menu": "Promo materials",
+                "name": "Promo materials",
+                "heading": "  Do you want to join the contest? We recommend using promo materials provided below.",
                 "subheading": "Wait... there is more!",
                 "newsletters": {
                     "invite": {
-                        "title": "Einladung zum Stand Meeting!",
-                        "description": "Nutze unsere fertiggestellten Newsletter, um Klienten und Partner über eure Anwesenheit auf der Expo wissen zu lassen. Der Tracking Link ist bereits darin enthalten."
+                        "title": "Invite to your booth!",
+                        "description": "Use this ready-to-send newsletter to inform your partners and clients about participating in the Expo. Tracking link already applied."
                     }
                 },
                 "banners": "Banners",
@@ -1353,12 +2053,12 @@ const languages = {
                     "disabled": "Oooops! You must fill in some data: ",
                     "preview": "Image that will be published on social websites",
                     "logotype": {
-                        "title": "Link zum promoten eures Profils - mit Standard Grafik (Logo)",
-                        "description": "Wir haben einige Standard Grafiken erstellt, welche mit eurem Profil auf sozialen Netzwerken geteilt werden kann. "
+                        "title": "Link promoting your profile - with default image (your logotype)",
+                        "description": "We designed some default graphics that is shared each time your profile link is posted on social websites. "
                     },
                     "opengraph_image": {
-                        "title": "Persönlich erstellter Link mit persönlich erstellten Grafiken",
-                        "description": "Wählt die beste Option: persönlich erstellte Grafiken hochladen welche mit eurem Link geteilt werden können."
+                        "title": "Custom link with custom graphics",
+                        "description": "Do you want to excel? Upload custom graphics that will be shared when using this link."
                     }
                 },
                 "actions": {
@@ -1371,8 +2071,8 @@ const languages = {
                     "copy_tracking_link_to_clipboard": "Copy tracking link to clipboard",
                     "copy_embed_code": "Copy embed code",
                     "preview": "Preview",
-                    "jumpto": "Jump to Profile",
-                    "close": "Close"
+                    "close": "Close",
+                    "jumpto": "Jump to Profile"
                 },
                 "types": {
                     "link": {
@@ -1381,8 +2081,8 @@ const languages = {
                 }
             },
             "newsletters": {
-                "menu": "Newsletter Vorlagen",
-                "name": "Newsletter Vorlagen",
+                "menu": "Newsletter templates",
+                "name": "Newsletter templates",
                 "fields": {
                     "name": "Internal name of newsletter",
                     "data": {
@@ -1396,7 +2096,7 @@ const languages = {
                 "menu": "RSVPs",
                 "name": "RSVPs",
                 "limit": " %{limit} invite(s) left.",
-                "subtitle": "Du erhältst zunächst 5 Einladungen für Meetings. Für jeweils 5 Punkte in der Platzierung, erhältst du eine weitere Einladung. - z.B. Eine Firma mit 50 Punkten gewinnt 10 weitere Einladungen. ",
+                "subtitle": "Your start limit is 5 invites. For every 5 pts in the Ranking you earn 1 additional invite, i.e. company with 50 pts should have 10 invites.",
                 "noresults": "Navigate to Browse participants to invite some people.",
                 "noresultsmore": "",
                 "fields": {
@@ -1404,7 +2104,6 @@ const languages = {
                     "message_create": "Type in your message",
                     "creative_id": "Choose your template",
                     "comment": "Private comment",
-                    "participant_id": "",
                     "status": {
                         "agreed": "Confirmed",
                         "rejected": "Rejected",
@@ -1418,12 +2117,13 @@ const languages = {
                         "name": "Name",
                         "profile": {
                             "title": "Check invitation details",
-                            "fname": "Vorname",
-                            "lname": "Nachname",
-                            "cname2": "Firma",
+                            "fname": "First name",
+                            "lname": "Last name",
+                            "cname2": "Company name",
                             "position": "Position"
                         }
-                    }
+                    },
+                    "participant_id": ""
                 },
                 "tabs": {
                     "form": "Create new meeting request",
@@ -1433,12 +2133,12 @@ const languages = {
             "campaigns": {
                 "menu": "Email campaigns",
                 "name": "Email campaigns",
-                "creative": "Create new campaign",
                 "noresults": "This feature is not yet enabled for your company.",
                 "noresultsmore": "However...",
+                "creative": "Create new campaign",
                 "fields": {
-                    "fname": "Vorname",
-                    "lname": "Nachname",
+                    "fname": "First name",
+                    "lname": "Last name",
                     "cname2": "Company",
                     "position": "Position",
                     "name": "Name",
@@ -1481,10 +2181,10 @@ const languages = {
                     "comment": "Comment",
                     "contactlist_ids": "Lists",
                     "data": {
-                        "fname": "Vorname",
-                        "lname": "Nachname",
+                        "fname": "First name",
+                        "lname": "Last name",
                         "phone": "Phone",
-                        "cname2": "Firma",
+                        "cname2": "Company name",
                         "position": "Job position",
                         "linkedin": "Linkedin",
                         "twitter": "Twitter",
@@ -1499,8 +2199,8 @@ const languages = {
                 }
             },
             "visitors": {
-                "menu": "Teilnehmer finden",
-                "name": "Teilnehmer finden",
+                "menu": "Browse participants",
+                "name": "Browse participants",
                 "tabs": {
                     "invitation": "Send invitation",
                     "subject": "Subject",
@@ -1512,9 +2212,9 @@ const languages = {
                 "fields": {
                     "creative": "Select newsletter",
                     "profile": {
-                        "fname": "Vorname",
-                        "lname": "Nachname",
-                        "cname2": "Firma",
+                        "fname": "First name",
+                        "lname": "Last name",
+                        "cname2": "Company name",
                         "position": "Position",
                         "domain": "Domain"
                     }
