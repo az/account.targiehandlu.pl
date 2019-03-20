@@ -12,7 +12,7 @@ const CustomField = ({basePath, record, resource, translate, locale}) => {
 
         <ul>
         <li>{translate("common.sales.ends")}: {record.end}</li>
-        <li>{translate("common.sales.remaining")}: {record.remaining}</li>
+        <li>{`${translate("common.sales.bookable")}: ${record.bookable} ${translate("common.sales.pcs")}`}</li>
         </ul>
 
         <p style={{marginTop : 10, marginBottom: 10}}>

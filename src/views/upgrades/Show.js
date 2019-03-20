@@ -27,6 +27,29 @@ MyImageField.defaultProps = {
   record : {}
 }
 
+const Purchases = (props) => {
+
+  const {record} = props;
+    
+  if("purchase_ids" in record && Array.isArray(record.purchase_ids) && !record.purchase_ids.length){
+    return null;
+  }
+
+  return (
+  <ReferenceManyField {...props} label="Purchases" reference="purchases" target="ticket_id">
+
+  <Datagrid>
+
+    <DateField source="ts" label="Date" sortable={false} />
+    <PurchaseTicketsField showItems={false} source="items" sortable={false} />
+    <AmountField source="amount" sortable={false} />
+    <PurchaseStatusField source="status" sortable={false} />
+    <ModifyPurchaseField sortable={false} />
+
+  </Datagrid>
+</ReferenceManyField>
+)}
+
 const ViewEdit = (props) => (
 
   <Show {...props}
@@ -37,18 +60,7 @@ const ViewEdit = (props) => (
 
     <SimpleShowLayout>
       
-      <ReferenceManyField label="Purchases" reference="purchases" target="ticket_id">
-
-        <Datagrid>
-
-          <DateField source="ts" label="Date" sortable={false} />
-          <PurchaseTicketsField showItems={false} source="items" sortable={false} />
-          <AmountField source="amount" sortable={false} />
-          <PurchaseStatusField source="status" sortable={false} />
-          <ModifyPurchaseField sortable={false} />
-
-        </Datagrid>
-      </ReferenceManyField>
+      <Purchases />
     
       <CustomField />
       <MyImageField  />
