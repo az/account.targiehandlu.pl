@@ -337,6 +337,15 @@ const languages = {
                         "name": "Carpet",
                         "description": "Only for standard (not Grand) booths - 3x2m. The Expo floor is made of concrete. If you want your booth to look different you can choose from 6 different carpet colours.",
                         "specs": "To complete this order let us know which colour you've chosen at: booths@targiehandlu.pl"
+                    },
+                    "chair": {
+                        "description": "Do you need more chairs for your representatives? Choose this option and additional hocker will be waiting for you at your booth. Picture below is for illustration purpose only. ",
+                        "specs": "Remember that 2 hockers and 1 cocktail table are already included in the standard package.\n"
+                    },
+                    "table": {
+                        "name": "1 cocktail table",
+                        "description": "Do you need more tables for your representatives and company's gadgets? Choose this option and additional table will be waiting for you at your booth. Picture below is for illustration purpose only. ",
+                        "specs": "Remember that 2 hockers and 1 cocktail table are already included in the standard package."
                     }
                 },
                 "misc": {
@@ -362,22 +371,13 @@ const languages = {
                     },
                     "catering": {
                         "name": "Additional catering voucher",
-                        "description": "1 catering voucher for lunch.",
+                        "description": "Additional catering voucher for lunch.",
                         "specs": "Remember that 4 catering vouchers are already included in the standard package."
                     },
                     "parking": {
                         "name": "Additional parking card",
                         "description": "1 parking card is valid for 1 car only on the assembly day and on the day of the Expo.",
                         "specs": "Remember that 1 parking card is already included in the standard package."
-                    },
-                    "chair": {
-                        "description": "Do you need more chairs for your representatives? Choose this option and additional hocker will be waiting for you at your booth. Picture below is for illustration purpose only. ",
-                        "specs": "Remember that 2 hockers and 1 cocktail table are already included in the standard package.\n"
-                    },
-                    "table": {
-                        "name": "1 cocktail table",
-                        "description": "Do you need more tables for your representatives and company's gadgets? Choose this option and additional table will be waiting for you at your booth. Picture below is for illustration purpose only. ",
-                        "specs": "Remember that 2 hockers and 1 cocktail table are already included in the standard package."
                     }
                 },
                 "actions": {
@@ -770,7 +770,7 @@ const languages = {
         },
         " resources": {
             "upgrades": {
-                "misc": {
+                "booth": {
                     "chair": {
                         "name": "1 Hocker"
                     }
@@ -1116,6 +1116,15 @@ const languages = {
                         "name": "Wykładzina",
                         "description": "DOTYCZY TYLKO STOISK 3x2m (stoiska standardowe). Na podłodze hali położony jest beton techniczny. Jeżeli chcesz żeby Twoje stoisko wyglądało inaczej możesz wybrać wykładzinę w jednym z sześciu kolorów.",
                         "specs": "Prosimy o wysłanie wiadomości z wybranym kolorem wykładziny na adres booths@targiehandlu.pl"
+                    },
+                    "chair": {
+                        "description": "Potrzebujesz więcej krzeseł dla swoich przedstawicieli? Wybierz tę opcję, a dodatkowy stołek barowy będzie czekał na Ciebie na stoisku. Zdjęcie poniżej ma jedynie charakter poglądowy",
+                        "specs": "Pamiętaj, że w podstawowym pakiecie otrzymujesz 2 stołki barowe i 1 stolik koktajlowy."
+                    },
+                    "table": {
+                        "name": "1 stolik koktajlowy",
+                        "description": "Potrzebujesz więcej stolików do rozmów i rozłożenia materiałów promocyjnych? Wybierz tę opcję, a dodatkowy stolik będzie czekał na Ciebie na stoisku. Zdjęcie poniżej ma jedynie charakter poglądowy",
+                        "specs": "Pamiętaj, że w podstawowym pakiecie otrzymujesz 2 stołki barowe i 1 stolik koktajlowy."
                     }
                 },
                 "misc": {
@@ -1141,22 +1150,13 @@ const languages = {
                     },
                     "catering": {
                         "name": "Dodatkowy voucher cateringowy",
-                        "description": "1 voucher cateringowy na lunch.",
+                        "description": "Dodatkowy voucher cateringowy na lunch.",
                         "specs": "Pamiętaj, że w podstawowym pakiecie otrzymujesz 4 vouchery cateringowe."
                     },
                     "parking": {
                         "name": "Dodatkowa karta parkingowa",
                         "description": "1 karta parkingowa jest ważna na 1 samochód podczas dnia montażowego oraz w dzień Targów.",
                         "specs": "Pamiętaj, że w podstawowym pakiecie otrzymujesz 1 kartę parkingową."
-                    },
-                    "chair": {
-                        "description": "Potrzebujesz więcej krzeseł dla swoich przedstawicieli? Wybierz tę opcję, a dodatkowy stołek barowy będzie czekał na Ciebie na stoisku. Zdjęcie poniżej ma jedynie charakter poglądowy",
-                        "specs": "Pamiętaj, że w podstawowym pakiecie otrzymujesz 2 stołki barowe i 1 stolik koktajlowy."
-                    },
-                    "table": {
-                        "name": "1 stolik koktajlowy",
-                        "description": "Potrzebujesz więcej stolików do rozmów i rozłożenia materiałów promocyjnych? Wybierz tę opcję, a dodatkowy stolik będzie czekał na Ciebie na stoisku. Zdjęcie poniżej ma jedynie charakter poglądowy",
-                        "specs": "Pamiętaj, że w podstawowym pakiecie otrzymujesz 2 stołki barowe i 1 stolik koktajlowy."
                     }
                 },
                 "actions": {
@@ -1549,7 +1549,7 @@ const languages = {
         },
         " resources": {
             "upgrades": {
-                "misc": {
+                "booth": {
                     "chair": {
                         "name": "1 Stołek barowy"
                     }
@@ -1895,6 +1895,15 @@ const languages = {
                         "name": "Carpet",
                         "description": "Only for standard (not Grand) booths - 3x2m. The Expo floor is made of concrete. If you want your booth to look different you can choose from 6 different carpet colours.",
                         "specs": "To complete this order let us know which colour you've chosen at: booths@targiehandlu.pl"
+                    },
+                    "chair": {
+                        "description": "Do you need more chairs for your representatives? Choose this option and additional hocker will be waiting for you at your booth. Picture below is for illustration purpose only. ",
+                        "specs": "Remember that 2 hockers and 1 cocktail table are already included in the standard package."
+                    },
+                    "table": {
+                        "name": "1 cocktail table",
+                        "description": "Do you need more tables for your representatives and company's gadgets? Choose this option and additional table will be waiting for you at your booth. Picture below is for illustration purpose only. ",
+                        "specs": "Remember that 2 hockers and 1 cocktail table are already included in the standard package."
                     }
                 },
                 "misc": {
@@ -1920,22 +1929,13 @@ const languages = {
                     },
                     "catering": {
                         "name": "Additional catering voucher",
-                        "description": "1 catering voucher for lunch.",
+                        "description": "Additional catering voucher for lunch.",
                         "specs": "Remember that 4 catering vouchers are already included in the standard package."
                     },
                     "parking": {
                         "name": "Additional parking card",
                         "description": "1 parking card is valid for 1 car only on the assembly day and on the day of the Expo.",
                         "specs": "Remember that 1 parking card is already included in the standard package."
-                    },
-                    "chair": {
-                        "description": "Do you need more chairs for your representatives? Choose this option and additional hocker will be waiting for you at your booth. Picture below is for illustration purpose only. ",
-                        "specs": "Remember that 2 hockers and 1 cocktail table are already included in the standard package."
-                    },
-                    "table": {
-                        "name": "1 cocktail table",
-                        "description": "Do you need more tables for your representatives and company's gadgets? Choose this option and additional table will be waiting for you at your booth. Picture below is for illustration purpose only. ",
-                        "specs": "Remember that 2 hockers and 1 cocktail table are already included in the standard package."
                     }
                 },
                 "actions": {
@@ -2328,7 +2328,7 @@ const languages = {
         },
         " resources": {
             "upgrades": {
-                "misc": {
+                "booth": {
                     "chair": {
                         "name": "1 Hocker"
                     }
