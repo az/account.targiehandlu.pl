@@ -1,18 +1,25 @@
 import React from 'react'
 import { put, takeEvery, all, call } from 'redux-saga/effects';
-import { refreshUserData } from '../../helpers';
+import {
+  CRUD_CREATE_SUCCESS,
+  CRUD_UPDATE_SUCCESS,
+  showNotification
+} from 'admin-on-rest';
 import { push } from 'react-router-redux';
-import { showNotification } from 'admin-on-rest';
 import get from 'lodash/get'
-import {UPGRADE_CREATE_SUCCESS} from '../types'
+
+
+
+import { refreshUserData } from '../../helpers';
+
+import {
+  PURCHASE_CREATE_SUCCESS,
+  PURCHASE_UPDATE_SUCCESS
+} from '../types'
+
 import {showModal} from '../actions';
 import slack from '../../services/slack';
 import ConfirmationBox from '../../views/upgrades/ConfirmationBox'
-
-import {
-  CRUD_CREATE_SUCCESS,
-  CRUD_UPDATE_SUCCESS
-} from 'admin-on-rest';
 
 
 function* handleSlackNotification({meta, payload, requestPayload}) {
@@ -41,19 +48,32 @@ function* onResourceUpdate(data) {
   }
 }
 
-function* onUpgradeCreateSuccess({payload}){
+function* onPurchaseCreateSuccess({payload}){
 
   yield put(showNotification('common.statuses.success'));
   yield put(push('/upgrades'));
   yield put(showModal({
     title : "Status",
-    body : <ConfirmationBox data={payload} />
+    body : <ConfirmationBox action="buy" data={payload} />
+  }))
+}
+
+function* onPurchaseUpdateSuccess({payload}){
+
+  yield put(showNotification('common.statuses.success'));
+  yield put(push('/upgrades'));
+  yield put(showModal({
+    title : "Status",
+    body : <ConfirmationBox action="remove" data={payload} />
   }))
 }
 
 export default function* saga() {
   yield all([
-    takeEvery(UPGRADE_CREATE_SUCCESS, onUpgradeCreateSuccess),
+
+    takeEvery(PURCHASE_CREATE_SUCCESS, onPurchaseCreateSuccess),
+    takeEvery(PURCHASE_UPDATE_SUCCESS, onPurchaseUpdateSuccess),
+
     takeEvery(CRUD_UPDATE_SUCCESS, onResourceUpdate),
     takeEvery(CRUD_CREATE_SUCCESS, handleSlackNotification),
     takeEvery(CRUD_UPDATE_SUCCESS, handleSlackNotification)

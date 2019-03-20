@@ -176,10 +176,6 @@ show={hasAccessTo(permissions, "upgrades", "edit") ? UpgradeShow : null}
 />,
 
 <Resource
-name="tasks"
-/>,
-
-<Resource
 name="contactlists"
 list={hasAccessTo(permissions, "contactlists", "list") ? ContactlistList : null}
 edit={hasAccessTo(permissions, "contactlists", "edit") ? ContactlistEdit : null}
@@ -230,7 +226,11 @@ create={hasAccessTo(permissions, "contactlists", "create") ? ContactlistCreate :
   options={{ label: 'Scans' }}
   list={hasAccessTo(permissions, "scans", "list") ? ScanList : null}
   edit={hasAccessTo(permissions, "scans", "edit") ? ScanEdit : null}
-/>
+/>,
+
+<Resource name="tasks" />,
+
+<Resource name="purchases" />
 
        ]} 
       </Admin>

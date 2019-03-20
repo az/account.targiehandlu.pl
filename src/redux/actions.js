@@ -5,16 +5,30 @@ import {
   SHOW_MODAL,
   CLOSE_MODAL,
   RESOURCE_LIMIT_SHOW,
-  UPGRADE_CREATE
+  PURCHASE_CREATE,
+  PURCHASE_UPDATE
 } from './types';
 
-import { CREATE } from 'admin-on-rest';
+import { CREATE, UPDATE } from 'admin-on-rest';
 
-export const upgradeCreate = (data, basePath) => ({
-    type: UPGRADE_CREATE,
+export const purchaseCreate = (data, basePath) => ({
+    type: PURCHASE_CREATE,
     payload: { data },
-    meta: { resource: 'upgrades', fetch: CREATE, cancelPrevious: false },
+    meta: { resource: 'purchases', fetch: CREATE, cancelPrevious: false },
 });
+
+// export const purchaseDelete = (id, previousData, basePath) => ({
+//   type: PURCHASE_DELETE,
+//   payload: { id, previousData, basePath},
+//   meta: { resource: 'purchases', fetch: DELETE, cancelPrevious: false },
+// });
+
+export const purchaseUpdate = (id, data, previousData = {}, basePath = "") => ({
+  type: PURCHASE_UPDATE,
+  payload: { id, data, previousData, basePath},
+  meta: { resource: 'purchases', fetch: UPDATE, cancelPrevious: false },
+});
+
 
 export const changeTheme = theme => ({
   type: CHANGE_THEME,
@@ -47,3 +61,6 @@ export const setResponseLimit = (resource, limit) => ({
   resource: resource,
   limit: limit
 });
+
+
+//https://github.com/marmelab/admin-on-rest/blob/c15559c266d449ffc4e39563971822f2f9563bf7/src/actions/dataActions.js

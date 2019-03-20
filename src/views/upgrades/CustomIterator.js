@@ -48,14 +48,14 @@ const CustomIterator = ({ ids, data, basePath, locale, translate, push }) => (
                 overlay={
                 <CardTitle 
                     title={
-                        data[id].bookable > 0  ? 
+                        data[id].bookable > 0 || data[id].booked > 0 ? 
                         `${ get(data[id], `price.${locale}`) } ${locale==="pl" ? "PLN" : "EUR"} ${translate("common.sales.net")}` : 
                         `${translate("common.statuses.unavailable")}`
                     } 
                     subtitle={
                         `
                         ${translate("common.sales.ends")}: ${data[id].end}
-                        ${translate("common.sales.remaining")}: ${data[id].remaining} 
+                        ${translate("common.sales.remaining")}: ${data[id].bookable} 
                         `
                     }
                 />
@@ -95,7 +95,7 @@ const CustomIterator = ({ ids, data, basePath, locale, translate, push }) => (
           
             <CardActions style={{ textAlign: 'right' }}>
                 {/* <ItemStatusField record={data[id]} source="booked" /> */}
-                <ShowButton resource="posts" basePath={basePath} record={data[id]} label="resources.upgrades.actions.details" />
+                <ShowButton resource="upgrades" basePath={basePath} record={data[id]} label="resources.upgrades.actions.details" />
             </CardActions>
         </Card>
         )

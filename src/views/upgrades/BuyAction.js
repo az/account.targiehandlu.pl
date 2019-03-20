@@ -3,7 +3,7 @@ import {
     translate
 } from 'admin-on-rest';
 import RaisedButton from 'material-ui/RaisedButton';
-import {Cart, Check, Cancel, Pencil} from 'mdi-material-ui'
+import {Cart} from 'mdi-material-ui'
 import {connect} from 'react-redux'
 import compose from 'recompose/compose'
 import {showModal} from '../../redux/actions';
@@ -26,56 +26,32 @@ class BuyAction extends React.Component {
 
         const {translate, data} = this.props    
 
-        if("booked" in data && data.booked > 0){
-        
-            if(data.changeable){
+        if("bookable" in data && data.bookable > 0){
+                
+            return  (<RaisedButton
+                primary
+                label={
+                    ("booked" in data && data.booked > 0) ? 
+                    translate(`common.statuses.buy_more`) :
+                    translate(`common.statuses.buy`)
+                }
+                icon={<Cart />}
+                onClick={this.handleClick}
+                />
+            )
 
-                return  (<RaisedButton
-                    primary
-                    label={translate(`common.actions.modify`, {
-                        smart_count : data.booked
-                    })}
-                    icon={<Pencil />}
-                    onClick={this.handleClick}
-                    />
-                )
-
-            }else{
-                return  (<RaisedButton
-                    disabled={true}
-                    primary
-                    disabledBackgroundColor="green"
-                    disabledLabelColor="#cccccc"
-                    label={translate(`common.statuses.already_bought`, {
-                        smart_count : data.booked
-                    })}
-                    icon={<Check />}
-                   
-                    />
-                )
-            }
+        }
+        else{
+            
+            return  (<RaisedButton
+                disabled={true}
+                primary
+                label={translate(`common.statuses.unavailable`)}
+                icon={<Cart />}
+              />)
+            
         }
 
-
-        if("bookable" in data && data.bookable <= 0){
-
-            return  (<RaisedButton
-            disabled={true}
-            primary
-            label={translate(`common.statuses.unavailable`)}
-            icon={<Cancel />}
-          />)
-       }
-
-
-        return (
-            <RaisedButton
-            primary
-            label={translate(`common.actions.buy`)}
-            icon={<Cart />}
-            onClick={this.handleClick}
-          />
-        )
     }
 
 }
