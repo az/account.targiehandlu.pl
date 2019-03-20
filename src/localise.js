@@ -320,7 +320,7 @@ const languages = {
                     },
                     "counter": {
                         "name": "Fullprint counter",
-                        "description": "This is a recommended option if you have your branding/advertising elements like textile ad wall or roll-ups. This option is a cost-saver and provides some luxury :) (flooring) and convenience (counter)",
+                        "description": "This is a recommended option if you have your branding/advertising elements (like textile ad wall or roll-ups) but still want to have a traditional counter at your booth. ",
                         "specs": "To complete this order we need some graphic design! Please prepare them and send to booths@targiehandlu.pl. Counter - 100x100cm, TIFF, 120dpi (scale 1:1) "
                     },
                     "flooring": {
@@ -361,22 +361,22 @@ const languages = {
                         "specs": ""
                     },
                     "catering": {
-                        "name": "1 catering voucher",
+                        "name": "Additional catering voucher",
                         "description": "1 catering voucher for lunch.",
                         "specs": "Remember that 4 catering vouchers are already included in the standard package."
                     },
                     "parking": {
-                        "name": "1 parking card",
+                        "name": "Additional parking card",
                         "description": "1 parking card is valid for 1 car only on the assembly day and on the day of the Expo.",
                         "specs": "Remember that 1 parking card is already included in the standard package."
                     },
                     "chair": {
-                        "description": "Do you need more chairs for your representatives? Choose this option and additional hocker will be waiting for you at your booth.",
+                        "description": "Do you need more chairs for your representatives? Choose this option and additional hocker will be waiting for you at your booth. Picture below is for illustration purpose only. ",
                         "specs": "Remember that 2 hockers and 1 cocktail table are already included in the standard package.\n"
                     },
                     "table": {
                         "name": "1 cocktail table",
-                        "description": "Do you need more tables for your representatives and company's gadgets? Choose this option and additional table will be waiting for you at your booth.",
+                        "description": "Do you need more tables for your representatives and company's gadgets? Choose this option and additional table will be waiting for you at your booth. Picture below is for illustration purpose only. ",
                         "specs": "Remember that 2 hockers and 1 cocktail table are already included in the standard package."
                     }
                 },
@@ -1099,7 +1099,7 @@ const languages = {
                     },
                     "counter": {
                         "name": "Lada z nadrukiem",
-                        "description": "Opcja dla firm, które dysponują własnymi elementami brandingowymi -  na przykład reklamową ścianką tekstylną wielorazowego użytku.",
+                        "description": "Doskonała opcja dla firm, które dysponują własnymi elementami brandingowymi ale zależy im na klasycznej ladzie z nadrukiem.",
                         "specs": "Musimy otrzymać od Ciebie pliki do wydruków na adres booths@targiehandlu.pl. Specyfikacja pliku do druku: projekt 100x100cm, TIFF, 120dpi (skala 1:1)"
                     },
                     "flooring": {
@@ -1140,22 +1140,22 @@ const languages = {
                         "specs": ""
                     },
                     "catering": {
-                        "name": "1 voucher cateringowy",
+                        "name": "Dodatkowy voucher cateringowy",
                         "description": "1 voucher cateringowy na lunch.",
                         "specs": "Pamiętaj, że w podstawowym pakiecie otrzymujesz 4 vouchery cateringowe."
                     },
                     "parking": {
-                        "name": "1 karta parkingowa",
+                        "name": "Dodatkowa karta parkingowa",
                         "description": "1 karta parkingowa jest ważna na 1 samochód podczas dnia montażowego oraz w dzień Targów.",
                         "specs": "Pamiętaj, że w podstawowym pakiecie otrzymujesz 1 kartę parkingową."
                     },
                     "chair": {
-                        "description": "Potrzebujesz więcej krzeseł dla swoich przedstawicieli? Wybierz tę opcję, a dodatkowy stołek barowy będzie czekał na Ciebie na stoisku.",
+                        "description": "Potrzebujesz więcej krzeseł dla swoich przedstawicieli? Wybierz tę opcję, a dodatkowy stołek barowy będzie czekał na Ciebie na stoisku. Zdjęcie poniżej ma jedynie charakter poglądowy",
                         "specs": "Pamiętaj, że w podstawowym pakiecie otrzymujesz 2 stołki barowe i 1 stolik koktajlowy."
                     },
                     "table": {
                         "name": "1 stolik koktajlowy",
-                        "description": "Potrzebujesz więcej stolików do rozmów i rozłożenia materiałów promocyjnych? Wybierz tę opcję, a dodatkowy stolik będzie czekał na Ciebie na stoisku.",
+                        "description": "Potrzebujesz więcej stolików do rozmów i rozłożenia materiałów promocyjnych? Wybierz tę opcję, a dodatkowy stolik będzie czekał na Ciebie na stoisku. Zdjęcie poniżej ma jedynie charakter poglądowy",
                         "specs": "Pamiętaj, że w podstawowym pakiecie otrzymujesz 2 stołki barowe i 1 stolik koktajlowy."
                     }
                 },
@@ -1878,7 +1878,7 @@ const languages = {
                     },
                     "counter": {
                         "name": "Fullprint counter",
-                        "description": "This is a recommended option if you have your branding/advertising elements like textile ad wall or roll-ups. This option is a cost-saver and provides some luxury :) (flooring) and convenience (counter)",
+                        "description": "This is a recommended option if you have your branding/advertising elements (like textile ad wall or roll-ups) but still want to have a traditional counter at your booth. ",
                         "specs": "To complete this order we need some graphic design! Please prepare them and send to booths@targiehandlu.pl. Counter - 100x100cm, TIFF, 120dpi (scale 1:1) "
                     },
                     "flooring": {
@@ -1919,22 +1919,22 @@ const languages = {
                         "specs": ""
                     },
                     "catering": {
-                        "name": "1 catering voucher",
+                        "name": "Additional catering voucher",
                         "description": "1 catering voucher for lunch.",
                         "specs": "Remember that 4 catering vouchers are already included in the standard package."
                     },
                     "parking": {
-                        "name": "1 parking card",
+                        "name": "Additional parking card",
                         "description": "1 parking card is valid for 1 car only on the assembly day and on the day of the Expo.",
                         "specs": "Remember that 1 parking card is already included in the standard package."
                     },
                     "chair": {
-                        "description": "Do you need more chairs for your representatives? Choose this option and additional hocker will be waiting for you at your booth.",
+                        "description": "Do you need more chairs for your representatives? Choose this option and additional hocker will be waiting for you at your booth. Picture below is for illustration purpose only. ",
                         "specs": "Remember that 2 hockers and 1 cocktail table are already included in the standard package."
                     },
                     "table": {
                         "name": "1 cocktail table",
-                        "description": "Do you need more tables for your representatives and company's gadgets? Choose this option and additional table will be waiting for you at your booth.",
+                        "description": "Do you need more tables for your representatives and company's gadgets? Choose this option and additional table will be waiting for you at your booth. Picture below is for illustration purpose only. ",
                         "specs": "Remember that 2 hockers and 1 cocktail table are already included in the standard package."
                     }
                 },

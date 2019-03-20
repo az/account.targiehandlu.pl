@@ -18,7 +18,7 @@ export default translate(({ style, translate }) => (
 
     <div style={{margin: 10, paddingBottom: 50}}>
 
-      <SectionTitle label="tutorials.competition.title" />
+     {/* <SectionTitle label="tutorials.competition.title" />
 
        <iframe 
         width="800" 
@@ -37,7 +37,7 @@ export default translate(({ style, translate }) => (
         allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" 
         allowfullscreen />
 
-
+      */}
         
 
       {/* <Contact /> */}
