@@ -339,6 +339,7 @@ const languages = {
                         "specs": "To complete this order let us know which colour you've chosen at: booths@targiehandlu.pl"
                     },
                     "chair": {
+                        "name": "1 Hocker",
                         "description": "Do you need more chairs for your representatives? Choose this option and additional hocker will be waiting for you at your booth. Picture below is for illustration purpose only. ",
                         "specs": "Remember that 2 hockers and 1 cocktail table are already included in the standard package.\n"
                     },
@@ -767,15 +768,6 @@ const languages = {
                 "menu": "Purchases",
                 "name": "Purchases"
             }
-        },
-        " resources": {
-            "upgrades": {
-                "booth": {
-                    "chair": {
-                        "name": "1 Hocker"
-                    }
-                }
-            }
         }
     },
     "pl": {
@@ -1118,6 +1110,7 @@ const languages = {
                         "specs": "Prosimy o wysłanie wiadomości z wybranym kolorem wykładziny na adres booths@targiehandlu.pl"
                     },
                     "chair": {
+                        "name": "1 Stołek barowy",
                         "description": "Potrzebujesz więcej krzeseł dla swoich przedstawicieli? Wybierz tę opcję, a dodatkowy stołek barowy będzie czekał na Ciebie na stoisku. Zdjęcie poniżej ma jedynie charakter poglądowy",
                         "specs": "Pamiętaj, że w podstawowym pakiecie otrzymujesz 2 stołki barowe i 1 stolik koktajlowy."
                     },
@@ -1546,15 +1539,6 @@ const languages = {
                 "menu": "Zamówienia",
                 "name": "Zamówienia"
             }
-        },
-        " resources": {
-            "upgrades": {
-                "booth": {
-                    "chair": {
-                        "name": "1 Stołek barowy"
-                    }
-                }
-            }
         }
     },
     "de": {
@@ -1897,6 +1881,7 @@ const languages = {
                         "specs": "To complete this order let us know which colour you've chosen at: booths@targiehandlu.pl"
                     },
                     "chair": {
+                        "name": "1 Hocker",
                         "description": "Do you need more chairs for your representatives? Choose this option and additional hocker will be waiting for you at your booth. Picture below is for illustration purpose only. ",
                         "specs": "Remember that 2 hockers and 1 cocktail table are already included in the standard package."
                     },
@@ -2325,18 +2310,8 @@ const languages = {
                 "menu": "Purchases",
                 "name": "Purchases"
             }
-        },
-        " resources": {
-            "upgrades": {
-                "booth": {
-                    "chair": {
-                        "name": "1 Hocker"
-                    }
-                }
-            }
         }
     }
 }
-
 
 export default languages
