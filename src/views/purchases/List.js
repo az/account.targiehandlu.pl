@@ -31,7 +31,7 @@ const ViewList = props => (
     <Datagrid>
 
       <DateField source="ts" label="Date" sortable={false} />
-      <PurchaseTicketsField showItems={true} source="quantity" sortable={false} />
+      <PurchaseTicketsField showItems={true} source="items" sortable={false} />
       <AmountField source="amount" sortable={false} />
       <PurchaseStatusField source="status" sortable={false} />
       <ModifyPurchaseField sortable={false} />
