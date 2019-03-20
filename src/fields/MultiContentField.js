@@ -12,7 +12,7 @@ const isHTML = (str = "") => str && /<[a-z][\s\S]*>/i.test(str)
 const stripTags = html => {
    var tmp = document.createElement("DIV");
    tmp.innerHTML = html;
-   return tmp.textContent || tmp.innerText || "";
+   return (tmp.textContent || tmp.innerText || "").substr(0, 100);
 }
 
 const styles = {

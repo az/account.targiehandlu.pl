@@ -5,7 +5,7 @@ const PurchaseTicketsField = ({basePath, record, resource, translate, locale}) =
 
     return Array.isArray(record.tickets) ? 
 
-        record.tickets.map(ticket => <span>{`${ticket.quantity} ${translate("common.sales.pcs")}`}<br/></span>)
+        record.tickets.map(ticket => <span key={ticket.id}>{`${ticket.quantity} ${translate("common.sales.pcs")}`}<br/></span>)
  : null
 }
 
