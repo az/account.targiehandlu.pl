@@ -51,7 +51,7 @@ function* onResourceUpdate(data) {
 function* onPurchaseCreateSuccess({payload}){
 
   yield put(showNotification('common.statuses.success'));
- // yield put(push('/upgrades'));
+  yield put(push('/purchases'));
   yield put(showModal({
     title : "Status",
     body : <ConfirmationBox action="buy" data={payload} />
@@ -61,7 +61,7 @@ function* onPurchaseCreateSuccess({payload}){
 function* onPurchaseUpdateSuccess({payload}){
 
   yield put(showNotification('common.statuses.success'));
- // yield put(push('/upgrades'));
+  yield put(push('/purchases'));
   yield put(showModal({
     title : "Status",
     body : <ConfirmationBox action="remove" data={payload} />
