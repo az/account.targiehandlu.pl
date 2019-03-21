@@ -3,7 +3,9 @@ import {translate} from 'admin-on-rest'
 
 const AmountField = ({basePath, record, resource, translate, locale}) => {
 
-    return `${record.amount} ${locale==="pl" ? "PLN" : "EUR"} ${translate("common.sales.net")}` 
+    const currency = "locale" in record && record.locale === "en" ? "EUR" : "PLN"; 
+
+    return `${record.amount} ${currency} ${translate("common.sales.net")}` 
 }
 
 AmountField.defaultProps = {
