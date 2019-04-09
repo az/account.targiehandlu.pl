@@ -78,7 +78,7 @@ class Newsletter extends React.Component {
 
           {newsletter && (
             <div>
-              <Iframe src={`data:text/html, ${newsletter}`} />
+              <Iframe src={`data:text/html;base64,${newsletter}`} />
 
               <CardActions>
                 <PrimaryButton
@@ -100,7 +100,7 @@ class Newsletter extends React.Component {
                 />
 
                 <CopyToClipboardButton
-                  text={newsletter}
+                  text={ atob(newsletter) }
                   label={translate("resources.creatives.actions.copy_html_to_clipboard")}
                 />
               </CardActions>
