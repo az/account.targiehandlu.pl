@@ -74,8 +74,8 @@ const languages = {
             },
             "input": {
                 "image": {
-                    "upload_several": "",
-                    "upload_single": ""
+                    "upload_several": "Upuść pliki tutaj lub naciśnij, aby załadować.",
+                    "upload_single": "Upuść plik tutaj lub naciśnij, aby załadować."
                 }
             }
         },
@@ -96,7 +96,7 @@ const languages = {
                 "description": "Need assistance? Some features are not so self-explanatory? Im ready to help, just let me know I am needed :)"
             },
             "sections": {
-                "suggest_a_meeting": ""
+                "suggest_a_meeting": "Zaproś do stoiska"
             }
         },
         "common": {
@@ -220,6 +220,10 @@ const languages = {
                 "title": "A guest article on the ehandelmag.com portal",
                 "description": "One-time inclusion of company content on the ehandelmag.com portal. The blogpost will be promoted on the Facebook and Twitter channels of the E-Commerce Poland Expo.",
                 "image": ""
+            },
+            "stage": {
+                "title": "Stage Patronage",
+                "description": "Stage patronage means you will be assigned presentation slot and also receive promotional benefits (stage area stickers, logotype in multimedia setting)"
             }
         },
         "fields": {
@@ -266,7 +270,7 @@ const languages = {
                 "equipment": "If you have not ordered additional equipment to your booth, there will be:",
                 "equipment_options": {
                     "hocker": "2 hockers",
-                    "table": "1 cocktail table",
+                    "table": "Additional cocktail table",
                     "voucher": "4 lunch vouchers",
                     "wifi": "WiFi password",
                     "electricity": "electric socket (300 W)"
@@ -286,27 +290,27 @@ const languages = {
                 "country": ", Poland",
                 "deliver_hours": "Delivers of the materials will take place in the following hours:",
                 "date": {
-                    "day_before_event": "April 24 (4:00 PM)",
-                    "event_day": "April 25 (8:00 AM)"
+                    "day_before_event": "April 16th (5:00 PM)",
+                    "event_day": "April 17th (9:00 AM)"
                 },
-                "deliver": "Materials can be delivered to the Expo no earlier than April 23",
+                "deliver": "Materials can be delivered to the Expo no earlier than April 15th",
                 "sped": "The official forwarding agent of the Expo is Transmeble International Sp. z o.o.",
                 "contact_person": "Contact person:",
-                "contact_number": "",
-                "fill_in_form": "",
-                "form": ""
+                "contact_number": "Numer kontaktowy dla Kuriera: +48 690 960 279",
+                "fill_in_form": "Przed nadaniem paczki, wypełnij ",
+                "form": "FORMULARZ"
             },
             "assembly": {
                 "assembly": "Assembly",
                 "disassembly": "Disassembly",
                 "options": {
-                    "day_before_event": "April 24 (from 6:00 PM)",
-                    "event_day": "April 25 (8:00 AM - 9:30 AM)"
+                    "day_before_event": "April 16th (from 6:00 PM to 8:00 PM)",
+                    "event_day": "April 17th (8:00 AM - 9:30 AM)"
                 },
-                "event_day": "April 25 (5:15 PM - 8:00 PM)",
-                "delivery": "",
-                "go_to_info": "",
-                "tape": ""
+                "event_day": "April 17th (5:15 PM - 8:00 PM)",
+                "delivery": "W dniu montażowym wszystkie bramy wjazdowe będą otwarte. Dostawcy będą mogli korzystać z wejścia oznaczonego numerem \"D3\". Zobacz mapkę poniżej:",
+                "go_to_info": "Po przyjściu na halę, udaj się bezpośrednio do punktu INFO - tam dowiesz się co zrobić dalej",
+                "tape": "Pamiętaj, aby podczas montażu używać materiałów nie pozostawiających śladów na podłodze hali. Szczególną uwagę należy zwrócić na taśmę do podklejania wykładziny. Polecamy ETG Imawex."
             }
         },
         "resources": {
@@ -336,16 +340,16 @@ const languages = {
                     },
                     "carpet": {
                         "name": "Carpet",
-                        "description": "Only for standard (not Grand) booths - 3x2m. The Expo floor is made of concrete. If you want your booth to look different you can choose from 6 different carpet colours.",
+                        "description": "The Expo floor is made of concrete. If you want your booth to look different you can choose from 6 different carpet colours.\nOnly for standard (not Grand) booths - 3x2m - for Grand booths please choose 3 items. ",
                         "specs": "To complete this order let us know which colour you've chosen at: booths@targiehandlu.pl"
                     },
                     "chair": {
-                        "name": "1 hocker",
+                        "name": "Additional hocker",
                         "description": "Do you need more chairs for your representatives? Choose this option and additional hocker will be waiting for you at your booth. Picture below is for illustration purpose only. ",
                         "specs": "Remember that 2 hockers and 1 cocktail table are already included in the standard package.\n"
                     },
                     "table": {
-                        "name": "1 cocktail table",
+                        "name": "Additional cocktail table",
                         "description": "Do you need more tables for your representatives and company's gadgets? Choose this option and additional table will be waiting for you at your booth. Picture below is for illustration purpose only. ",
                         "specs": "Remember that 2 hockers and 1 cocktail table are already included in the standard package."
                     }
@@ -461,6 +465,9 @@ const languages = {
                     },
                     "xing": {
                         "name": "Xing profile"
+                    },
+                    "password": {
+                        "name": "Mobile access password"
                     }
                 },
                 "fields": {
@@ -534,9 +541,9 @@ const languages = {
                     }
                 },
                 "list": {
-                    "brand_name": "",
-                    "domain": "",
-                    "points": ""
+                    "brand_name": "Nazwa handlowa",
+                    "domain": "Domena",
+                    "points": "Punkty"
                 }
             },
             "scans": {
@@ -665,7 +672,7 @@ const languages = {
                             "position": "Position"
                         }
                     },
-                    "participant_id": ""
+                    "participant_id": "Uczestnik"
                 },
                 "tabs": {
                     "form": "Create new meeting request",
@@ -802,7 +809,7 @@ const languages = {
                 "dashboard": "Panel główny",
                 "not_found": "Strona nie została znaleziona",
                 "meeting_request": "Wyślij prośbę o spotkanie",
-                "participant_id": "Participant"
+                "participant_id": ""
             },
             "message": {
                 "yes": "Tak",
@@ -992,6 +999,10 @@ const languages = {
                 "title": "Gościnny artykuł na branżowym portalu ehandelmag.com",
                 "description": "Możliwość opublikowania autorskiego artykułu na portalu ehandelmag.com. Wpis będzie promowany na oficjalnych kanałach social media Targów eHandlu.",
                 "image": ""
+            },
+            "stage": {
+                "title": "Patronat nad sceną prezentacyjną",
+                "description": "Patronat nad sceną oznacza uzyskanie slotu prezentacyjnego oraz świadczeń marketingowych - naklejek na ścianach zabudowy sali, GOBO."
             }
         },
         "fields": {
@@ -1038,7 +1049,7 @@ const languages = {
                 "equipment": "Jeżeli nie dokonałeś zamówienia dodatkowego wyposażenia, na Twoim stoisku znajdować się będą:",
                 "equipment_options": {
                     "hocker": "2 hockery",
-                    "table": "1 stolik koktajlowy",
+                    "table": "Dodatkowy stolik koktajlowy",
                     "voucher": "4 vouchery na lunch",
                     "wifi": "hasło do WiFi",
                     "electricity": "gniazdo elektryczne obsługujące maksimum 300W"
@@ -1054,16 +1065,16 @@ const languages = {
             },
             "shipment": {
                 "address": "Adres do wysyłki:",
-                "describe": "XV Targi eHandlu, [nr stoiska, NAZWA FIRMY]",
-                "country": ", Poland",
+                "describe": "EHANDEL [nr stoiska, NAZWA FIRMY]",
+                "country": "",
                 "deliver_hours": "Dostawy materiałów na halę, odbędą się w godzinach:",
                 "date": {
-                    "day_before_event": "24 kwietnia (16:00)",
-                    "event_day": "25 kwietnia (8:00)"
+                    "day_before_event": "16 kwietnia (17:00)",
+                    "event_day": "17 kwietnia (9:00)"
                 },
-                "deliver": "Doręczenie materiałów przez Kuriera na teren EXPO może odbyć się nie wcześniej niż 23 kwietnia",
+                "deliver": "Doręczenie materiałów przez Kuriera na teren EXPO może odbyć się nie wcześniej niż 15 kwietnia",
                 "sped": "Oficjalnym Spedytorem Targów jest firma Transmeble International Sp. z o.o.",
-                "contact_person": "Contact person:",
+                "contact_person": "",
                 "contact_number": "Numer kontaktowy dla Kuriera: +48 690 960 279",
                 "fill_in_form": "Przed nadaniem paczki, wypełnij ",
                 "form": "FORMULARZ"
@@ -1072,10 +1083,10 @@ const languages = {
                 "assembly": "Montaż",
                 "disassembly": "Demontaż",
                 "options": {
-                    "day_before_event": "6 listopada  (16:00 - 20:00)",
-                    "event_day": "7 listopada (8:00 - 9:30)"
+                    "day_before_event": "16 kwietnia (16:00 - 20:00)",
+                    "event_day": "17 kwietnia (8:00 - 9:30)"
                 },
-                "event_day": "7 listopada (17:15 - 20:00)",
+                "event_day": "17 kwietnia (17:15 - 20:00)",
                 "delivery": "W dniu montażowym wszystkie bramy wjazdowe będą otwarte. Dostawcy będą mogli korzystać z wejścia oznaczonego numerem \"D3\". Zobacz mapkę poniżej:",
                 "go_to_info": "Po przyjściu na halę, udaj się bezpośrednio do punktu INFO - tam dowiesz się co zrobić dalej",
                 "tape": "Pamiętaj, aby podczas montażu używać materiałów nie pozostawiających śladów na podłodze hali. Szczególną uwagę należy zwrócić na taśmę do podklejania wykładziny. Polecamy ETG Imawex."
@@ -1108,16 +1119,16 @@ const languages = {
                     },
                     "carpet": {
                         "name": "Wykładzina",
-                        "description": "DOTYCZY TYLKO STOISK 3x2m (stoiska standardowe). Na podłodze hali położony jest beton techniczny. Jeżeli chcesz żeby Twoje stoisko wyglądało inaczej możesz wybrać wykładzinę w jednym z sześciu kolorów.",
+                        "description": "Na podłodze hali położony jest beton techniczny. Jeżeli chcesz żeby Twoje stoisko wyglądało inaczej możesz wybrać wykładzinę w jednym z sześciu kolorów.\nDOTYCZY TYLKO STOISK 3x2m (stoiska standardowe) - w przypadku stoisk Grand prosimy o wybór 3 sztuk.",
                         "specs": "Prosimy o wysłanie wiadomości z wybranym kolorem wykładziny na adres booths@targiehandlu.pl"
                     },
                     "chair": {
-                        "name": "1 stołek barowy",
+                        "name": "Dodatkowy stołek barowy",
                         "description": "Potrzebujesz więcej krzeseł dla swoich przedstawicieli? Wybierz tę opcję, a dodatkowy stołek barowy będzie czekał na Ciebie na stoisku. Zdjęcie poniżej ma jedynie charakter poglądowy",
                         "specs": "Pamiętaj, że w podstawowym pakiecie otrzymujesz 2 stołki barowe i 1 stolik koktajlowy."
                     },
                     "table": {
-                        "name": "1 stolik koktajlowy",
+                        "name": "Dodatkowy stolik koktajlowy",
                         "description": "Potrzebujesz więcej stolików do rozmów i rozłożenia materiałów promocyjnych? Wybierz tę opcję, a dodatkowy stolik będzie czekał na Ciebie na stoisku. Zdjęcie poniżej ma jedynie charakter poglądowy",
                         "specs": "Pamiętaj, że w podstawowym pakiecie otrzymujesz 2 stołki barowe i 1 stolik koktajlowy."
                     }
@@ -1233,6 +1244,9 @@ const languages = {
                     },
                     "xing": {
                         "name": "Profil na Xing"
+                    },
+                    "password": {
+                        "name": "Hasło dostępu dla kanały mobilnego"
                     }
                 },
                 "fields": {
@@ -1300,7 +1314,7 @@ const languages = {
                     "stats": "Punkty",
                     "domain": "Domena",
                     "slug": "Domena",
-                    "export": "Export",
+                    "export": "",
                     "profile": {
                         "name": "Nazwa handlowa"
                     }
@@ -1315,7 +1329,7 @@ const languages = {
                 "menu": "Twoje skany",
                 "name": "Twoje skany",
                 "fields": {
-                    "refresh": "refresh",
+                    "refresh": "",
                     "participant": {
                         "profile": {
                             "fname": "Imię",
@@ -1385,12 +1399,12 @@ const languages = {
                     "copy_tracking_link_to_clipboard": "Kopiuj link URL",
                     "copy_embed_code": "Kopiuj kod źródłowy",
                     "preview": "Podgląd",
-                    "close": "Close",
+                    "close": "",
                     "jumpto": "Pokaż profil"
                 },
                 "types": {
                     "link": {
-                        "title": "Your company universal tracking link"
+                        "title": ""
                     }
                 }
             },
@@ -1618,8 +1632,8 @@ const languages = {
             },
             "input": {
                 "image": {
-                    "upload_several": "",
-                    "upload_single": ""
+                    "upload_several": "Upuść pliki tutaj lub naciśnij, aby załadować.",
+                    "upload_single": "Upuść plik tutaj lub naciśnij, aby załadować."
                 }
             }
         },
@@ -1640,7 +1654,7 @@ const languages = {
                 "description": "Need assistance? Some features are not so self-explanatory? Im ready to help, just let me know I am needed :)"
             },
             "sections": {
-                "suggest_a_meeting": ""
+                "suggest_a_meeting": "Zaproś do stoiska"
             }
         },
         "common": {
@@ -1651,29 +1665,29 @@ const languages = {
                 "gross": "includes 23% VAT",
                 "remaining": "Remaining",
                 "pcs": "pcs",
-                "bookable": "remaining"
+                "bookable": "Do kupienia"
             },
             "actions": {
                 "buy": "Buy now!",
-                "modify": "Modify",
-                "buy_more": "Buy more"
+                "modify": "Usuń",
+                "buy_more": "Dokup więcej"
             },
             "statuses": {
                 "unavailable": "Unavailable",
                 "already_bought": "Already bought",
                 "success": "Success!",
                 "cancelled": "Cancelled",
-                "new": "New",
-                "hold": "Waiting for payment",
-                "ok": "Completed",
-                "confirmed": "Confirmed"
+                "new": "Nowe",
+                "hold": "Oczekiwanie na płatność",
+                "ok": "Sfinalizowane",
+                "confirmed": "Potwierdzone"
             },
             "langs": {
                 "pl": "polski",
                 "en": "english",
                 "de": "deutsch"
             },
-            "thankyou": "Thank you"
+            "thankyou": "Dziękujemy"
         },
         "menu": {
             "sections": {
@@ -1764,6 +1778,10 @@ const languages = {
                 "title": "A guest article on the ehandelmag.com portal",
                 "description": "One-time inclusion of company content on the ehandelmag.com portal. The blogpost will be promoted on the Facebook and Twitter channels of the E-Commerce Poland Expo.",
                 "image": ""
+            },
+            "stage": {
+                "title": "Patronat nad sceną prezentacyjną",
+                "description": "Patronat nad sceną oznacza uzyskanie slotu prezentacyjnego oraz świadczeń marketingowych - naklejek na ścianach zabudowy sali, GOBO."
             }
         },
         "fields": {
@@ -1810,7 +1828,7 @@ const languages = {
                 "equipment": "If you have not ordered additional equipment to your booth, there will be:",
                 "equipment_options": {
                     "hocker": "2 hockers",
-                    "table": "1 cocktail table",
+                    "table": "Additional cocktail table",
                     "voucher": "4 lunch vouchers",
                     "wifi": "WiFi password",
                     "electricity": "electric socket (300 W)"
@@ -1830,27 +1848,27 @@ const languages = {
                 "country": ", Poland",
                 "deliver_hours": "Delivers of the materials will take place in the following hours:",
                 "date": {
-                    "day_before_event": "April 24 (4:00 PM)",
-                    "event_day": "April 25 (8:00 AM)"
+                    "day_before_event": "April 16th (5:00 PM)",
+                    "event_day": "April 17th (9:00 AM)"
                 },
-                "deliver": "Materials can be delivered to the Expo no earlier than April 23",
+                "deliver": "Materials can be delivered to the Expo no earlier than April 15th",
                 "sped": "The official forwarding agent of the Expo is Transmeble International Sp. z o.o.",
                 "contact_person": "Contact person:",
-                "contact_number": "",
-                "fill_in_form": "",
-                "form": ""
+                "contact_number": "Numer kontaktowy dla Kuriera: +48 690 960 279",
+                "fill_in_form": "Przed nadaniem paczki, wypełnij ",
+                "form": "FORMULARZ"
             },
             "assembly": {
                 "assembly": "Assembly",
                 "disassembly": "Disassembly",
                 "options": {
-                    "day_before_event": "April 24 (from 6:00 PM)",
+                    "day_before_event": "April 16th (from 6:00 PM to 8:00 PM)",
                     "event_day": "April 25 (8:00 AM - 9:30 AM)"
                 },
-                "event_day": "April 25 (5:15 PM - 8:00 PM)",
-                "delivery": "",
-                "go_to_info": "",
-                "tape": ""
+                "event_day": "April 17th (5:15 PM - 8:00 PM)",
+                "delivery": "W dniu montażowym wszystkie bramy wjazdowe będą otwarte. Dostawcy będą mogli korzystać z wejścia oznaczonego numerem \"D3\". Zobacz mapkę poniżej:",
+                "go_to_info": "Po przyjściu na halę, udaj się bezpośrednio do punktu INFO - tam dowiesz się co zrobić dalej",
+                "tape": "Pamiętaj, aby podczas montażu używać materiałów nie pozostawiających śladów na podłodze hali. Szczególną uwagę należy zwrócić na taśmę do podklejania wykładziny. Polecamy ETG Imawex."
             }
         },
         "resources": {
@@ -1884,12 +1902,12 @@ const languages = {
                         "specs": "To complete this order let us know which colour you've chosen at: booths@targiehandlu.pl"
                     },
                     "chair": {
-                        "name": "1 hocker",
+                        "name": "Additional hocker",
                         "description": "Do you need more chairs for your representatives? Choose this option and additional hocker will be waiting for you at your booth. Picture below is for illustration purpose only. ",
                         "specs": "Remember that 2 hockers and 1 cocktail table are already included in the standard package."
                     },
                     "table": {
-                        "name": "1 cocktail table",
+                        "name": "Additional cocktail table",
                         "description": "Do you need more tables for your representatives and company's gadgets? Choose this option and additional table will be waiting for you at your booth. Picture below is for illustration purpose only. ",
                         "specs": "Remember that 2 hockers and 1 cocktail table are already included in the standard package."
                     }
@@ -1929,7 +1947,7 @@ const languages = {
                 "actions": {
                     "details": "Check details and buy!"
                 },
-                "dialog": "Buy items"
+                "dialog": "Wybierz ilość i potwierdź zakup"
             },
             "companydata": {
                 "name": "Company data",
@@ -1998,13 +2016,16 @@ const languages = {
                         "description": "Fill in to speed up inviting visitors to your booth"
                     },
                     "pr_manager": {
-                        "name": "PR Manager email address "
+                        "name": "E-mail osoby odpowiedzialnej za PR w Firmie"
                     },
                     "sales_manager": {
-                        "name": "Sales representative email address"
+                        "name": "Adres email osoby odpowiedzialnej za sprzedaż w firmie"
                     },
                     "xing": {
-                        "name": "Xing profile"
+                        "name": "Profil na Xing"
+                    },
+                    "password": {
+                        "name": "Hasło dostępu dla kanały mobilnego"
                     }
                 },
                 "fields": {
@@ -2078,9 +2099,9 @@ const languages = {
                     }
                 },
                 "list": {
-                    "brand_name": "",
-                    "domain": "",
-                    "points": ""
+                    "brand_name": "Nazwa handlowa",
+                    "domain": "Domena",
+                    "points": "Punkty"
                 }
             },
             "scans": {
@@ -2209,7 +2230,7 @@ const languages = {
                             "position": "Position"
                         }
                     },
-                    "participant_id": ""
+                    "participant_id": "Uczestnik"
                 },
                 "tabs": {
                     "form": "Create new meeting request",
@@ -2296,26 +2317,25 @@ const languages = {
                     "invite": "Invite"
                 },
                 "fields": {
-                    "creative": "Select newsletter",
+                    "creative": "Wybierz newsletter",
                     "profile": {
-                        "fname": "First name",
-                        "lname": "Last name",
-                        "cname2": "Company name",
-                        "position": "Position",
-                        "domain": "Domain"
+                        "fname": "Imię",
+                        "lname": "Nazwisko",
+                        "cname2": "Nazwa firmy",
+                        "position": "Pozycja",
+                        "domain": "Domena"
                     }
                 }
             },
             "participants-by-code": {
-                "name": "Participants"
+                "name": "Uczestnicy"
             },
             "purchases": {
-                "menu": "Purchases",
-                "name": "Purchases"
+                "menu": "Zamówienia",
+                "name": "Zamówienia"
             }
         }
     }
 }
 
-
-export default languages
+export default languages;
