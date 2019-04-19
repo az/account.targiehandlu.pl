@@ -37,19 +37,19 @@ const ViewList = props => (
     >
       <Datagrid bodyOptions={{ stripedRows: true, showRowHover: true }}>
         <TextField
-          source="participant.profile.fname"
+          source="profile.fname"
           sortable={false}
         />
         <TextField
-          source="participant.profile.lname"
+          source="profile.lname"
           sortable={false}
         />
         <TextField
-          source="participant.profile.cname2"
+          source="profile.cname2"
           sortable={false}
         />
         <TextField
-          source="participant.profile.position"
+          source="profile.position"
           sortable={false}
         />
 
