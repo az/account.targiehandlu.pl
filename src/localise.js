@@ -340,7 +340,7 @@ const languages = {
                     },
                     "carpet": {
                         "name": "Carpet",
-                        "description": "The Expo floor is made of concrete. If you want your booth to look different you can choose from 6 different carpet colours.\nOnly for standard (not Grand) booths - 3x2m - for Grand booths please choose 3 items. ",
+                        "description": "The Expo floor is made of tiles. If you want your booth to look different you can choose from 7 different carpet colors.\nOnly for standard (not Grand) booths - 3x2m - for Grand booths please choose 3 items. ",
                         "specs": "To complete this order let us know which colour you've chosen at: booths@targiehandlu.pl"
                     },
                     "chair": {
@@ -1119,7 +1119,7 @@ const languages = {
                     },
                     "carpet": {
                         "name": "Wykładzina",
-                        "description": "Na podłodze hali położony jest beton techniczny. Jeżeli chcesz żeby Twoje stoisko wyglądało inaczej możesz wybrać wykładzinę w jednym z sześciu kolorów.\nDOTYCZY TYLKO STOISK 3x2m (stoiska standardowe) - w przypadku stoisk Grand prosimy o wybór 3 sztuk.",
+                        "description": "Na podłodze hali położone są płytki. Jeżeli chcesz żeby Twoje stoisko wyglądało inaczej możesz wybrać wykładzinę w jednym z siedmiu kolorów.\nDOTYCZY TYLKO STOISK 3x2m (stoiska standardowe) - w przypadku stoisk Grand prosimy o wybór 3 sztuk.",
                         "specs": "Prosimy o wysłanie wiadomości z wybranym kolorem wykładziny na adres booths@targiehandlu.pl"
                     },
                     "chair": {
@@ -1898,7 +1898,7 @@ const languages = {
                     },
                     "carpet": {
                         "name": "Carpet",
-                        "description": "Only for standard (not Grand) booths - 3x2m. The Expo floor is made of concrete. If you want your booth to look different you can choose from 6 different carpet colours.",
+                        "description": "Only for standard (not Grand) booths - 3x2m. The Expo floor is made of tiles. If you want your booth to look different you can choose from 7 different carpet colors.",
                         "specs": "To complete this order let us know which colour you've chosen at: booths@targiehandlu.pl"
                     },
                     "chair": {
@@ -2338,4 +2338,4 @@ const languages = {
     }
 }
 
-export default languages;
+export default languages
