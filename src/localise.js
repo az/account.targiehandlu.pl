@@ -265,13 +265,13 @@ const languages = {
                 "area": "Area:",
                 "stand_options": {
                     "standard": "3m x 2m (Light, Standard, Hot, Super-Hot, Ultra)",
-                    "grand": "6m x 4m (Grand, Ultra-Grand)"
+                    "grand": "6m x 4m (Grand)"
                 },
                 "equipment": "If you have not ordered additional equipment to your booth, there will be:",
                 "equipment_options": {
                     "hocker": "2 hockers",
-                    "table": "Additional cocktail table",
-                    "voucher": "4 lunch vouchers",
+                    "table": "Cocktail table",
+                    "voucher": "Lunch vouchers - the number of vouchers is equal to the number of representatives. However, no more than 4, unless additional have been purchased.",
                     "wifi": "WiFi password",
                     "electricity": "electric socket (300 W)"
                 },
@@ -280,20 +280,20 @@ const languages = {
                 "carpeting": "If you want a carpeting in your stand in any color of your choice - contact us at: ",
                 "add_eq_contact": "Do you need additional furniture, vouchers, electricity or you want to rent a TV screen? Talk to us!",
                 "see": "See visualization",
-                "construction": " prepared by All in Event. You can order it by 6 April at: ",
+                "construction": " prepared by All in Event. You can order it by October 9th at: ",
                 "representative": "Company representatives",
                 "reps_info": "The number of participants on your booth is unlimited. Remember to enter their data in "
             },
             "shipment": {
                 "address": "Shipping address:",
-                "describe": "E-commerce Poland Expo [booth number, COMPANY NAME]",
+                "describe": "ExpoSped\nTEH17 [booth number, COMPANY NAME]\nul. Prądzyńskiego 12/14\n01-222 Warszawa\n\nphone: +48 504103570",
                 "country": ", Poland",
                 "deliver_hours": "Delivers of the materials will take place in the following hours:",
                 "date": {
-                    "day_before_event": "April 16th (5:00 PM)",
-                    "event_day": "April 17th (9:00 AM)"
+                    "day_before_event": "October 21st (5:00 PM)",
+                    "event_day": "October 22nd (9:00 AM)"
                 },
-                "deliver": "Materials can be delivered to the Expo no earlier than April 15th",
+                "deliver": "Materials can be delivered not earlier than October 18th",
                 "sped": "The official forwarding agent of the Expo is Transmeble International Sp. z o.o.",
                 "contact_person": "Contact person:",
                 "contact_number": "Numer kontaktowy dla Kuriera: +48 690 960 279",
@@ -304,10 +304,10 @@ const languages = {
                 "assembly": "Assembly",
                 "disassembly": "Disassembly",
                 "options": {
-                    "day_before_event": "April 16th (from 6:00 PM to 8:00 PM)",
-                    "event_day": "April 17th (8:00 AM - 9:30 AM)"
+                    "day_before_event": "October 21st (from 4:00 PM to 8:00 PM)",
+                    "event_day": "October 22nd (8:00 AM - 9:30 AM)"
                 },
-                "event_day": "April 17th (5:15 PM - 8:00 PM)",
+                "event_day": "October 22nd (5:15 PM - 8:00 PM)",
                 "delivery": "W dniu montażowym wszystkie bramy wjazdowe będą otwarte. Dostawcy będą mogli korzystać z wejścia oznaczonego numerem \"D3\". Zobacz mapkę poniżej:",
                 "go_to_info": "Po przyjściu na halę, udaj się bezpośrednio do punktu INFO - tam dowiesz się co zrobić dalej",
                 "tape": "Pamiętaj, aby podczas montażu używać materiałów nie pozostawiających śladów na podłodze hali. Szczególną uwagę należy zwrócić na taśmę do podklejania wykładziny. Polecamy ETG Imawex."
@@ -362,7 +362,7 @@ const languages = {
                     },
                     "welcomepacks": {
                         "name": "2 additional vouchers + parking card",
-                        "description": "There are 4 welcome packs (including 4 vouchers and 1 parking card) per booth. If you need more vouchers or more parking card - buy this option.",
+                        "description": "There are 4 welcome packs (including max 4 vouchers and 1 parking card) per booth. If you need more vouchers or more parking card - buy this option.",
                         "specs": ""
                     },
                     "electricity": {
@@ -384,6 +384,11 @@ const languages = {
                         "name": "Additional parking card",
                         "description": "1 parking card is valid for 1 car only on the assembly day and on the day of the Expo.",
                         "specs": "Remember that 1 parking card is already included in the standard package."
+                    },
+                    "highvoltage": {
+                        "name": "3 phase electrical supply",
+                        "description": "As a standard option you will get only 300 Watt. This is sufficient when having 1-2 laptops and 1 bigger display but insufficient if you are planning to have some additional equipment. Buy this option to avoid surprises.",
+                        "specs": ""
                     }
                 },
                 "actions": {
@@ -645,7 +650,7 @@ const languages = {
                 "menu": "RSVPs",
                 "name": "RSVPs",
                 "limit": " %{limit} invite(s) left.",
-                "subtitle": "Your start limit is 5 invites. For every 5 pts in the Ranking you earn 1 additional invite, i.e. company with 50 pts should have 10 invites.",
+                "subtitle": "Your start limit is 15 invites. If we do organize Contest for Exhibitors you can earn points that increase your limit.",
                 "noresults": "Navigate to Browse participants to invite some people.",
                 "noresultsmore": "",
                 "fields": {
@@ -1044,13 +1049,13 @@ const languages = {
                 "area": "Powierzchnia:",
                 "stand_options": {
                     "standard": "3m x 2m (Light, Standard, Hot, Super-Hot, Ultra)",
-                    "grand": "6m x 4m (Grand, Ultra-Grand)"
+                    "grand": "6m x 4m (Grand)"
                 },
                 "equipment": "Jeżeli nie dokonałeś zamówienia dodatkowego wyposażenia, na Twoim stoisku znajdować się będą:",
                 "equipment_options": {
                     "hocker": "2 hockery",
-                    "table": "Dodatkowy stolik koktajlowy",
-                    "voucher": "4 vouchery na lunch",
+                    "table": "Stolik koktajlowy",
+                    "voucher": "Vouchery na lunch - liczba voucherów jest równa liczbie przedstawicieli. Jednak nie więcej niż 4, o ile nie dokupione zostały dodatkowe.",
                     "wifi": "hasło do WiFi",
                     "electricity": "gniazdo elektryczne obsługujące maksimum 300W"
                 },
@@ -1059,20 +1064,20 @@ const languages = {
                 "carpeting": "Jeśli chcesz, aby na Twoim stoisku znalazła się wykładzina w dowolnie wybranym przez Ciebie kolorze - zgłoś się do nas na: ",
                 "add_eq_contact": "Potrzebujesz dodatkowych mebli, voucherów, prądu lub chcesz wynająć ekran TV? Odezwij się do nas!",
                 "see": "Zobacz wizualizację",
-                "construction": " przygotowaną przez firmę All in Event. Zamówienia możesz dokonać do 6 kwietnia pod adresem: ",
+                "construction": " przygotowaną przez firmę All in Event. Zamówienia możesz dokonać do 9 października pod adresem: ",
                 "representative": "Przedstawiciele firmy",
                 "reps_info": "Liczba przedstawicieli Twojej firmy znajdujących się na stanowisku jest dowolna. Pamiętaj, aby wprowadzić ich dane w zakładce "
             },
             "shipment": {
                 "address": "Adres do wysyłki:",
-                "describe": "EHANDEL [nr stoiska, NAZWA FIRMY]",
+                "describe": "ExpoSped\nTEH17 [nr stoiska, NAZWA FIRMY]\nul. Prądzyńskiego 12/14\n01-222 Warszawa\n\ntel. +48 504103570",
                 "country": "",
                 "deliver_hours": "Dostawy materiałów na halę, odbędą się w godzinach:",
                 "date": {
-                    "day_before_event": "16 kwietnia (17:00)",
-                    "event_day": "17 kwietnia (9:00)"
+                    "day_before_event": "21 października (17:00)",
+                    "event_day": "22 października (9:00)"
                 },
-                "deliver": "Doręczenie materiałów przez Kuriera na teren EXPO może odbyć się nie wcześniej niż 15 kwietnia",
+                "deliver": "Doręczenie materiałów przez Kuriera może odbyć się nie wcześniej niż 18 października",
                 "sped": "Oficjalnym Spedytorem Targów jest firma Transmeble International Sp. z o.o.",
                 "contact_person": "",
                 "contact_number": "Numer kontaktowy dla Kuriera: +48 690 960 279",
@@ -1083,10 +1088,10 @@ const languages = {
                 "assembly": "Montaż",
                 "disassembly": "Demontaż",
                 "options": {
-                    "day_before_event": "16 kwietnia (16:00 - 20:00)",
-                    "event_day": "17 kwietnia (8:00 - 9:30)"
+                    "day_before_event": "21 października (16:00 - 20:00)",
+                    "event_day": "22 października (8:00 - 9:30)"
                 },
-                "event_day": "17 kwietnia (17:15 - 20:00)",
+                "event_day": "22 października (17:15 - 20:00)",
                 "delivery": "W dniu montażowym wszystkie bramy wjazdowe będą otwarte. Dostawcy będą mogli korzystać z wejścia oznaczonego numerem \"D3\". Zobacz mapkę poniżej:",
                 "go_to_info": "Po przyjściu na halę, udaj się bezpośrednio do punktu INFO - tam dowiesz się co zrobić dalej",
                 "tape": "Pamiętaj, aby podczas montażu używać materiałów nie pozostawiających śladów na podłodze hali. Szczególną uwagę należy zwrócić na taśmę do podklejania wykładziny. Polecamy ETG Imawex."
@@ -1141,7 +1146,7 @@ const languages = {
                     },
                     "welcomepacks": {
                         "name": "2 dodatkowe vouchery + 1 karta parkingowa",
-                        "description": "W ramach standardowej oferty stoiska otrzymujesz 4 welcome packi, w których znajdują się 4 vouchery cateringowe oraz 1 karta parkingowa. Jeśli potrzebujesz dodatkowej karty parkingowej i/lub dodatkowych voucherów obiadowych, kup ten pakiet.",
+                        "description": "W ramach standardowej oferty stoiska otrzymujesz 4 welcome packi, w których znajdują się maksymalnie 4 vouchery cateringowe oraz 1 karta parkingowa. Jeśli potrzebujesz dodatkowej karty parkingowej i/lub dodatkowych voucherów obiadowych, kup ten pakiet.",
                         "specs": ""
                     },
                     "electricity": {
@@ -1163,6 +1168,11 @@ const languages = {
                         "name": "Dodatkowa karta parkingowa",
                         "description": "1 karta parkingowa jest ważna na 1 samochód podczas dnia montażowego oraz w dzień Targów.",
                         "specs": "Pamiętaj, że w podstawowym pakiecie otrzymujesz 1 kartę parkingową."
+                    },
+                    "highvoltage": {
+                        "name": "3-fazowe przyłącze prądu",
+                        "description": "Standardowe przyłącze prądu pozwala na podłączenie kilku laptopów i ew. ekranu LCD. Potrzebujesz więcej niż standardowe 300W? Wykup niezależne 3-fazowe podłączenie prądu.",
+                        "specs": ""
                     }
                 },
                 "actions": {
@@ -1424,7 +1434,7 @@ const languages = {
                 "menu": "RSVPs",
                 "name": "RSVPs",
                 "limit": " Pozostało %{limit} zaproszeń",
-                "subtitle": "Twój początkowy limit wynosi 5 zaproszeń. Za każde 5 pkt w Rankingu otrzymasz 1 dodatkowe zaproszenie, tzn. firma, która zdobyła 50 pkt powinna mieć 10 zaproszeń.",
+                "subtitle": "Twój początkowy limit wynosi 15 zaproszeń. Jeśli w danej edycji Targów organizujemy konkurs dla Wystawców i zdobywasz punkty Twój limit się zwiększa / masz więcej zaproszeń.",
                 "noresults": "Przejdź do zakładki \"Przeglądaj uczestników\", aby zaprosić wybrane osoby.",
                 "noresultsmore": "",
                 "fields": {
@@ -1823,13 +1833,13 @@ const languages = {
                 "area": "Area:",
                 "stand_options": {
                     "standard": "3m x 2m (Light, Standard, Hot, Super-Hot, Ultra)",
-                    "grand": "6m x 4m (Grand, Ultra-Grand)"
+                    "grand": "6m x 4m (Grand)"
                 },
                 "equipment": "If you have not ordered additional equipment to your booth, there will be:",
                 "equipment_options": {
                     "hocker": "2 hockers",
-                    "table": "Additional cocktail table",
-                    "voucher": "4 lunch vouchers",
+                    "table": "Cocktail table",
+                    "voucher": "Lunch vouchers - the number of vouchers is equal to the number of representatives. However, no more than 4, unless additional have been purchased.",
                     "wifi": "WiFi password",
                     "electricity": "electric socket (300 W)"
                 },
@@ -1838,20 +1848,20 @@ const languages = {
                 "carpeting": "If you want a carpeting in your stand in any color of your choice - contact us at: ",
                 "add_eq_contact": "Do you need additional furniture, vouchers, electricity or you want to rent a TV screen? Talk to us!",
                 "see": "See visualization",
-                "construction": " prepared by All in Event. You can order it by 6 April at: ",
+                "construction": " prepared by All in Event. You can order it by October 9th at: ",
                 "representative": "Company representatives",
                 "reps_info": "The number of participants on your booth is unlimited. Remember to enter their data in "
             },
             "shipment": {
                 "address": "Shipping address:",
-                "describe": "E-commerce Poland Expo [booth number, COMPANY NAME]",
+                "describe": "ExpoSped\nTEH17 [booth number, COMPANY NAME]\nul. Prądzyńskiego 12/14\n01-222 Warszawa\n\nphone: +48 504103570",
                 "country": ", Poland",
                 "deliver_hours": "Delivers of the materials will take place in the following hours:",
                 "date": {
-                    "day_before_event": "April 16th (5:00 PM)",
-                    "event_day": "April 17th (9:00 AM)"
+                    "day_before_event": "October 21st (5:00 PM)",
+                    "event_day": "October 22nd (9:00 AM)"
                 },
-                "deliver": "Materials can be delivered to the Expo no earlier than April 15th",
+                "deliver": "Materials can be delivered not earlier than October 18th",
                 "sped": "The official forwarding agent of the Expo is Transmeble International Sp. z o.o.",
                 "contact_person": "Contact person:",
                 "contact_number": "Numer kontaktowy dla Kuriera: +48 690 960 279",
@@ -1862,10 +1872,10 @@ const languages = {
                 "assembly": "Assembly",
                 "disassembly": "Disassembly",
                 "options": {
-                    "day_before_event": "April 16th (from 6:00 PM to 8:00 PM)",
-                    "event_day": "April 25 (8:00 AM - 9:30 AM)"
+                    "day_before_event": "October 21st (from 4:00 PM to 8:00 PM)",
+                    "event_day": "October 22nd (8:00 AM - 9:30 AM)"
                 },
-                "event_day": "April 17th (5:15 PM - 8:00 PM)",
+                "event_day": "October 22nd (5:15 PM - 8:00 PM)",
                 "delivery": "W dniu montażowym wszystkie bramy wjazdowe będą otwarte. Dostawcy będą mogli korzystać z wejścia oznaczonego numerem \"D3\". Zobacz mapkę poniżej:",
                 "go_to_info": "Po przyjściu na halę, udaj się bezpośrednio do punktu INFO - tam dowiesz się co zrobić dalej",
                 "tape": "Pamiętaj, aby podczas montażu używać materiałów nie pozostawiających śladów na podłodze hali. Szczególną uwagę należy zwrócić na taśmę do podklejania wykładziny. Polecamy ETG Imawex."
@@ -1920,7 +1930,7 @@ const languages = {
                     },
                     "welcomepacks": {
                         "name": "2 additional vouchers + parking card",
-                        "description": "There are 4 welcome packs (including 4 vouchers and 1 parking card) per booth. If you need more vouchers or more parking card - buy this option.",
+                        "description": "There are 4 welcome packs (including max 4 vouchers and 1 parking card) per booth. If you need more vouchers or more parking card - buy this option.",
                         "specs": ""
                     },
                     "electricity": {
@@ -1942,6 +1952,11 @@ const languages = {
                         "name": "Additional parking card",
                         "description": "1 parking card is valid for 1 car only on the assembly day and on the day of the Expo.",
                         "specs": "Remember that 1 parking card is already included in the standard package."
+                    },
+                    "highvoltage": {
+                        "name": "3 phase electrical supply",
+                        "description": "As a standard option you will get only 300 Watt. This is sufficient when having 1-2 laptops and 1 bigger display but insufficient if you are planning to have some additional equipment. Buy this option to avoid surprises.",
+                        "specs": ""
                     }
                 },
                 "actions": {
