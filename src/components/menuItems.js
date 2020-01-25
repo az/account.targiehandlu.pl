@@ -15,7 +15,8 @@ import IconCart from 'material-ui/svg-icons/action/shopping-cart';
 
 import {
   PackageVariantClosed as IconLogistics,
-  AccountMultiple as IconPeople
+  AccountMultiple as IconPeople,
+  GlassWine as IconParty
 } from 'mdi-material-ui'
 
 export const getSectionItemNames = (section) => section.items.map(item => item.name)
@@ -47,6 +48,10 @@ const menuItems = [
       name : "representatives",
       label : "resources.representatives.menu",
       icon : <IconPeople />
+    },{
+      name : "party",
+      label : "resources.party.menu",
+      icon : <IconParty />
     }
   ]},
   {

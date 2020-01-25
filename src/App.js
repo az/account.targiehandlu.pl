@@ -41,6 +41,11 @@ import {
   ViewCreate as RepresentativeCreate
 } from './views/representatives';
 
+import {
+  ViewList as PartyList,
+  ViewEdit as PartyEdit,
+  ViewCreate as PartyCreate
+} from './views/party';
 
 import {
   ViewList as PurchaseList
@@ -150,43 +155,48 @@ class App extends React.Component {
 <Resource name="purchases" list={PurchaseList} />,
 
 <Resource
-name="imports"
-list={hasAccessTo(permissions, "imports", "list") ?  ImportList : null}
-edit={hasAccessTo(permissions, "imports", "edit") ? ImportEdit : null}
-create={hasAccessTo(permissions, "imports", "create") ? ImportCreate : null}
+  name="imports"
+  list={hasAccessTo(permissions, "imports", "list") ?  ImportList : null}
+  edit={hasAccessTo(permissions, "imports", "edit") ? ImportEdit : null}
+  create={hasAccessTo(permissions, "imports", "create") ? ImportCreate : null}
 />,
 
 <Resource
-name="meetups"
-list={hasAccessTo(permissions, "meetups", "list") ? MeetupList : null}
-edit={hasAccessTo(permissions, "meetups", "edit") ? MeetupEdit  : null}
-create={hasAccessTo(permissions, "meetups", "create") ? MeetupCreate  : null}
-remove={hasAccessTo(permissions, "meetups", "remove") ? Delete  : null}
-/>,
-
-
-
-
-<Resource
-name="representatives"
-list={hasAccessTo(permissions, "representatives", "list") ? RepresentativeList : null}
-edit={hasAccessTo(permissions, "representatives", "edit") ? RepresentativeEdit : null}
-create={hasAccessTo(permissions, "representatives", "create") ? RepresentativeCreate : null}
-remove={hasAccessTo(permissions, "representatives", "delete") ? Delete : null}
-/>,
-
-
-<Resource
-name="upgrades"
-list={hasAccessTo(permissions, "upgrades", "list") ? UpgradeList : null}
-show={hasAccessTo(permissions, "upgrades", "edit") ? UpgradeShow : null}
+  name="meetups"
+  list={hasAccessTo(permissions, "meetups", "list") ? MeetupList : null}
+  edit={hasAccessTo(permissions, "meetups", "edit") ? MeetupEdit  : null}
+  create={hasAccessTo(permissions, "meetups", "create") ? MeetupCreate  : null}
+  remove={hasAccessTo(permissions, "meetups", "remove") ? Delete  : null}
 />,
 
 <Resource
-name="contactlists"
-list={hasAccessTo(permissions, "contactlists", "list") ? ContactlistList : null}
-edit={hasAccessTo(permissions, "contactlists", "edit") ? ContactlistEdit : null}
-create={hasAccessTo(permissions, "contactlists", "create") ? ContactlistCreate : null}
+  name="representatives"
+  list={hasAccessTo(permissions, "representatives", "list") ? RepresentativeList : null}
+  edit={hasAccessTo(permissions, "representatives", "edit") ? RepresentativeEdit : null}
+  create={hasAccessTo(permissions, "representatives", "create") ? RepresentativeCreate : null}
+  remove={hasAccessTo(permissions, "representatives", "delete") ? Delete : null}
+/>,
+
+<Resource
+  name="party"
+  list={hasAccessTo(permissions, "party", "list") ? PartyList : null}
+  edit={hasAccessTo(permissions, "party", "edit") ? PartyEdit : null}
+  create={hasAccessTo(permissions, "party", "create") ? PartyCreate : null}
+  remove={hasAccessTo(permissions, "party", "delete") ? Delete : null}
+/>,
+
+
+<Resource
+  name="upgrades"
+  list={hasAccessTo(permissions, "upgrades", "list") ? UpgradeList : null}
+  show={hasAccessTo(permissions, "upgrades", "edit") ? UpgradeShow : null}
+/>,
+
+<Resource
+  name="contactlists"
+  list={hasAccessTo(permissions, "contactlists", "list") ? ContactlistList : null}
+  edit={hasAccessTo(permissions, "contactlists", "edit") ? ContactlistEdit : null}
+  create={hasAccessTo(permissions, "contactlists", "create") ? ContactlistCreate : null}
 />,
 
 <Resource 

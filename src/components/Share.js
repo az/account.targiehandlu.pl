@@ -25,13 +25,11 @@ const Share = ({ translate, type, target, title, description, disabled }) => {
   const Icon = Icons[type]
   let link = '';
 
-  const _title = title ? _escape( translate(title) ) : ''
-  const _description = description ? _escape( translate(description) ) : ''
   const _target = _escape(target)
 
   switch (type) {
     case 'linkedin':
-      link = `https://www.linkedin.com/shareArticle?mini=true&url=${ _target }&title=${ _title }&summary=${ _description }`;
+      link = `https://www.linkedin.com/sharing/share-offsite/?url=${ _target }`;
 
       break;
 
@@ -40,7 +38,7 @@ const Share = ({ translate, type, target, title, description, disabled }) => {
       break;
 
     case 'twitter':
-      link = `https://twitter.com/home?status=${ _target }`;
+      link = `https://twitter.com/intent/tweet?text=${ _target }`;
 
       break;
 
