@@ -7,14 +7,18 @@ import {
   DeleteButton
 } from 'admin-on-rest';
 
+import ViewTitle from '../../components/ViewTitle';
 
-
+// const titleElement = (
+//   <Title title={"asd"} defaultTitle={"dsa"} />
+// );
 
 const ViewList = props => (
 
 <List
     {...props}
     perPage={100}
+    title={<ViewTitle {...props} title="ssss" subtitle="ssss" />}
   >
     <Datagrid
       bodyOptions={{ stripedRows: true, showRowHover: true }}
