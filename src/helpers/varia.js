@@ -207,7 +207,7 @@ export const addUrlParam = (url = "", param = "") => {
 
 export const getProfileUrl = (params = "", purgeCache = false) => {
 
-  let url = getFullUrl(`${slug(getCompanyName())},c,${getCompanyId()}`)
+  let url = getFullUrl(`exhibitors/${getUserData('company.slug')}`)
 
   if(params.length){
     url = addUrlParam(url, params)
@@ -216,6 +216,7 @@ export const getProfileUrl = (params = "", purgeCache = false) => {
   if(purgeCache){
     url = addUrlParam(url, 'purge')
   }
+  
   return url
 }
 

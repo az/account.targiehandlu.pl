@@ -8,7 +8,8 @@ export const transform = (resource, data = {}) => {
   switch (resource) {
 
     case 'representatives':
-
+    case 'party':
+    
       const ticket_id = `${process.env.REACT_APP_REP_TICKET_ID}`
       transformed = {
           fields : data.profile,
