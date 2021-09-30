@@ -184,7 +184,7 @@ const languages = {
             },
             "video_interview": {
                 "title": "Video Interview",
-                "description": "It will be carried out during the event and then published on the fanpage of the E-commerce Poland Expo and the ehandelmag.com portal.",
+                "description": "It will be carried out during the event and then published on the fanpage of the E-commerce Poland Expo and the ehandel.com.pl portal.",
                 "image": ""
             },
             "brand_highlight": {
@@ -217,8 +217,8 @@ const languages = {
                 "image": ""
             },
             "blog": {
-                "title": "A guest article on the ehandelmag.com portal",
-                "description": "One-time inclusion of company content on the ehandelmag.com portal. The blogpost will be promoted on the Facebook and Twitter channels of the E-Commerce Poland Expo.",
+                "title": "A guest article on the ehandel.com.pl portal",
+                "description": "One-time inclusion of company content on the ehandel.com.pl portal. The article will be promoted on the Facebook and Twitter channels of the E-Commerce Poland Expo.",
                 "image": ""
             },
             "stage": {
@@ -972,7 +972,7 @@ const languages = {
             },
             "video_interview": {
                 "title": "Wywiad wideo z przedstawicielem firmy",
-                "description": "Zostanie on przeprowadzony podczas wydarzenia, a następnie opublikowany na fanpage'u Targów eHandlu oraz portalu ehandelmag.com.",
+                "description": "Zostanie on przeprowadzony podczas wydarzenia, a następnie opublikowany na fanpage'u Targów eHandlu oraz portalu ehandel.com.pl",
                 "image": ""
             },
             "brand_highlight": {
@@ -1005,8 +1005,8 @@ const languages = {
                 "image": ""
             },
             "blog": {
-                "title": "Gościnny artykuł na branżowym portalu ehandelmag.com",
-                "description": "Możliwość opublikowania autorskiego artykułu na portalu ehandelmag.com. Wpis będzie promowany na oficjalnych kanałach social media Targów eHandlu.",
+                "title": "Gościnny artykuł na branżowym portalu ehandel.com.pl",
+                "description": "Możliwość opublikowania autorskiego, promowanego, artykułu na portalu ehandel.com.pl. Wpis będzie promowany na oficjalnych kanałach social media Targów eHandlu.",
                 "image": ""
             },
             "stage": {
