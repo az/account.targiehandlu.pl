@@ -74,8 +74,8 @@ const languages = {
             },
             "input": {
                 "image": {
-                    "upload_several": "Upuść pliki tutaj lub naciśnij, aby załadować.",
-                    "upload_single": "Upuść plik tutaj lub naciśnij, aby załadować."
+                    "upload_several": "",
+                    "upload_single": ""
                 }
             }
         },
@@ -96,7 +96,7 @@ const languages = {
                 "description": "Need assistance? Some features are not so self-explanatory? Im ready to help, just let me know I am needed :)"
             },
             "sections": {
-                "suggest_a_meeting": "Zaproś do stoiska"
+                "suggest_a_meeting": ""
             }
         },
         "common": {
@@ -111,7 +111,7 @@ const languages = {
             },
             "actions": {
                 "buy": "Buy now!",
-                "modify": "Modify",
+                "modify": "Cancel ",
                 "buy_more": "Buy more"
             },
             "statuses": {
@@ -194,7 +194,7 @@ const languages = {
             },
             "earlybird": {
                 "title": "Access to earl-bird sales",
-                "description": "Next E-commerce Poland Expo edition will be held in Warsaw (7th of November)."
+                "description": "Next E-commerce Poland Expo edition will be held in Warsaw."
             },
             "leaflets": {
                 "title": "Permission of Distribution of flyers",
@@ -286,31 +286,31 @@ const languages = {
             },
             "shipment": {
                 "address": "Shipping address:",
-                "describe": "ExpoSped\nTEH17 [booth number, COMPANY NAME]\nul. Prądzyńskiego 12/14\n01-222 Warszawa\n\nphone: +48 504103570",
+                "describe": "ExpoSped\nTEH18 [booth number, COMPANY NAME]\nul. Prądzyńskiego 12/14\n01-222 Warszawa\n\nphone: +48 504103570",
                 "country": ", Poland",
                 "deliver_hours": "Delivers of the materials will take place in the following hours:",
                 "date": {
-                    "day_before_event": "October 21st (5:00 PM)",
-                    "event_day": "October 22nd (9:00 AM)"
+                    "day_before_event": "October 22nd (5:00 PM)",
+                    "event_day": "October 23rd (9:00 AM)"
                 },
                 "deliver": "Materials can be delivered not earlier than October 18th",
                 "sped": "The official forwarding agent of the Expo is Transmeble International Sp. z o.o.",
                 "contact_person": "Contact person:",
-                "contact_number": "Numer kontaktowy dla Kuriera: +48 690 960 279",
-                "fill_in_form": "Przed nadaniem paczki, wypełnij ",
-                "form": "FORMULARZ"
+                "contact_number": "",
+                "fill_in_form": "",
+                "form": ""
             },
             "assembly": {
                 "assembly": "Assembly",
                 "disassembly": "Disassembly",
                 "options": {
-                    "day_before_event": "October 21st (from 4:00 PM to 8:00 PM)",
-                    "event_day": "October 22nd (8:00 AM - 9:30 AM)"
+                    "day_before_event": "October 22nd (from 4:00 PM to 8:00 PM)",
+                    "event_day": "October 23rd (8:00 AM - 9:30 AM)"
                 },
-                "event_day": "October 22nd (5:15 PM - 8:00 PM)",
-                "delivery": "W dniu montażowym wszystkie bramy wjazdowe będą otwarte. Dostawcy będą mogli korzystać z wejścia oznaczonego numerem \"D3\". Zobacz mapkę poniżej:",
-                "go_to_info": "Po przyjściu na halę, udaj się bezpośrednio do punktu INFO - tam dowiesz się co zrobić dalej",
-                "tape": "Pamiętaj, aby podczas montażu używać materiałów nie pozostawiających śladów na podłodze hali. Szczególną uwagę należy zwrócić na taśmę do podklejania wykładziny. Polecamy ETG Imawex."
+                "event_day": "October 23rd (5:15 PM - 8:00 PM)",
+                "delivery": "",
+                "go_to_info": "",
+                "tape": ""
             }
         },
         "resources": {
@@ -546,9 +546,9 @@ const languages = {
                     }
                 },
                 "list": {
-                    "brand_name": "Nazwa handlowa",
-                    "domain": "Domena",
-                    "points": "Punkty"
+                    "brand_name": "",
+                    "domain": "",
+                    "points": ""
                 }
             },
             "scans": {
@@ -604,7 +604,7 @@ const languages = {
                     "image_body": "Important! Please remember that you have to use your tracking link."
                 },
                 "links": {
-                    "disabled": "Oooops! You must fill in some data: ",
+                    "disabled": "Currently disabled.",
                     "preview": "Image that will be published on social websites",
                     "logotype": {
                         "title": "Link promoting your profile - with default image (your logotype)",
@@ -677,7 +677,7 @@ const languages = {
                             "position": "Position"
                         }
                     },
-                    "participant_id": "Uczestnik"
+                    "participant_id": ""
                 },
                 "tabs": {
                     "form": "Create new meeting request",
@@ -895,7 +895,7 @@ const languages = {
             },
             "actions": {
                 "buy": "Kup teraz",
-                "modify": "Usuń",
+                "modify": "Rezygnuj",
                 "buy_more": "Dokup więcej"
             },
             "statuses": {
@@ -978,7 +978,7 @@ const languages = {
             },
             "earlybird": {
                 "title": "Dostęp do najtańszej puli sprzedaży na kolejne Targi",
-                "description": "Kolejne Targi eHandlu już w listopadzie. Najbardziej zaangażowani Wystawcy dostaną informację apropos otwarcia sprzedaży wcześniej. Niższe ceny, lepszy wybór lokalizacji stoiska."
+                "description": "Kolejne Targi eHandlu już w październiku. Najbardziej zaangażowani Wystawcy dostaną informację apropos otwarcia sprzedaży wcześniej. Niższe ceny, lepszy wybór lokalizacji stoiska."
             },
             "leaflets": {
                 "title": "Dystrybucja ulotek na terenie Targów",
@@ -1070,12 +1070,12 @@ const languages = {
             },
             "shipment": {
                 "address": "Adres do wysyłki:",
-                "describe": "ExpoSped\nTEH17 [nr stoiska, NAZWA FIRMY]\nul. Prądzyńskiego 12/14\n01-222 Warszawa\n\ntel. +48 504103570",
+                "describe": "ExpoSped\nTEH18 [nr stoiska, NAZWA FIRMY]\nul. Prądzyńskiego 12/14\n01-222 Warszawa\n\ntel. +48 504103570",
                 "country": "",
                 "deliver_hours": "Dostawy materiałów na halę, odbędą się w godzinach:",
                 "date": {
-                    "day_before_event": "21 października (17:00)",
-                    "event_day": "22 października (9:00)"
+                    "day_before_event": "22 października (17:00)",
+                    "event_day": "23 października (9:00)"
                 },
                 "deliver": "Doręczenie materiałów przez Kuriera może odbyć się nie wcześniej niż 18 października",
                 "sped": "Oficjalnym Spedytorem Targów jest firma Transmeble International Sp. z o.o.",
@@ -1088,10 +1088,10 @@ const languages = {
                 "assembly": "Montaż",
                 "disassembly": "Demontaż",
                 "options": {
-                    "day_before_event": "21 października (16:00 - 20:00)",
-                    "event_day": "22 października (8:00 - 9:30)"
+                    "day_before_event": "22 października (16:00 - 20:00)",
+                    "event_day": "23 października (8:00 - 9:30)"
                 },
-                "event_day": "22 października (17:15 - 20:00)",
+                "event_day": "23 października (17:15 - 20:00)",
                 "delivery": "W dniu montażowym wszystkie bramy wjazdowe będą otwarte. Dostawcy będą mogli korzystać z wejścia oznaczonego numerem \"D3\". Zobacz mapkę poniżej:",
                 "go_to_info": "Po przyjściu na halę, udaj się bezpośrednio do punktu INFO - tam dowiesz się co zrobić dalej",
                 "tape": "Pamiętaj, aby podczas montażu używać materiałów nie pozostawiających śladów na podłodze hali. Szczególną uwagę należy zwrócić na taśmę do podklejania wykładziny. Polecamy ETG Imawex."
@@ -1156,7 +1156,7 @@ const languages = {
                     },
                     "display": {
                         "name": "Ekran LCD 50 cali",
-                        "description": "Ekran pozwala na podłączenie źródła HDMI bądź USB. Dostarczany na stoisko.",
+                        "description": "Ekran pozwala na podłączenie źródła HDMI bądź USB. Dostarczany na stoisko na stojaku.",
                         "specs": ""
                     },
                     "catering": {
@@ -1388,7 +1388,7 @@ const languages = {
                     "image_body": "Uwaga! Pamiętaj, że aby zdobywać punkty w Rankingu, musisz użyć swojego unikatowego linku URL."
                 },
                 "links": {
-                    "disabled": "Musisz coś zrobić! Ustaw następujące pola w Dane firmy: ",
+                    "disabled": "Aktualnie ta opcja jest nieaktywna.",
                     "preview": "Oto obrazek, który będzie widoczny w serwisie społecznościowym po opublikowaniu",
                     "logotype": {
                         "title": "Obrazek z logotypem Twojej firmy",
@@ -1642,8 +1642,8 @@ const languages = {
             },
             "input": {
                 "image": {
-                    "upload_several": "Upuść pliki tutaj lub naciśnij, aby załadować.",
-                    "upload_single": "Upuść plik tutaj lub naciśnij, aby załadować."
+                    "upload_several": "",
+                    "upload_single": ""
                 }
             }
         },
@@ -1664,7 +1664,7 @@ const languages = {
                 "description": "Need assistance? Some features are not so self-explanatory? Im ready to help, just let me know I am needed :)"
             },
             "sections": {
-                "suggest_a_meeting": "Zaproś do stoiska"
+                "suggest_a_meeting": ""
             }
         },
         "common": {
@@ -1675,29 +1675,29 @@ const languages = {
                 "gross": "includes 23% VAT",
                 "remaining": "Remaining",
                 "pcs": "pcs",
-                "bookable": "Do kupienia"
+                "bookable": ""
             },
             "actions": {
                 "buy": "Buy now!",
-                "modify": "Usuń",
-                "buy_more": "Dokup więcej"
+                "modify": "",
+                "buy_more": ""
             },
             "statuses": {
                 "unavailable": "Unavailable",
                 "already_bought": "Already bought",
                 "success": "Success!",
                 "cancelled": "Cancelled",
-                "new": "Nowe",
-                "hold": "Oczekiwanie na płatność",
-                "ok": "Sfinalizowane",
-                "confirmed": "Potwierdzone"
+                "new": "",
+                "hold": "",
+                "ok": "",
+                "confirmed": ""
             },
             "langs": {
                 "pl": "polski",
                 "en": "english",
                 "de": "deutsch"
             },
-            "thankyou": "Dziękujemy"
+            "thankyou": ""
         },
         "menu": {
             "sections": {
@@ -1762,7 +1762,7 @@ const languages = {
             },
             "earlybird": {
                 "title": "Access to earl-bird sales",
-                "description": "Next E-commerce Poland Expo edition will be held in Warsaw (7th of November)."
+                "description": "Next E-commerce Poland Expo edition will be held in Warsaw."
             },
             "leaflets": {
                 "title": "Permission of Distribution of flyers",
@@ -1790,8 +1790,8 @@ const languages = {
                 "image": ""
             },
             "stage": {
-                "title": "Patronat nad sceną prezentacyjną",
-                "description": "Patronat nad sceną oznacza uzyskanie slotu prezentacyjnego oraz świadczeń marketingowych - naklejek na ścianach zabudowy sali, GOBO."
+                "title": "",
+                "description": ""
             }
         },
         "fields": {
@@ -1854,31 +1854,31 @@ const languages = {
             },
             "shipment": {
                 "address": "Shipping address:",
-                "describe": "ExpoSped\nTEH17 [booth number, COMPANY NAME]\nul. Prądzyńskiego 12/14\n01-222 Warszawa\n\nphone: +48 504103570",
+                "describe": "ExpoSped\nTEH18 [booth number, COMPANY NAME]\nul. Prądzyńskiego 12/14\n01-222 Warszawa\n\nphone: +48 504103570",
                 "country": ", Poland",
                 "deliver_hours": "Delivers of the materials will take place in the following hours:",
                 "date": {
-                    "day_before_event": "October 21st (5:00 PM)",
-                    "event_day": "October 22nd (9:00 AM)"
+                    "day_before_event": "October 22nd (5:00 PM)",
+                    "event_day": "October 23rd (9:00 AM)"
                 },
                 "deliver": "Materials can be delivered not earlier than October 18th",
                 "sped": "The official forwarding agent of the Expo is Transmeble International Sp. z o.o.",
                 "contact_person": "Contact person:",
-                "contact_number": "Numer kontaktowy dla Kuriera: +48 690 960 279",
-                "fill_in_form": "Przed nadaniem paczki, wypełnij ",
-                "form": "FORMULARZ"
+                "contact_number": "",
+                "fill_in_form": "",
+                "form": ""
             },
             "assembly": {
                 "assembly": "Assembly",
                 "disassembly": "Disassembly",
                 "options": {
-                    "day_before_event": "October 21st (from 4:00 PM to 8:00 PM)",
-                    "event_day": "October 22nd (8:00 AM - 9:30 AM)"
+                    "day_before_event": "October 22nd (from 4:00 PM to 8:00 PM)",
+                    "event_day": "October 23rd (8:00 AM - 9:30 AM)"
                 },
-                "event_day": "October 22nd (5:15 PM - 8:00 PM)",
-                "delivery": "W dniu montażowym wszystkie bramy wjazdowe będą otwarte. Dostawcy będą mogli korzystać z wejścia oznaczonego numerem \"D3\". Zobacz mapkę poniżej:",
-                "go_to_info": "Po przyjściu na halę, udaj się bezpośrednio do punktu INFO - tam dowiesz się co zrobić dalej",
-                "tape": "Pamiętaj, aby podczas montażu używać materiałów nie pozostawiających śladów na podłodze hali. Szczególną uwagę należy zwrócić na taśmę do podklejania wykładziny. Polecamy ETG Imawex."
+                "event_day": "October 23rd (5:15 PM - 8:00 PM)",
+                "delivery": "",
+                "go_to_info": "",
+                "tape": ""
             }
         },
         "resources": {
@@ -1962,7 +1962,7 @@ const languages = {
                 "actions": {
                     "details": "Check details and buy!"
                 },
-                "dialog": "Wybierz ilość i potwierdź zakup"
+                "dialog": ""
             },
             "companydata": {
                 "name": "Company data",
@@ -2031,16 +2031,16 @@ const languages = {
                         "description": "Fill in to speed up inviting visitors to your booth"
                     },
                     "pr_manager": {
-                        "name": "E-mail osoby odpowiedzialnej za PR w Firmie"
+                        "name": ""
                     },
                     "sales_manager": {
-                        "name": "Adres email osoby odpowiedzialnej za sprzedaż w firmie"
+                        "name": ""
                     },
                     "xing": {
-                        "name": "Profil na Xing"
+                        "name": ""
                     },
                     "password": {
-                        "name": "Hasło dostępu dla kanały mobilnego"
+                        "name": ""
                     }
                 },
                 "fields": {
@@ -2114,9 +2114,9 @@ const languages = {
                     }
                 },
                 "list": {
-                    "brand_name": "Nazwa handlowa",
-                    "domain": "Domena",
-                    "points": "Punkty"
+                    "brand_name": "",
+                    "domain": "",
+                    "points": ""
                 }
             },
             "scans": {
@@ -2172,7 +2172,7 @@ const languages = {
                     "image_body": "Important! Please remember that you have to use your tracking link."
                 },
                 "links": {
-                    "disabled": "Oooops! You must fill in some data: ",
+                    "disabled": "Currently disabled.",
                     "preview": "Image that will be published on social websites",
                     "logotype": {
                         "title": "Link promoting your profile - with default image (your logotype)",
@@ -2245,7 +2245,7 @@ const languages = {
                             "position": "Position"
                         }
                     },
-                    "participant_id": "Uczestnik"
+                    "participant_id": ""
                 },
                 "tabs": {
                     "form": "Create new meeting request",
@@ -2332,22 +2332,22 @@ const languages = {
                     "invite": "Invite"
                 },
                 "fields": {
-                    "creative": "Wybierz newsletter",
+                    "creative": "",
                     "profile": {
-                        "fname": "Imię",
-                        "lname": "Nazwisko",
-                        "cname2": "Nazwa firmy",
-                        "position": "Pozycja",
-                        "domain": "Domena"
+                        "fname": "",
+                        "lname": "",
+                        "cname2": "",
+                        "position": "",
+                        "domain": ""
                     }
                 }
             },
             "participants-by-code": {
-                "name": "Uczestnicy"
+                "name": ""
             },
             "purchases": {
-                "menu": "Zamówienia",
-                "name": "Zamówienia"
+                "menu": "",
+                "name": ""
             }
         }
     }
