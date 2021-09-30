@@ -224,6 +224,10 @@ const languages = {
             "stage": {
                 "title": "Stage Patronage",
                 "description": "Stage patronage means you will be assigned presentation slot and also receive promotional benefits (stage area stickers, logotype in multimedia setting)"
+            },
+            "badges": {
+                "title": "Company logotype on visitors' name badges",
+                "description": " "
             }
         },
         "fields": {
@@ -1008,6 +1012,10 @@ const languages = {
             "stage": {
                 "title": "Patronat nad sceną prezentacyjną",
                 "description": "Patronat nad sceną oznacza uzyskanie slotu prezentacyjnego oraz świadczeń marketingowych - naklejek na ścianach zabudowy sali, GOBO."
+            },
+            "badges": {
+                "title": "Logotyp firmy na identyfikatorach Zwiedzających",
+                "description": " "
             }
         },
         "fields": {
@@ -1790,6 +1798,10 @@ const languages = {
                 "image": ""
             },
             "stage": {
+                "title": "",
+                "description": ""
+            },
+            "badges": {
                 "title": "",
                 "description": ""
             }
